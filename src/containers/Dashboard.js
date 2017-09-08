@@ -34,7 +34,8 @@ const styles = {
   },
   body_header: {
     margin: '0px',
-    padding: '10px'
+    padding: '10px',
+    textAlign: 'center'
   },
   responsive_toggler: {
     width: 250,
@@ -65,7 +66,16 @@ class Dashboard extends Component {
           <ResponsiveDrawer openSecondary={false}>
             <div style={styles.drawer_container}>
               <div style={styles.drawer_header_container}>
-                <h1 style={styles.drawer_header}>Dashboard</h1>
+                <svg
+                  fill="#000000"
+                  height="48"
+                  viewBox="0 0 24 24"
+                  width="48"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z" />
+                </svg>
 
                 <List>
                   <ListItem
@@ -82,7 +92,7 @@ class Dashboard extends Component {
           </ResponsiveDrawer>
           <BodyContainer openSecondary={false}>
             <ResponsiveAppBar
-              title={'Family History Seeker'}
+              title={'FAMILY HISTORY SEEKER'}
               iconElementRight={
                 <FlatButton
                   href="https://github.com/TarikHuber/material-ui-responsive-drawer"
@@ -100,8 +110,8 @@ class Dashboard extends Component {
                 />
               }
             />
-            <div style={{ margin: '10px' }}>
-              <h1 style={styles.body_header}>Body</h1>
+            <div style={{ marginTop: '80px' }}>
+              <h1 style={styles.body_header}>DASHBOARD</h1>
             </div>
           </BodyContainer>
         </div>
