@@ -99,7 +99,7 @@ class App extends Component {
               title={'FAMILY HISTORY SEEKER'}
               iconElementRight={
                 <FlatButton
-                  href="https://github.com/TarikHuber/material-ui-responsive-drawer"
+                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker.git"
                   target="_blank"
                   secondary={true}
                   icon={
