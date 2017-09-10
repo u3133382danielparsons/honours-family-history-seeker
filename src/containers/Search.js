@@ -5,6 +5,8 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 // src
+import SearchBar from '../components/SearchBar';
+import ArticleList from './ArticleList';
 import '../styles/App.css';
 
 // Material-ui
@@ -19,7 +21,8 @@ import {
 import { List, ListItem } from 'material-ui/List';
 import FlatButton from 'material-ui/FlatButton';
 import HomeIcon from 'material-ui/svg-icons/action/home';
-import SearchIcon from 'material-ui/svg-icons/action/search';
+import DashboardIcon from 'material-ui/svg-icons/action/dashboard';
+
 import SvgIcon from 'material-ui/SvgIcon';
 
 // inline styles
@@ -49,7 +52,7 @@ const styles = {
   }
 };
 
-class Dashboard extends Component {
+class Search extends Component {
   render() {
     return (
       <div>
@@ -68,10 +71,10 @@ class Dashboard extends Component {
                   </ListItem>
                   <ListItem
                     onTouchTap={this.handleClose}
-                    leftIcon={<SearchIcon />}
+                    leftIcon={<DashboardIcon />}
                   >
-                    <Link style={styles.linkText} to="/containers/Search">
-                      Search
+                    <Link style={styles.linkText} to="/containers/Dashboard">
+                      Dashboard
                     </Link>
                   </ListItem>
                 </List>
@@ -109,7 +112,9 @@ class Dashboard extends Component {
                 <path d="M0 0h24v24H0z" fill="none" />
                 <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z" />
               </svg>
-              <h1 style={styles.body_header}>DASHBOARD</h1>
+              <h1 style={styles.body_header}>SEARCH TROVE</h1>
+              <SearchBar />
+              <ArticleList />
             </div>
           </BodyContainer>
         </div>
@@ -118,7 +123,7 @@ class Dashboard extends Component {
   }
 }
 
-Dashboard.propTypes = {
+Search.propTypes = {
   toggleDrawerOpen: PropTypes.func.isRequired,
   toggleDrawerDock: PropTypes.func.isRequired,
   setResponsive: PropTypes.func.isRequired
@@ -146,4 +151,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);
+export default connect(mapStateToProps, mapDispatchToProps)(Search);

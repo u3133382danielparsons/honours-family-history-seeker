@@ -1,6 +1,10 @@
+// Node modules
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
+// Material-ui
 import {
   ResponsiveDrawer,
   ResponsiveAppBar,
@@ -18,24 +22,29 @@ import {
   CardActions
 } from 'material-ui/Card';
 import { List, ListItem } from 'material-ui/List';
-// import MenuItem from 'material-ui/MenuItem';
-import { Link } from 'react-router-dom';
 import FlatButton from 'material-ui/FlatButton';
-import { connect } from 'react-redux';
 import SvgIcon from 'material-ui/SvgIcon';
 import DashboardIcon from 'material-ui/svg-icons/action/dashboard';
-import grayFamily from './img/gray.jpg';
-import grayAv from './img/grayAv.jpg';
+import SearchIcon from 'material-ui/svg-icons/action/search';
+
+// Images
+import grayFamily from './img/gray/grayFamily.jpg';
+import grayAv from './img/gray/grayAv.jpg';
+import grayArtP1 from './img/gray/grayArtP1.png';
+import grayArtP2 from './img/gray/grayArtP2.png';
+import scarlettAv from './img/scarlett/scarlettAv.jpg';
+import scarlettArticle from './img/scarlett/scarlettArticle.png';
+import scarlettFamily from './img/scarlett/scarlettFamily.jpg';
 
 const styles = {
   drawer_container: {
     backgroundColor: '#1fd390',
     height: '100%'
   },
-  drawer_header: {
-    margin: '0px',
-    paddingBottom: '10px'
-  },
+  // drawer_header: {
+  //   margin: '0px',
+  //   paddingBottom: '10px'
+  // },
   drawer_header_container: {
     padding: '10px'
   },
@@ -58,30 +67,12 @@ const styles = {
 
 class App extends Component {
   render() {
-    // const {
-    //   // toggleDrawerOpen,
-    //   // browser,
-    //   // responsiveDrawer,
-    //   // toggleDrawerDock,
-    //   // setResponsive
-    // } = this.props;
-
     return (
       <div>
         <div>
           <ResponsiveDrawer openSecondary={false}>
             <div style={styles.drawer_container}>
               <div style={styles.drawer_header_container}>
-                <svg
-                  fill="#000000"
-                  height="48"
-                  viewBox="0 0 24 24"
-                  width="48"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
-                  <path d="M0 0h24v24H0z" fill="none" />
-                </svg>
                 <List>
                   <ListItem
                     onTouchTap={this.handleClose}
@@ -89,6 +80,14 @@ class App extends Component {
                   >
                     <Link style={styles.linkText} to="/containers/Dashboard">
                       Dashboard
+                    </Link>
+                  </ListItem>
+                  <ListItem
+                    onTouchTap={this.handleClose}
+                    leftIcon={<SearchIcon />}
+                  >
+                    <Link style={styles.linkText} to="/containers/Search">
+                      Search
                     </Link>
                   </ListItem>
                 </List>
@@ -116,37 +115,166 @@ class App extends Component {
               }
             />
 
-            <div style={{ margin: '10px' }}>
-              <h1 style={styles.body_header}>Body</h1>
-              <Card>
-                <CardHeader
-                  title="Sheila Gray"
-                  subtitle="1934"
-                  avatar={grayAv}
-                />
-                <CardMedia
-                  overlay={
-                    <CardTitle title="The Gray Family" subtitle="1898" />
-                  }
-                >
-                  <img src={grayFamily} alt="The Gray Family" />
-                </CardMedia>
-                <CardTitle
-                  title="Family Home"
-                  subtitle="The Armidale Express"
-                />
-                <CardText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                  mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
-                  Donec vulputate interdum sollicitudin. Nunc lacinia auctor
-                  quam sed pellentesque. Aliquam dui mauris, mattis quis lacus
-                  id, pellentesque lobortis odio.
-                </CardText>
-                <CardActions>
-                  <FlatButton label="Action1" />
-                  <FlatButton label="Action2" />
-                </CardActions>
-              </Card>
+            <div style={{ marginTop: '80px' }}>
+              <svg
+                fill="#000000"
+                height="48"
+                viewBox="0 0 24 24"
+                width="48"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+                <path d="M0 0h24v24H0z" fill="none" />
+              </svg>
+              <h1 style={styles.body_header}>Home Page</h1>
+              <hr />
+              <div className="row">
+                <div className="col-sm-6">
+                  <Card>
+                    <CardHeader
+                      title="Sheila Gray"
+                      subtitle="1934"
+                      avatar={grayAv}
+                    />
+                    <CardMedia
+                      overlay={
+                        <CardTitle
+                          title="The Gray Family - Mullumbibmy"
+                          subtitle="Milton Samios behind soda fountain at left and probably Alex on the right (Courtesy Jim Samios)"
+                        />
+                      }
+                    >
+                      <img
+                        src={grayFamily}
+                        alt="Milton Samios behind soda fountain at left and probably Alex on the right (Courtesy Jim Samios)"
+                      />
+                    </CardMedia>
+                    <CardTitle
+                      title="Tweed Daily (Murwillumbah, NSW : 1914 - 1949)"
+                      subtitle=""
+                    />
+                    <CardText>
+                      <img
+                        src={grayArtP1}
+                        alt="First half of Article on Gray Family"
+                      />
+                      <img
+                        src={grayArtP2}
+                        alt="Second half of Article on Gray Family"
+                      />
+                    </CardText>
+                    <CardActions>
+                      <FlatButton label="Trove">
+                        <a href="http://trove.nla.gov.au/newspaper/article/190722784?browse=ndp%3Abrowse%2Ftitle%2FT%2Ftitle%2F1007%2F1922%2F02%2F08%2Fpage%2F21492780%2Farticle%2F190722784">
+                          The Tweed Daily, Mullimbimby, Feburary 8, 1922.
+                        </a>
+                      </FlatButton>
+                      <FlatButton label="Ancestory">
+                        <a href="http://freepages.history.rootsweb.ancestry.com/~aliens/chapter_2.htm">
+                          Aliens of the Tweed and Brunswick
+                        </a>
+                      </FlatButton>
+                    </CardActions>
+                  </Card>
+                </div>
+                <div className="col-sm-6">
+                  <Card>
+                    <CardHeader
+                      title="Sir James Scarlett"
+                      subtitle="James Scarlett, 1st Baron Abinger, (13 December 1769 – 17 April 1844)"
+                      avatar={scarlettAv}
+                    />
+                    <CardMedia
+                      overlay={
+                        <CardTitle
+                          title="The Scarlett Family"
+                          subtitle="Raymond Married Josephine in 1917"
+                        />
+                      }
+                    >
+                      <img src={scarlettFamily} alt="The Scarlett Family" />
+                    </CardMedia>
+                    <CardTitle title="Family Home" subtitle="" />
+                    <CardText>
+                      <img src={scarlettArticle} alt="The Scarlett Family" />
+                    </CardText>
+                    <CardActions>
+                      <FlatButton label="Trove">
+                        <a href="http://trove.nla.gov.au/newspaper/article/154972483?browse=ndp%3Abrowse%2Ftitle%2FA%2Ftitle%2F809%2F1917%2F06%2F26%2Fpage%2F18601136%2Farticle%2F154972483">
+                          The Melbourne Age, Tuesday 26th June, 1917
+                        </a>
+                      </FlatButton>
+                      <FlatButton label="Wikipedia">
+                        <a href="https://en.wikipedia.org/wiki/James_Scarlett,_1st_Baron_Abinger">
+                          James Scarlett, 1st Baron Abinger
+                        </a>
+                      </FlatButton>
+                    </CardActions>
+                  </Card>
+                </div>
+                <div className="col-sm-6">
+                  <Card>
+                    <CardHeader
+                      title="Sheila Gray"
+                      subtitle="1934"
+                      avatar={grayAv}
+                    />
+                    <CardMedia
+                      overlay={
+                        <CardTitle title="The Gray Family" subtitle="1898" />
+                      }
+                    >
+                      <img src={grayFamily} alt="The Gray Family" />
+                    </CardMedia>
+                    <CardTitle
+                      title="Family Home"
+                      subtitle=" Tweed Daily (Murwillumbah, NSW : 1914 - 1949)"
+                    />
+                    <CardText>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Donec mattis pretium massa. Aliquam erat volutpat. Nulla
+                      facilisi. Donec vulputate interdum sollicitudin. Nunc
+                      lacinia auctor quam sed pellentesque. Aliquam dui mauris,
+                      mattis quis lacus id, pellentesque lobortis odio.
+                    </CardText>
+                    <CardActions>
+                      <FlatButton label="Action1" />
+                      <FlatButton label="Action2" />
+                    </CardActions>
+                  </Card>
+                </div>
+                <div className="col-sm-6">
+                  <Card>
+                    <CardHeader
+                      title="Sheila Gray"
+                      subtitle="1934"
+                      avatar={grayAv}
+                    />
+                    <CardMedia
+                      overlay={
+                        <CardTitle title="The Gray Family" subtitle="1898" />
+                      }
+                    >
+                      <img src={grayFamily} alt="The Gray Family" />
+                    </CardMedia>
+                    <CardTitle
+                      title="Family Home"
+                      subtitle=" Tweed Daily (Murwillumbah, NSW : 1914 - 1949)"
+                    />
+                    <CardText>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Donec mattis pretium massa. Aliquam erat volutpat. Nulla
+                      facilisi. Donec vulputate interdum sollicitudin. Nunc
+                      lacinia auctor quam sed pellentesque. Aliquam dui mauris,
+                      mattis quis lacus id, pellentesque lobortis odio.
+                    </CardText>
+                    <CardActions>
+                      <FlatButton label="Action1" />
+                      <FlatButton label="Action2" />
+                    </CardActions>
+                  </Card>
+                </div>
+              </div>
             </div>
           </BodyContainer>
         </div>
