@@ -26,6 +26,7 @@ import FlatButton from 'material-ui/FlatButton';
 import SvgIcon from 'material-ui/SvgIcon';
 import DashboardIcon from 'material-ui/svg-icons/action/dashboard';
 import SearchIcon from 'material-ui/svg-icons/action/search';
+import AboutIcon from 'material-ui/svg-icons/action/question-answer';
 
 // Images
 import grayFamily from './img/gray/grayFamily.jpg';
@@ -90,6 +91,14 @@ class App extends Component {
                       Search
                     </Link>
                   </ListItem>
+                  <ListItem
+                    onTouchTap={this.handleClose}
+                    leftIcon={<AboutIcon />}
+                  >
+                    <Link style={styles.linkText} to="/containers/About">
+                      About
+                    </Link>
+                  </ListItem>
                 </List>
               </div>
             </div>
@@ -99,7 +108,7 @@ class App extends Component {
               title={'FAMILY HISTORY SEEKER'}
               iconElementRight={
                 <FlatButton
-                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker.git"
+                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/App.js"
                   target="_blank"
                   secondary={true}
                   icon={
@@ -132,14 +141,14 @@ class App extends Component {
                 <div className="col-sm-6">
                   <Card>
                     <CardHeader
-                      title="Sheila Gray"
+                      title="The Gray Family - Mullumbibmy"
                       subtitle="1934"
                       avatar={grayAv}
                     />
                     <CardMedia
                       overlay={
                         <CardTitle
-                          title="The Gray Family - Mullumbibmy"
+                          title=""
                           subtitle="Milton Samios behind soda fountain at left and probably Alex on the right (Courtesy Jim Samios)"
                         />
                       }
@@ -177,6 +186,7 @@ class App extends Component {
                     </CardActions>
                   </Card>
                 </div>
+                <hr />
                 <div className="col-sm-6">
                   <Card>
                     <CardHeader
@@ -212,6 +222,7 @@ class App extends Component {
                     </CardActions>
                   </Card>
                 </div>
+                <hr />
                 <div className="col-sm-6">
                   <Card>
                     <CardHeader
@@ -243,6 +254,7 @@ class App extends Component {
                     </CardActions>
                   </Card>
                 </div>
+                <hr />
                 <div className="col-sm-6">
                   <Card>
                     <CardHeader
@@ -274,6 +286,7 @@ class App extends Component {
                     </CardActions>
                   </Card>
                 </div>
+                <hr />
               </div>
             </div>
           </BodyContainer>
@@ -291,6 +304,7 @@ App.propTypes = {
 
 const mapStateToProps = state => {
   const { browser, responsiveDrawer } = state;
+
   return {
     browser,
     responsiveDrawer

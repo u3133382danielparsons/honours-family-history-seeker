@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 
 // src
 import SearchBar from '../components/SearchBar';
-import ArticleList from './ArticleList';
+import ArticleList from '../components/ArticleList';
 import '../styles/App.css';
 
 // Material-ui
@@ -22,6 +22,7 @@ import { List, ListItem } from 'material-ui/List';
 import FlatButton from 'material-ui/FlatButton';
 import HomeIcon from 'material-ui/svg-icons/action/home';
 import DashboardIcon from 'material-ui/svg-icons/action/dashboard';
+import AboutIcon from 'material-ui/svg-icons/action/question-answer';
 
 import SvgIcon from 'material-ui/SvgIcon';
 
@@ -31,10 +32,6 @@ const styles = {
     backgroundColor: '#1fd390',
     height: '100%'
   },
-  // drawer_header: {
-  //   margin: '0px',
-  //   paddingBottom: '10px'
-  // },
   drawer_header_container: {
     padding: '10px'
   },
@@ -77,6 +74,14 @@ class Search extends Component {
                       Dashboard
                     </Link>
                   </ListItem>
+                  <ListItem
+                    onTouchTap={this.handleClose}
+                    leftIcon={<AboutIcon />}
+                  >
+                    <Link style={styles.linkText} to="/containers/About">
+                      About
+                    </Link>
+                  </ListItem>
                 </List>
               </div>
             </div>
@@ -86,7 +91,7 @@ class Search extends Component {
               title={'FAMILY HISTORY SEEKER'}
               iconElementRight={
                 <FlatButton
-                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker.git"
+                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/Search.js"
                   target="_blank"
                   secondary={true}
                   icon={
@@ -101,21 +106,27 @@ class Search extends Component {
                 />
               }
             />
-            <div style={{ marginTop: '80px' }}>
-              <svg
-                fill="#000000"
-                height="48"
-                viewBox="0 0 24 24"
-                width="48"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M0 0h24v24H0z" fill="none" />
-                <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z" />
-              </svg>
-              <h1 style={styles.body_header}>SEARCH TROVE</h1>
-              <SearchBar />
-              <ArticleList />
-            </div>
+            <header>
+              <div style={{ marginTop: '60px' }}>
+                <svg
+                  fill="#000000"
+                  height="48"
+                  viewBox="0 0 24 24"
+                  width="48"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                  <path d="M0 0h24v24H0z" fill="none" />
+                </svg>
+                <h1 style={styles.body_header}>SEARCH TROVE</h1>
+                <hr />
+              </div>
+            </header>
+            <hr />
+            <h3>Basic Search</h3>
+            <SearchBar />
+            <hr />
+            <ArticleList />
           </BodyContainer>
         </div>
       </div>
@@ -130,10 +141,13 @@ Search.propTypes = {
 };
 
 const mapStateToProps = state => {
-  const { browser, responsiveDrawer } = state;
+  // console.log('In a Search.js state', state);
+
+  const { browser, responsiveDrawer, articles } = state;
   return {
     browser,
-    responsiveDrawer
+    responsiveDrawer,
+    articles
   };
 };
 

@@ -19,8 +19,9 @@ import {
 import { List, ListItem } from 'material-ui/List';
 import FlatButton from 'material-ui/FlatButton';
 import HomeIcon from 'material-ui/svg-icons/action/home';
+import DashboardIcon from 'material-ui/svg-icons/action/dashboard';
+
 import SearchIcon from 'material-ui/svg-icons/action/search';
-import AboutIcon from 'material-ui/svg-icons/action/question-answer';
 import SvgIcon from 'material-ui/SvgIcon';
 
 // inline styles
@@ -50,7 +51,7 @@ const styles = {
   }
 };
 
-class Dashboard extends Component {
+class About extends Component {
   render() {
     return (
       <div>
@@ -69,18 +70,18 @@ class Dashboard extends Component {
                   </ListItem>
                   <ListItem
                     onTouchTap={this.handleClose}
-                    leftIcon={<SearchIcon />}
+                    leftIcon={<DashboardIcon />}
                   >
-                    <Link style={styles.linkText} to="/containers/Search">
-                      Search
+                    <Link style={styles.linkText} to="/containers/Dashboard">
+                      Dashboard
                     </Link>
                   </ListItem>
                   <ListItem
                     onTouchTap={this.handleClose}
-                    leftIcon={<AboutIcon />}
+                    leftIcon={<SearchIcon />}
                   >
-                    <Link style={styles.linkText} to="/containers/About">
-                      About
+                    <Link style={styles.linkText} to="/containers/Search">
+                      Search
                     </Link>
                   </ListItem>
                 </List>
@@ -92,7 +93,7 @@ class Dashboard extends Component {
               title={'FAMILY HISTORY SEEKER'}
               iconElementRight={
                 <FlatButton
-                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/Dashboard.js"
+                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/About.js"
                   target="_blank"
                   secondary={true}
                   icon={
@@ -107,20 +108,22 @@ class Dashboard extends Component {
                 />
               }
             />
-            <div style={{ marginTop: '80px' }}>
-              <svg
-                fill="#000000"
-                height="48"
-                viewBox="0 0 24 24"
-                width="48"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M0 0h24v24H0z" fill="none" />
-                <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z" />
-              </svg>
-              <h1 style={styles.body_header}>DASHBOARD</h1>
-              <hr />
-            </div>
+            <header>
+              <div style={{ marginTop: '80px' }}>
+                <svg
+                  fill="#000000"
+                  height="48"
+                  viewBox="0 0 24 24"
+                  width="48"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1z" />
+                </svg>
+                <h1 style={styles.body_header}>About</h1>
+                <hr />
+              </div>
+            </header>
           </BodyContainer>
         </div>
       </div>
@@ -128,7 +131,7 @@ class Dashboard extends Component {
   }
 }
 
-Dashboard.propTypes = {
+About.propTypes = {
   toggleDrawerOpen: PropTypes.func.isRequired,
   toggleDrawerDock: PropTypes.func.isRequired,
   setResponsive: PropTypes.func.isRequired
@@ -156,4 +159,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);
+export default connect(mapStateToProps, mapDispatchToProps)(About);
