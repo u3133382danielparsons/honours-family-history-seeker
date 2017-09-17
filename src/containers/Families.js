@@ -19,6 +19,9 @@ import {
 import { List, ListItem } from 'material-ui/List';
 import FlatButton from 'material-ui/FlatButton';
 import HomeIcon from 'material-ui/svg-icons/action/home';
+import DashboardIcon from 'material-ui/svg-icons/action/dashboard';
+import PostsIcon from 'material-ui/svg-icons/action/chrome-reader-mode';
+import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
 import SearchIcon from 'material-ui/svg-icons/action/search';
 import AboutIcon from 'material-ui/svg-icons/action/question-answer';
 import SvgIcon from 'material-ui/SvgIcon';
@@ -32,21 +35,16 @@ const styles = {
   drawer_header_container: {
     padding: '10px'
   },
-  body_header: {
-    margin: '0px',
-    padding: '10px',
-    textAlign: 'center'
-  },
   iconStyles: {
     marginTop: 10
   },
   linkText: {
     textDecoration: 'none',
-    color: 'black'
+    color: '#4f4f4f'
   }
 };
 
-class PostsShow extends Component {
+class Families extends Component {
   render() {
     return (
       <div>
@@ -65,10 +63,34 @@ class PostsShow extends Component {
                   </ListItem>
                   <ListItem
                     onTouchTap={this.handleClose}
+                    leftIcon={<DashboardIcon />}
+                  >
+                    <Link style={styles.linkText} to="/containers/Dashboard">
+                      Dashboard
+                    </Link>
+                  </ListItem>
+                  <ListItem
+                    onTouchTap={this.handleClose}
                     leftIcon={<SearchIcon />}
                   >
                     <Link style={styles.linkText} to="/containers/Search">
                       Search
+                    </Link>
+                  </ListItem>
+                  <ListItem
+                    onTouchTap={this.handleClose}
+                    leftIcon={<PostsIcon />}
+                  >
+                    <Link style={styles.linkText} to="/containers/Posts">
+                      Posts
+                    </Link>
+                  </ListItem>
+                  <ListItem
+                    onTouchTap={this.handleClose}
+                    leftIcon={<AddPostsIcon />}
+                  >
+                    <Link style={styles.linkText} to="/containers/AddPosts">
+                      Add Posts
                     </Link>
                   </ListItem>
                   <ListItem
@@ -103,19 +125,20 @@ class PostsShow extends Component {
                 />
               }
             />
-            <div style={{ marginTop: '80px' }}>
-              <svg
-                fill="#000000"
-                height="48"
-                viewBox="0 0 24 24"
-                width="48"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M0 0h24v24H0z" fill="none" />
-                <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z" />
-              </svg>
-              <h1 style={styles.body_header}>DASHBOARD</h1>
-              <hr />
+            <div className="container">
+              <header>
+                <svg
+                  fill="#1fbcd3"
+                  height="48"
+                  viewBox="0 0 24 24"
+                  width="48"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM8 17.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5zM9.5 8c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5S9.5 9.38 9.5 8zm6.5 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                </svg>
+                <h3>FAMILIES</h3>
+              </header>
             </div>
           </BodyContainer>
         </div>
@@ -124,7 +147,7 @@ class PostsShow extends Component {
   }
 }
 
-PostsShow.propTypes = {
+Families.propTypes = {
   toggleDrawerOpen: PropTypes.func.isRequired,
   toggleDrawerDock: PropTypes.func.isRequired,
   setResponsive: PropTypes.func.isRequired
@@ -152,4 +175,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(PostsShow);
+export default connect(mapStateToProps, mapDispatchToProps)(Families);

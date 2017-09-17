@@ -1,7 +1,4 @@
-html {
+html,
+body {
   font-family: 'Roboto', sans-serif;
-}
-
-h1 {
-  font-weght: 700;
 }

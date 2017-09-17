@@ -15,6 +15,7 @@ import App from './App.js';
 import Dashboard from './containers/Dashboard';
 import Search from './containers/Search';
 import Posts from './containers/Posts';
+import Families from './containers/Families';
 import AddPosts from './containers/AddPosts';
 import About from './containers/About';
 
@@ -35,13 +36,14 @@ render(
           <Route path="/containers/Dashboard" component={Dashboard} />
           <Route path="/containers/Search" component={Search} />
           <Route path="/containers/Posts" component={Posts} />
+          <Route path="/containers/Families" component={Families} />
           <Route path="/containers/AddPosts" component={AddPosts} />
           <Route path="/containers/About" component={About} />
         </Switch>
       </BrowserRouter>
     </MuiThemeProvider>
   </Provider>,
-  document.querySelector('.container')
+  document.getElementById('root')
 );
 
 registerServiceWorker();

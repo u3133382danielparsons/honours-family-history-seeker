@@ -21,6 +21,8 @@ import FlatButton from 'material-ui/FlatButton';
 import HomeIcon from 'material-ui/svg-icons/action/home';
 import DashboardIcon from 'material-ui/svg-icons/action/dashboard';
 import SearchIcon from 'material-ui/svg-icons/action/search';
+import PostsIcon from 'material-ui/svg-icons/action/chrome-reader-mode';
+import FamiliesIcon from 'material-ui/svg-icons/action/group-work';
 import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
 import SvgIcon from 'material-ui/SvgIcon';
 
@@ -30,24 +32,15 @@ const styles = {
     backgroundColor: '#1fd390',
     height: '100%'
   },
-  // drawer_header: {
-  //   margin: '0px',
-  //   paddingBottom: '10px'
-  // },
   drawer_header_container: {
     padding: '10px'
-  },
-  body_header: {
-    margin: '0px',
-    padding: '10px',
-    textAlign: 'center'
   },
   iconStyles: {
     marginTop: 10
   },
   linkText: {
     textDecoration: 'none',
-    color: 'black'
+    color: '#4f4f4f'
   }
 };
 
@@ -86,10 +79,26 @@ class About extends Component {
                   </ListItem>
                   <ListItem
                     onTouchTap={this.handleClose}
+                    leftIcon={<PostsIcon />}
+                  >
+                    <Link style={styles.linkText} to="/containers/Posts">
+                      Posts
+                    </Link>
+                  </ListItem>
+                  <ListItem
+                    onTouchTap={this.handleClose}
                     leftIcon={<AddPostsIcon />}
                   >
                     <Link style={styles.linkText} to="/containers/AddPosts">
                       Add Posts
+                    </Link>
+                  </ListItem>
+                  <ListItem
+                    onTouchTap={this.handleClose}
+                    leftIcon={<FamiliesIcon />}
+                  >
+                    <Link style={styles.linkText} to="/containers/Families">
+                      Families
                     </Link>
                   </ListItem>
                 </List>
@@ -116,10 +125,10 @@ class About extends Component {
                 />
               }
             />
-            <header>
-              <div style={{ marginTop: '80px' }}>
+            <div className="container">
+              <header>
                 <svg
-                  fill="#000000"
+                  fill="#1fbcd3"
                   height="48"
                   viewBox="0 0 24 24"
                   width="48"
@@ -128,10 +137,9 @@ class About extends Component {
                   <path d="M0 0h24v24H0z" fill="none" />
                   <path d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1z" />
                 </svg>
-                <h1 style={styles.body_header}>About</h1>
-                <hr />
-              </div>
-            </header>
+                <h3>About</h3>
+              </header>
+            </div>
           </BodyContainer>
         </div>
       </div>

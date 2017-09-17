@@ -18,9 +18,11 @@ import {
 } from '../material-ui-responsive-drawer/index.js';
 import { List, ListItem } from 'material-ui/List';
 import FlatButton from 'material-ui/FlatButton';
+import IconButton from 'material-ui/IconButton';
 import HomeIcon from 'material-ui/svg-icons/action/home';
 import SearchIcon from 'material-ui/svg-icons/action/search';
 import PostsIcon from 'material-ui/svg-icons/action/chrome-reader-mode';
+import FamiliesIcon from 'material-ui/svg-icons/action/group-work';
 import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
 import AboutIcon from 'material-ui/svg-icons/action/question-answer';
 import SvgIcon from 'material-ui/SvgIcon';
@@ -31,24 +33,25 @@ const styles = {
     backgroundColor: '#1fd390',
     height: '100%'
   },
-  // drawer_header: {
-  //   margin: '0px',
-  //   paddingBottom: '10px'
-  // },
   drawer_header_container: {
     padding: '10px'
-  },
-  body_header: {
-    margin: '0px',
-    padding: '10px',
-    textAlign: 'center'
   },
   iconStyles: {
     marginTop: 10
   },
   linkText: {
     textDecoration: 'none',
-    color: 'black'
+    color: '#4f4f4f'
+  },
+  large: {
+    width: 180,
+    height: 180,
+    padding: 40
+  },
+  largeIcon: {
+    width: 90,
+    height: 90,
+    color: '#1fd390'
   }
 };
 
@@ -83,6 +86,14 @@ class Dashboard extends Component {
                   >
                     <Link style={styles.linkText} to="/containers/Posts">
                       Posts
+                    </Link>
+                  </ListItem>
+                  <ListItem
+                    onTouchTap={this.handleClose}
+                    leftIcon={<FamiliesIcon />}
+                  >
+                    <Link style={styles.linkText} to="/containers/Families">
+                      Families
                     </Link>
                   </ListItem>
                   <ListItem
@@ -125,19 +136,101 @@ class Dashboard extends Component {
                 />
               }
             />
-            <div style={{ marginTop: '80px' }}>
-              <svg
-                fill="#000000"
-                height="48"
-                viewBox="0 0 24 24"
-                width="48"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M0 0h24v24H0z" fill="none" />
-                <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z" />
-              </svg>
-              <h1 style={styles.body_header}>DASHBOARD</h1>
-              <hr />
+            <div className="container">
+              <header>
+                <IconButton tooltip="DASHBOARD PAGE">
+                  <svg
+                    fill="#1fbcd3"
+                    height="48"
+                    viewBox="0 0 24 24"
+                    width="48"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z" />
+                  </svg>
+                </IconButton>
+                <h3>DASHBOARD</h3>
+              </header>
+              <div className="row">
+                <div className="col-sm-6">
+                  <Link to="/">
+                    <IconButton
+                      iconStyle={styles.largeIcon}
+                      style={styles.large}
+                      tooltip="HOME PAGE"
+                    >
+                      <HomeIcon />
+                    </IconButton>
+                  </Link>
+                </div>
+                <div className="col-sm-6">
+                  <Link to="/containers/Search">
+                    <IconButton
+                      iconStyle={styles.largeIcon}
+                      style={styles.large}
+                      tooltip="SEARCH TROVE"
+                    >
+                      <SearchIcon />
+                    </IconButton>
+                  </Link>
+                </div>
+                <div className="col-sm-6">
+                  <Link to="/containers/Posts">
+                    <IconButton
+                      iconStyle={styles.largeIcon}
+                      style={styles.large}
+                      tooltip="READ POSTS"
+                    >
+                      <PostsIcon />
+                    </IconButton>
+                  </Link>
+                </div>
+                <div className="col-sm-6">
+                  <Link to="/containers/Families">
+                    <IconButton
+                      iconStyle={styles.largeIcon}
+                      style={styles.large}
+                      tooltip="FAMILIES"
+                    >
+                      <FamiliesIcon />
+                    </IconButton>
+                  </Link>
+                </div>
+                <div className="col-sm-6">
+                  <Link to="/containers/AddPosts">
+                    <IconButton
+                      iconStyle={styles.largeIcon}
+                      style={styles.large}
+                      tooltip="ADD POSTS"
+                    >
+                      <AddPostsIcon />
+                    </IconButton>
+                  </Link>
+                </div>
+                <div className="col-sm-6">
+                  <Link to="/containers/About">
+                    <IconButton
+                      iconStyle={styles.largeIcon}
+                      style={styles.large}
+                      tooltip="ABOUT FAMILY HISTORY SEEKER"
+                    >
+                      <AboutIcon />
+                    </IconButton>
+                  </Link>
+                </div>
+                <div className="col-sm-6">
+                  <Link to="/">
+                    <IconButton
+                      iconStyle={styles.largeIcon}
+                      style={styles.large}
+                      tooltip="HOME PAGE"
+                    >
+                      <HomeIcon />
+                    </IconButton>
+                  </Link>
+                </div>
+              </div>
             </div>
           </BodyContainer>
         </div>

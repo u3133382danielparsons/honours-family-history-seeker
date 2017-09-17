@@ -22,9 +22,10 @@ import { List, ListItem } from 'material-ui/List';
 import FlatButton from 'material-ui/FlatButton';
 import HomeIcon from 'material-ui/svg-icons/action/home';
 import DashboardIcon from 'material-ui/svg-icons/action/dashboard';
+import PostsIcon from 'material-ui/svg-icons/action/chrome-reader-mode';
+import FamiliesIcon from 'material-ui/svg-icons/action/group-work';
 import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
 import AboutIcon from 'material-ui/svg-icons/action/question-answer';
-
 import SvgIcon from 'material-ui/SvgIcon';
 
 // inline styles
@@ -36,17 +37,12 @@ const styles = {
   drawer_header_container: {
     padding: '10px'
   },
-  body_header: {
-    margin: '0px',
-    padding: '10px',
-    textAlign: 'center'
-  },
   iconStyles: {
     marginTop: 10
   },
   linkText: {
     textDecoration: 'none',
-    color: 'black'
+    color: '#4f4f4f'
   }
 };
 
@@ -73,6 +69,22 @@ class Search extends Component {
                   >
                     <Link style={styles.linkText} to="/containers/Dashboard">
                       Dashboard
+                    </Link>
+                  </ListItem>
+                  <ListItem
+                    onTouchTap={this.handleClose}
+                    leftIcon={<PostsIcon />}
+                  >
+                    <Link style={styles.linkText} to="/containers/Posts">
+                      Posts
+                    </Link>
+                  </ListItem>
+                  <ListItem
+                    onTouchTap={this.handleClose}
+                    leftIcon={<FamiliesIcon />}
+                  >
+                    <Link style={styles.linkText} to="/containers/Families">
+                      Families
                     </Link>
                   </ListItem>
                   <ListItem
@@ -116,25 +128,28 @@ class Search extends Component {
               }
             />
 
-            <div style={{ marginTop: '80px' }}>
-              <svg
-                fill="#000000"
-                height="48"
-                viewBox="0 0 24 24"
-                width="48"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
-                <path d="M0 0h24v24H0z" fill="none" />
-              </svg>
-              <h1 style={styles.body_header}>SEARCH TROVE</h1>
-            </div>
-            <div className="basic-search">
-              <h3>Make a Basic Search</h3>
-            </div>
-            <SearchBar />
+            <div className="container">
+              <header>
+                <svg
+                  fill="#1fbcd3"
+                  height="48"
+                  viewBox="0 0 24 24"
+                  width="48"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                  <path d="M0 0h24v24H0z" fill="none" />
+                </svg>
+                <h3>SEARCH TROVE</h3>
+              </header>
 
-            <ArticleList />
+              <div className="basic-search">
+                <h3>Make a Basic Search</h3>
+              </div>
+              <SearchBar />
+
+              <ArticleList />
+            </div>
           </BodyContainer>
         </div>
       </div>

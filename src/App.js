@@ -26,6 +26,8 @@ import FlatButton from 'material-ui/FlatButton';
 import SvgIcon from 'material-ui/SvgIcon';
 import DashboardIcon from 'material-ui/svg-icons/action/dashboard';
 import SearchIcon from 'material-ui/svg-icons/action/search';
+import PostsIcon from 'material-ui/svg-icons/action/chrome-reader-mode';
+import FamiliesIcon from 'material-ui/svg-icons/action/group-work';
 import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
 import AboutIcon from 'material-ui/svg-icons/action/question-answer';
 
@@ -46,10 +48,7 @@ const styles = {
   drawer_header_container: {
     padding: '10px'
   },
-  body_header: {
-    margin: '0px',
-    padding: '10px'
-  },
+
   responsive_toggler: {
     width: 250,
     paddingTop: 15
@@ -59,7 +58,7 @@ const styles = {
   },
   linkText: {
     textDecoration: 'none',
-    color: 'black'
+    color: '#4f4f4f'
   }
 };
 
@@ -86,6 +85,22 @@ class App extends Component {
                   >
                     <Link style={styles.linkText} to="/containers/Search">
                       Search
+                    </Link>
+                  </ListItem>
+                  <ListItem
+                    onTouchTap={this.handleClose}
+                    leftIcon={<PostsIcon />}
+                  >
+                    <Link style={styles.linkText} to="/containers/Posts">
+                      Posts
+                    </Link>
+                  </ListItem>
+                  <ListItem
+                    onTouchTap={this.handleClose}
+                    leftIcon={<FamiliesIcon />}
+                  >
+                    <Link style={styles.linkText} to="/containers/Families">
+                      Families
                     </Link>
                   </ListItem>
                   <ListItem
@@ -129,21 +144,56 @@ class App extends Component {
               }
             />
 
-            <div style={{ marginTop: '80px' }}>
-              <svg
-                fill="#000000"
-                height="48"
-                viewBox="0 0 24 24"
-                width="48"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
-                <path d="M0 0h24v24H0z" fill="none" />
-              </svg>
-              <h1 style={styles.body_header}>Home</h1>
-              <hr />
-
+            <div className="container">
+              <header>
+                <svg
+                  fill="#1fbcd3"
+                  height="48"
+                  viewBox="0 0 24 24"
+                  width="48"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+                  <path d="M0 0h24v24H0z" fill="none" />
+                </svg>
+                <h3>HOME PAGE</h3>
+              </header>
               <div className="row">
+                <div className="col-sm-6">
+                  <Card>
+                    <CardHeader
+                      title="Sir James Scarlett"
+                      subtitle="James Scarlett, 1st Baron Abinger, (13 December 1769 – 17 April 1844)"
+                      avatar={scarlettAv}
+                    />
+                    <CardMedia
+                      overlay={
+                        <CardTitle
+                          title="The Scarlett Family"
+                          subtitle="Raymond Married Josephine in 1917"
+                        />
+                      }
+                    >
+                      <img src={scarlettFamily} alt="The Scarlett Family" />
+                    </CardMedia>
+                    <CardTitle title="Family Home" subtitle="" />
+                    <CardText>
+                      <img src={scarlettArticle} alt="The Scarlett Family" />
+                    </CardText>
+                    <CardActions>
+                      <FlatButton label="Trove">
+                        <a href="http://trove.nla.gov.au/newspaper/article/154972483?browse=ndp%3Abrowse%2Ftitle%2FA%2Ftitle%2F809%2F1917%2F06%2F26%2Fpage%2F18601136%2Farticle%2F154972483">
+                          The Melbourne Age, Tuesday 26th June, 1917
+                        </a>
+                      </FlatButton>
+                      <FlatButton label="Wikipedia">
+                        <a href="https://en.wikipedia.org/wiki/James_Scarlett,_1st_Baron_Abinger">
+                          James Scarlett, 1st Baron Abinger
+                        </a>
+                      </FlatButton>
+                    </CardActions>
+                  </Card>
+                </div>
                 <div className="col-sm-6">
                   <Card>
                     <CardHeader
@@ -192,43 +242,6 @@ class App extends Component {
                     </CardActions>
                   </Card>
                 </div>
-                <hr />
-                <div className="col-sm-6">
-                  <Card>
-                    <CardHeader
-                      title="Sir James Scarlett"
-                      subtitle="James Scarlett, 1st Baron Abinger, (13 December 1769 – 17 April 1844)"
-                      avatar={scarlettAv}
-                    />
-                    <CardMedia
-                      overlay={
-                        <CardTitle
-                          title="The Scarlett Family"
-                          subtitle="Raymond Married Josephine in 1917"
-                        />
-                      }
-                    >
-                      <img src={scarlettFamily} alt="The Scarlett Family" />
-                    </CardMedia>
-                    <CardTitle title="Family Home" subtitle="" />
-                    <CardText>
-                      <img src={scarlettArticle} alt="The Scarlett Family" />
-                    </CardText>
-                    <CardActions>
-                      <FlatButton label="Trove">
-                        <a href="http://trove.nla.gov.au/newspaper/article/154972483?browse=ndp%3Abrowse%2Ftitle%2FA%2Ftitle%2F809%2F1917%2F06%2F26%2Fpage%2F18601136%2Farticle%2F154972483">
-                          The Melbourne Age, Tuesday 26th June, 1917
-                        </a>
-                      </FlatButton>
-                      <FlatButton label="Wikipedia">
-                        <a href="https://en.wikipedia.org/wiki/James_Scarlett,_1st_Baron_Abinger">
-                          James Scarlett, 1st Baron Abinger
-                        </a>
-                      </FlatButton>
-                    </CardActions>
-                  </Card>
-                </div>
-                <hr />
                 <div className="col-sm-6">
                   <Card>
                     <CardHeader

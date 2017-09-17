@@ -21,7 +21,9 @@ import {
 import { List, ListItem } from 'material-ui/List';
 import FlatButton from 'material-ui/FlatButton';
 import HomeIcon from 'material-ui/svg-icons/action/home';
+import DashboardIcon from 'material-ui/svg-icons/action/dashboard';
 import SearchIcon from 'material-ui/svg-icons/action/search';
+import FamiliesIcon from 'material-ui/svg-icons/action/group-work';
 import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
 import AboutIcon from 'material-ui/svg-icons/action/question-answer';
 import SvgIcon from 'material-ui/SvgIcon';
@@ -37,17 +39,15 @@ const styles = {
   drawer_header_container: {
     padding: '10px'
   },
-  body_header: {
-    margin: '0px',
-    padding: '10px',
-    textAlign: 'center'
-  },
   iconStyles: {
     marginTop: 10
   },
   linkText: {
     textDecoration: 'none',
-    color: 'black'
+    color: '#4f4f4f'
+  },
+  postItem: {
+    lineHeight: 2
   }
 };
 
@@ -59,13 +59,20 @@ class Posts extends Component {
     return _.map(this.props.posts, post => {
       return (
         <div key={post.id}>
-          <Subheader>{post.title}</Subheader>
+          <Link to="/containers/Families">
+            <Subheader>{post.title}</Subheader>
+          </Link>
           <List>
             <ListItem
               primaryText={post.categories}
               leftIcon={<ActionGrade />}
+              style={styles.postItem}
             />
-            <ListItem primaryText={post.content} leftIcon={<ActionGrade />} />
+            <ListItem
+              primaryText={post.content}
+              leftIcon={<ActionGrade />}
+              style={styles.postItem}
+            />
           </List>
           <hr />
         </div>
@@ -91,10 +98,26 @@ class Posts extends Component {
                   </ListItem>
                   <ListItem
                     onTouchTap={this.handleClose}
+                    leftIcon={<DashboardIcon />}
+                  >
+                    <Link style={styles.linkText} to="/containers/Dashboard">
+                      Dashboard
+                    </Link>
+                  </ListItem>
+                  <ListItem
+                    onTouchTap={this.handleClose}
                     leftIcon={<SearchIcon />}
                   >
                     <Link style={styles.linkText} to="/containers/Search">
                       Search
+                    </Link>
+                  </ListItem>
+                  <ListItem
+                    onTouchTap={this.handleClose}
+                    leftIcon={<FamiliesIcon />}
+                  >
+                    <Link style={styles.linkText} to="/containers/Families">
+                      Families
                     </Link>
                   </ListItem>
                   <ListItem
@@ -137,22 +160,23 @@ class Posts extends Component {
                 />
               }
             />
-            <div style={{ marginTop: '80px' }}>
-              <svg
-                fill="#000000"
-                height="48"
-                viewBox="0 0 24 24"
-                width="48"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M-74 29h48v48h-48V29zM0 0h24v24H0V0zm0 0h24v24H0V0z"
-                  fill="none"
-                />
-                <path d="M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z" />
-              </svg>
-              <h1 style={styles.body_header}>POSTS</h1>
-              <hr />
+            <div className="container">
+              <header>
+                <svg
+                  fill="#1fbcd3"
+                  height="48"
+                  viewBox="0 0 24 24"
+                  width="48"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M-74 29h48v48h-48V29zM0 0h24v24H0V0zm0 0h24v24H0V0z"
+                    fill="none"
+                  />
+                  <path d="M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z" />
+                </svg>
+                <h3>POSTS</h3>
+              </header>
               <div>
                 <div className="posts">{this.renderPosts()}</div>
               </div>
