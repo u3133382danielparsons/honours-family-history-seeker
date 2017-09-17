@@ -26,6 +26,7 @@ import FlatButton from 'material-ui/FlatButton';
 import SvgIcon from 'material-ui/SvgIcon';
 import DashboardIcon from 'material-ui/svg-icons/action/dashboard';
 import SearchIcon from 'material-ui/svg-icons/action/search';
+import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
 import AboutIcon from 'material-ui/svg-icons/action/question-answer';
 
 // Images
@@ -42,10 +43,6 @@ const styles = {
     backgroundColor: '#1fd390',
     height: '100%'
   },
-  // drawer_header: {
-  //   margin: '0px',
-  //   paddingBottom: '10px'
-  // },
   drawer_header_container: {
     padding: '10px'
   },
@@ -93,6 +90,14 @@ class App extends Component {
                   </ListItem>
                   <ListItem
                     onTouchTap={this.handleClose}
+                    leftIcon={<AddPostsIcon />}
+                  >
+                    <Link style={styles.linkText} to="/containers/AddPosts">
+                      Add Posts
+                    </Link>
+                  </ListItem>
+                  <ListItem
+                    onTouchTap={this.handleClose}
                     leftIcon={<AboutIcon />}
                   >
                     <Link style={styles.linkText} to="/containers/About">
@@ -135,8 +140,9 @@ class App extends Component {
                 <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
                 <path d="M0 0h24v24H0z" fill="none" />
               </svg>
-              <h1 style={styles.body_header}>Home Page</h1>
+              <h1 style={styles.body_header}>Home</h1>
               <hr />
+
               <div className="row">
                 <div className="col-sm-6">
                   <Card>

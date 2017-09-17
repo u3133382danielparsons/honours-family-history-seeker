@@ -18,3 +18,16 @@ h3 {
 .search-form {
   padding-bottom: 20px;
 }
+
+form a {
+  margin-left: 20px;
+}
+
+.posts {
+  text-align: left;
+}
+
+.basic-search {
+  margin-top: 80px;
+  text-align: left;
+}

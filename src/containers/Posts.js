@@ -3,9 +3,11 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import _ from 'lodash';
 
 // src
 import '../styles/App.css';
+import { fetchPosts } from '../actions';
 
 // Material-ui
 import {
@@ -20,10 +22,11 @@ import { List, ListItem } from 'material-ui/List';
 import FlatButton from 'material-ui/FlatButton';
 import HomeIcon from 'material-ui/svg-icons/action/home';
 import SearchIcon from 'material-ui/svg-icons/action/search';
-import PostsIcon from 'material-ui/svg-icons/action/chrome-reader-mode';
 import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
 import AboutIcon from 'material-ui/svg-icons/action/question-answer';
 import SvgIcon from 'material-ui/SvgIcon';
+import Subheader from 'material-ui/Subheader';
+import ActionGrade from 'material-ui/svg-icons/action/grade';
 
 // inline styles
 const styles = {
@@ -31,10 +34,6 @@ const styles = {
     backgroundColor: '#1fd390',
     height: '100%'
   },
-  // drawer_header: {
-  //   margin: '0px',
-  //   paddingBottom: '10px'
-  // },
   drawer_header_container: {
     padding: '10px'
   },
@@ -52,8 +51,29 @@ const styles = {
   }
 };
 
-class Dashboard extends Component {
+class Posts extends Component {
+  componentDidMount() {
+    this.props.fetchPosts();
+  }
+  renderPosts() {
+    return _.map(this.props.posts, post => {
+      return (
+        <div key={post.id}>
+          <Subheader>{post.title}</Subheader>
+          <List>
+            <ListItem
+              primaryText={post.categories}
+              leftIcon={<ActionGrade />}
+            />
+            <ListItem primaryText={post.content} leftIcon={<ActionGrade />} />
+          </List>
+          <hr />
+        </div>
+      );
+    });
+  }
   render() {
+    console.log(this.props.posts);
     return (
       <div>
         <div>
@@ -75,14 +95,6 @@ class Dashboard extends Component {
                   >
                     <Link style={styles.linkText} to="/containers/Search">
                       Search
-                    </Link>
-                  </ListItem>
-                  <ListItem
-                    onTouchTap={this.handleClose}
-                    leftIcon={<PostsIcon />}
-                  >
-                    <Link style={styles.linkText} to="/containers/Posts">
-                      Posts
                     </Link>
                   </ListItem>
                   <ListItem
@@ -133,11 +145,17 @@ class Dashboard extends Component {
                 width="48"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <path d="M0 0h24v24H0z" fill="none" />
-                <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z" />
+                <path
+                  d="M-74 29h48v48h-48V29zM0 0h24v24H0V0zm0 0h24v24H0V0z"
+                  fill="none"
+                />
+                <path d="M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z" />
               </svg>
-              <h1 style={styles.body_header}>DASHBOARD</h1>
+              <h1 style={styles.body_header}>POSTS</h1>
               <hr />
+              <div>
+                <div className="posts">{this.renderPosts()}</div>
+              </div>
             </div>
           </BodyContainer>
         </div>
@@ -146,7 +164,7 @@ class Dashboard extends Component {
   }
 }
 
-Dashboard.propTypes = {
+Posts.propTypes = {
   toggleDrawerOpen: PropTypes.func.isRequired,
   toggleDrawerDock: PropTypes.func.isRequired,
   setResponsive: PropTypes.func.isRequired
@@ -156,7 +174,8 @@ const mapStateToProps = state => {
   const { browser, responsiveDrawer } = state;
   return {
     browser,
-    responsiveDrawer
+    responsiveDrawer,
+    posts: state.posts
   };
 };
 
@@ -170,8 +189,11 @@ const mapDispatchToProps = dispatch => {
     },
     setResponsive: isResponsive => {
       dispatch(setResponsive(isResponsive));
+    },
+    fetchPosts: () => {
+      dispatch(fetchPosts());
     }
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);
+export default connect(mapStateToProps, mapDispatchToProps)(Posts);

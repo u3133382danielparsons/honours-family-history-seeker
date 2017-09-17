@@ -3,8 +3,10 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { Field, reduxForm } from 'redux-form';
 
 // src
+import { createPost } from '../actions';
 import '../styles/App.css';
 
 // Material-ui
@@ -20,8 +22,8 @@ import { List, ListItem } from 'material-ui/List';
 import FlatButton from 'material-ui/FlatButton';
 import HomeIcon from 'material-ui/svg-icons/action/home';
 import SearchIcon from 'material-ui/svg-icons/action/search';
-import PostsIcon from 'material-ui/svg-icons/action/chrome-reader-mode';
-import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
+import DashboardIcon from 'material-ui/svg-icons/action/dashboard';
+
 import AboutIcon from 'material-ui/svg-icons/action/question-answer';
 import SvgIcon from 'material-ui/SvgIcon';
 
@@ -31,10 +33,6 @@ const styles = {
     backgroundColor: '#1fd390',
     height: '100%'
   },
-  // drawer_header: {
-  //   margin: '0px',
-  //   paddingBottom: '10px'
-  // },
   drawer_header_container: {
     padding: '10px'
   },
@@ -52,8 +50,26 @@ const styles = {
   }
 };
 
-class Dashboard extends Component {
+class AddPosts extends Component {
+  renderField(field) {
+    const { meta: { touched, error } } = field;
+    const className = `form-group ${touched && error ? 'has-danger' : ''}`;
+    return (
+      <div className={className}>
+        <label>{field.label}</label>
+        <input className="form-control" type="text" {...field.input} />
+        <div className="text-help">{touched ? error : ''}</div>
+      </div>
+    );
+  }
+
+  onSubmit(values) {
+    this.props.createPost(values);
+  }
+
   render() {
+    const { handleSubmit } = this.props;
+
     return (
       <div>
         <div>
@@ -71,26 +87,18 @@ class Dashboard extends Component {
                   </ListItem>
                   <ListItem
                     onTouchTap={this.handleClose}
+                    leftIcon={<DashboardIcon />}
+                  >
+                    <Link style={styles.linkText} to="/containers/Dashboard">
+                      Dashboard
+                    </Link>
+                  </ListItem>
+                  <ListItem
+                    onTouchTap={this.handleClose}
                     leftIcon={<SearchIcon />}
                   >
                     <Link style={styles.linkText} to="/containers/Search">
                       Search
-                    </Link>
-                  </ListItem>
-                  <ListItem
-                    onTouchTap={this.handleClose}
-                    leftIcon={<PostsIcon />}
-                  >
-                    <Link style={styles.linkText} to="/containers/Posts">
-                      Posts
-                    </Link>
-                  </ListItem>
-                  <ListItem
-                    onTouchTap={this.handleClose}
-                    leftIcon={<AddPostsIcon />}
-                  >
-                    <Link style={styles.linkText} to="/containers/AddPosts">
-                      Add Posts
                     </Link>
                   </ListItem>
                   <ListItem
@@ -134,10 +142,34 @@ class Dashboard extends Component {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path d="M0 0h24v24H0z" fill="none" />
-                <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z" />
+                <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 14h-3v3h-2v-3H8v-2h3v-3h2v3h3v2zm-3-7V3.5L18.5 9H13z" />
               </svg>
-              <h1 style={styles.body_header}>DASHBOARD</h1>
+              <h1 style={styles.body_header}>ADD POSTS</h1>
               <hr />
+              <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
+                <Field
+                  label="Article Heading"
+                  name="title"
+                  component={this.renderField}
+                />
+                <Field
+                  label="Newspaper Title"
+                  name="categories"
+                  component={this.renderField}
+                />
+                <Field
+                  label="content"
+                  name="content"
+                  component={this.renderField}
+                />
+
+                <button type="submit" className="btn btn-primary">
+                  Submit
+                </button>
+                <Link to="/" className="btn btn-danger">
+                  Cancel
+                </Link>
+              </form>
             </div>
           </BodyContainer>
         </div>
@@ -146,11 +178,28 @@ class Dashboard extends Component {
   }
 }
 
-Dashboard.propTypes = {
+AddPosts.propTypes = {
   toggleDrawerOpen: PropTypes.func.isRequired,
   toggleDrawerDock: PropTypes.func.isRequired,
   setResponsive: PropTypes.func.isRequired
 };
+
+function validate(values) {
+  // console.log(values)
+  const errors = {};
+  if (!values.title) {
+    errors.title = 'Enter a title!';
+  }
+
+  if (!values.categories) {
+    errors.categories = 'Enter some categories';
+  }
+
+  if (!values.content) {
+    errors.content = 'Enter some content please';
+  }
+  return errors;
+}
 
 const mapStateToProps = state => {
   const { browser, responsiveDrawer } = state;
@@ -170,8 +219,14 @@ const mapDispatchToProps = dispatch => {
     },
     setResponsive: isResponsive => {
       dispatch(setResponsive(isResponsive));
+    },
+    createPost: () => {
+      dispatch(createPost());
     }
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);
+export default reduxForm({
+  validate,
+  form: 'PostsNewForm'
+})(connect(mapStateToProps, mapDispatchToProps)(AddPosts));

@@ -20,8 +20,8 @@ import { List, ListItem } from 'material-ui/List';
 import FlatButton from 'material-ui/FlatButton';
 import HomeIcon from 'material-ui/svg-icons/action/home';
 import DashboardIcon from 'material-ui/svg-icons/action/dashboard';
-
 import SearchIcon from 'material-ui/svg-icons/action/search';
+import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
 import SvgIcon from 'material-ui/SvgIcon';
 
 // inline styles
@@ -82,6 +82,14 @@ class About extends Component {
                   >
                     <Link style={styles.linkText} to="/containers/Search">
                       Search
+                    </Link>
+                  </ListItem>
+                  <ListItem
+                    onTouchTap={this.handleClose}
+                    leftIcon={<AddPostsIcon />}
+                  >
+                    <Link style={styles.linkText} to="/containers/AddPosts">
+                      Add Posts
                     </Link>
                   </ListItem>
                 </List>

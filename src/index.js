@@ -14,6 +14,8 @@ import { responsiveStoreEnhancer } from 'redux-responsive';
 import App from './App.js';
 import Dashboard from './containers/Dashboard';
 import Search from './containers/Search';
+import Posts from './containers/Posts';
+import AddPosts from './containers/AddPosts';
 import About from './containers/About';
 
 // Material-ui theme
@@ -22,7 +24,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import registerServiceWorker from './registerServiceWorker';
 
 injectTapEventPlugin();
-console.log(store);
+// console.log(store);
 
 render(
   <Provider store={store(reducers, responsiveStoreEnhancer)}>
@@ -32,6 +34,8 @@ render(
           <Route exact path="/" component={App} />
           <Route path="/containers/Dashboard" component={Dashboard} />
           <Route path="/containers/Search" component={Search} />
+          <Route path="/containers/Posts" component={Posts} />
+          <Route path="/containers/AddPosts" component={AddPosts} />
           <Route path="/containers/About" component={About} />
         </Switch>
       </BrowserRouter>

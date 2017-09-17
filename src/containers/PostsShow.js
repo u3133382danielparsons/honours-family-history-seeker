@@ -20,8 +20,6 @@ import { List, ListItem } from 'material-ui/List';
 import FlatButton from 'material-ui/FlatButton';
 import HomeIcon from 'material-ui/svg-icons/action/home';
 import SearchIcon from 'material-ui/svg-icons/action/search';
-import PostsIcon from 'material-ui/svg-icons/action/chrome-reader-mode';
-import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
 import AboutIcon from 'material-ui/svg-icons/action/question-answer';
 import SvgIcon from 'material-ui/SvgIcon';
 
@@ -31,10 +29,6 @@ const styles = {
     backgroundColor: '#1fd390',
     height: '100%'
   },
-  // drawer_header: {
-  //   margin: '0px',
-  //   paddingBottom: '10px'
-  // },
   drawer_header_container: {
     padding: '10px'
   },
@@ -52,7 +46,7 @@ const styles = {
   }
 };
 
-class Dashboard extends Component {
+class PostsShow extends Component {
   render() {
     return (
       <div>
@@ -75,22 +69,6 @@ class Dashboard extends Component {
                   >
                     <Link style={styles.linkText} to="/containers/Search">
                       Search
-                    </Link>
-                  </ListItem>
-                  <ListItem
-                    onTouchTap={this.handleClose}
-                    leftIcon={<PostsIcon />}
-                  >
-                    <Link style={styles.linkText} to="/containers/Posts">
-                      Posts
-                    </Link>
-                  </ListItem>
-                  <ListItem
-                    onTouchTap={this.handleClose}
-                    leftIcon={<AddPostsIcon />}
-                  >
-                    <Link style={styles.linkText} to="/containers/AddPosts">
-                      Add Posts
                     </Link>
                   </ListItem>
                   <ListItem
@@ -146,7 +124,7 @@ class Dashboard extends Component {
   }
 }
 
-Dashboard.propTypes = {
+PostsShow.propTypes = {
   toggleDrawerOpen: PropTypes.func.isRequired,
   toggleDrawerDock: PropTypes.func.isRequired,
   setResponsive: PropTypes.func.isRequired
@@ -174,4 +152,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);
+export default connect(mapStateToProps, mapDispatchToProps)(PostsShow);
