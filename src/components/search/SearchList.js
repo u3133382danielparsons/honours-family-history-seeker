@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { List, ListItem } from 'material-ui/List';
 
-class ArticleList extends Component {
+class SearchList extends Component {
   renderArticle(articleData) {
     var data = articleData.response.zone[0].records.article;
     // console.log('Data json here', data);
@@ -161,4 +161,4 @@ function mapStateToProps({ articles, articlesTwo }) {
   return { articles, articlesTwo };
 }
 
-export default connect(mapStateToProps)(ArticleList);
+export default connect(mapStateToProps)(SearchList);

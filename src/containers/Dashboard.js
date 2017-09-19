@@ -1,11 +1,12 @@
 // Node modules
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 // src
-import '../styles/App.css';
+import DashboardNav from '../components/dashboard/DashboardNav';
+import DashboardHeader from '../components/dashboard/DashboardHeader';
+import DashboardMain from '../components/dashboard/DashboardMain';
 
 // Material-ui
 import {
@@ -16,15 +17,8 @@ import {
   toggleDrawerDock,
   setResponsive
 } from '../material-ui-responsive-drawer/index.js';
-import { List, ListItem } from 'material-ui/List';
+
 import FlatButton from 'material-ui/FlatButton';
-import IconButton from 'material-ui/IconButton';
-import HomeIcon from 'material-ui/svg-icons/action/home';
-import SearchIcon from 'material-ui/svg-icons/action/search';
-import PostsIcon from 'material-ui/svg-icons/action/chrome-reader-mode';
-import FamiliesIcon from 'material-ui/svg-icons/action/group-work';
-import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
-import AboutIcon from 'material-ui/svg-icons/action/question-answer';
 import SvgIcon from 'material-ui/SvgIcon';
 
 // inline styles
@@ -35,23 +29,6 @@ const styles = {
   },
   drawer_header_container: {
     padding: '10px'
-  },
-  iconStyles: {
-    marginTop: 10
-  },
-  linkText: {
-    textDecoration: 'none',
-    color: '#4f4f4f'
-  },
-  large: {
-    width: 180,
-    height: 180,
-    padding: 40
-  },
-  largeIcon: {
-    width: 90,
-    height: 90,
-    color: '#1fd390'
   }
 };
 
@@ -63,56 +40,7 @@ class Dashboard extends Component {
           <ResponsiveDrawer openSecondary={false}>
             <div style={styles.drawer_container}>
               <div style={styles.drawer_header_container}>
-                <List>
-                  <ListItem
-                    onTouchTap={this.handleClose}
-                    leftIcon={<HomeIcon style={styles.iconStyles} />}
-                  >
-                    <Link style={styles.linkText} to="/">
-                      Home
-                    </Link>
-                  </ListItem>
-                  <ListItem
-                    onTouchTap={this.handleClose}
-                    leftIcon={<SearchIcon />}
-                  >
-                    <Link style={styles.linkText} to="/containers/Search">
-                      Search
-                    </Link>
-                  </ListItem>
-                  <ListItem
-                    onTouchTap={this.handleClose}
-                    leftIcon={<PostsIcon />}
-                  >
-                    <Link style={styles.linkText} to="/containers/Posts">
-                      Posts
-                    </Link>
-                  </ListItem>
-                  <ListItem
-                    onTouchTap={this.handleClose}
-                    leftIcon={<FamiliesIcon />}
-                  >
-                    <Link style={styles.linkText} to="/containers/Families">
-                      Families
-                    </Link>
-                  </ListItem>
-                  <ListItem
-                    onTouchTap={this.handleClose}
-                    leftIcon={<AddPostsIcon />}
-                  >
-                    <Link style={styles.linkText} to="/containers/AddPosts">
-                      Add Posts
-                    </Link>
-                  </ListItem>
-                  <ListItem
-                    onTouchTap={this.handleClose}
-                    leftIcon={<AboutIcon />}
-                  >
-                    <Link style={styles.linkText} to="/containers/About">
-                      About
-                    </Link>
-                  </ListItem>
-                </List>
+                <DashboardNav />
               </div>
             </div>
           </ResponsiveDrawer>
@@ -136,102 +64,8 @@ class Dashboard extends Component {
                 />
               }
             />
-            <div className="container">
-              <header>
-                <IconButton tooltip="DASHBOARD PAGE">
-                  <svg
-                    fill="#1fbcd3"
-                    height="48"
-                    viewBox="0 0 24 24"
-                    width="48"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M0 0h24v24H0z" fill="none" />
-                    <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z" />
-                  </svg>
-                </IconButton>
-                <h3>DASHBOARD</h3>
-              </header>
-              <div className="row">
-                <div className="col-sm-6">
-                  <Link to="/">
-                    <IconButton
-                      iconStyle={styles.largeIcon}
-                      style={styles.large}
-                      tooltip="HOME PAGE"
-                    >
-                      <HomeIcon />
-                    </IconButton>
-                  </Link>
-                </div>
-                <div className="col-sm-6">
-                  <Link to="/containers/Search">
-                    <IconButton
-                      iconStyle={styles.largeIcon}
-                      style={styles.large}
-                      tooltip="SEARCH TROVE"
-                    >
-                      <SearchIcon />
-                    </IconButton>
-                  </Link>
-                </div>
-                <div className="col-sm-6">
-                  <Link to="/containers/Posts">
-                    <IconButton
-                      iconStyle={styles.largeIcon}
-                      style={styles.large}
-                      tooltip="READ POSTS"
-                    >
-                      <PostsIcon />
-                    </IconButton>
-                  </Link>
-                </div>
-                <div className="col-sm-6">
-                  <Link to="/containers/Families">
-                    <IconButton
-                      iconStyle={styles.largeIcon}
-                      style={styles.large}
-                      tooltip="FAMILIES"
-                    >
-                      <FamiliesIcon />
-                    </IconButton>
-                  </Link>
-                </div>
-                <div className="col-sm-6">
-                  <Link to="/containers/AddPosts">
-                    <IconButton
-                      iconStyle={styles.largeIcon}
-                      style={styles.large}
-                      tooltip="ADD POSTS"
-                    >
-                      <AddPostsIcon />
-                    </IconButton>
-                  </Link>
-                </div>
-                <div className="col-sm-6">
-                  <Link to="/containers/About">
-                    <IconButton
-                      iconStyle={styles.largeIcon}
-                      style={styles.large}
-                      tooltip="ABOUT FAMILY HISTORY SEEKER"
-                    >
-                      <AboutIcon />
-                    </IconButton>
-                  </Link>
-                </div>
-                <div className="col-sm-6">
-                  <Link to="/">
-                    <IconButton
-                      iconStyle={styles.largeIcon}
-                      style={styles.large}
-                      tooltip="HOME PAGE"
-                    >
-                      <HomeIcon />
-                    </IconButton>
-                  </Link>
-                </div>
-              </div>
-            </div>
+            <DashboardHeader />
+            <DashboardMain />
           </BodyContainer>
         </div>
       </div>

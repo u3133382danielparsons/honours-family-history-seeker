@@ -1,13 +1,12 @@
 // Node modules
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { Field, reduxForm } from 'redux-form';
 
 // src
-import { createPost } from '../actions';
-import '../styles/App.css';
+import AddPostsNav from '../components/add-posts/AddPostsNav';
+import AddPostsHeader from '../components/add-posts/AddPostsHeader';
+import AddPostsMain from '../components/add-posts/AddPostsMain';
 
 // Material-ui
 import {
@@ -18,14 +17,7 @@ import {
   toggleDrawerDock,
   setResponsive
 } from '../material-ui-responsive-drawer/index.js';
-import { List, ListItem } from 'material-ui/List';
 import FlatButton from 'material-ui/FlatButton';
-import HomeIcon from 'material-ui/svg-icons/action/home';
-import SearchIcon from 'material-ui/svg-icons/action/search';
-import DashboardIcon from 'material-ui/svg-icons/action/dashboard';
-import PostsIcon from 'material-ui/svg-icons/action/chrome-reader-mode';
-import FamiliesIcon from 'material-ui/svg-icons/action/group-work';
-import AboutIcon from 'material-ui/svg-icons/action/question-answer';
 import SvgIcon from 'material-ui/SvgIcon';
 
 // inline styles
@@ -36,92 +28,18 @@ const styles = {
   },
   drawer_header_container: {
     padding: '10px'
-  },
-  iconStyles: {
-    marginTop: 10
-  },
-  linkText: {
-    textDecoration: 'none',
-    color: '#4f4f4f'
   }
 };
 
 class AddPosts extends Component {
-  renderField(field) {
-    const { meta: { touched, error } } = field;
-    const className = `form-group ${touched && error ? 'has-danger' : ''}`;
-    return (
-      <div className={className}>
-        <label>{field.label}</label>
-        <input className="form-control" type="text" {...field.input} />
-        <div className="text-help">{touched ? error : ''}</div>
-      </div>
-    );
-  }
-
-  onSubmit(values) {
-    this.props.createPost(values);
-  }
-
   render() {
-    const { handleSubmit } = this.props;
-
     return (
       <div>
         <div>
           <ResponsiveDrawer openSecondary={false}>
             <div style={styles.drawer_container}>
               <div style={styles.drawer_header_container}>
-                <List>
-                  <ListItem
-                    onTouchTap={this.handleClose}
-                    leftIcon={<HomeIcon style={styles.iconStyles} />}
-                  >
-                    <Link style={styles.linkText} to="/">
-                      Home
-                    </Link>
-                  </ListItem>
-                  <ListItem
-                    onTouchTap={this.handleClose}
-                    leftIcon={<DashboardIcon />}
-                  >
-                    <Link style={styles.linkText} to="/containers/Dashboard">
-                      Dashboard
-                    </Link>
-                  </ListItem>
-                  <ListItem
-                    onTouchTap={this.handleClose}
-                    leftIcon={<SearchIcon />}
-                  >
-                    <Link style={styles.linkText} to="/containers/Search">
-                      Search
-                    </Link>
-                  </ListItem>
-                  <ListItem
-                    onTouchTap={this.handleClose}
-                    leftIcon={<PostsIcon />}
-                  >
-                    <Link style={styles.linkText} to="/containers/Posts">
-                      Posts
-                    </Link>
-                  </ListItem>
-                  <ListItem
-                    onTouchTap={this.handleClose}
-                    leftIcon={<FamiliesIcon />}
-                  >
-                    <Link style={styles.linkText} to="/containers/Families">
-                      Families
-                    </Link>
-                  </ListItem>
-                  <ListItem
-                    onTouchTap={this.handleClose}
-                    leftIcon={<AboutIcon />}
-                  >
-                    <Link style={styles.linkText} to="/containers/About">
-                      About
-                    </Link>
-                  </ListItem>
-                </List>
+                <AddPostsNav />
               </div>
             </div>
           </ResponsiveDrawer>
@@ -146,43 +64,8 @@ class AddPosts extends Component {
               }
             />
             <div className="container">
-              <header>
-                <svg
-                  fill="#1fbcd3"
-                  height="48"
-                  viewBox="0 0 24 24"
-                  width="48"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 14h-3v3h-2v-3H8v-2h3v-3h2v3h3v2zm-3-7V3.5L18.5 9H13z" />
-                </svg>
-                <h3>ADD POSTS</h3>
-              </header>
-              <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
-                <Field
-                  label="Article Heading"
-                  name="title"
-                  component={this.renderField}
-                />
-                <Field
-                  label="Newspaper Title"
-                  name="categories"
-                  component={this.renderField}
-                />
-                <Field
-                  label="content"
-                  name="content"
-                  component={this.renderField}
-                />
-
-                <button type="submit" className="btn btn-primary">
-                  Submit
-                </button>
-                <Link to="/" className="btn btn-danger">
-                  Cancel
-                </Link>
-              </form>
+              <AddPostsHeader />
+              <AddPostsMain />
             </div>
           </BodyContainer>
         </div>
@@ -196,23 +79,6 @@ AddPosts.propTypes = {
   toggleDrawerDock: PropTypes.func.isRequired,
   setResponsive: PropTypes.func.isRequired
 };
-
-function validate(values) {
-  // console.log(values)
-  const errors = {};
-  if (!values.title) {
-    errors.title = 'Enter a title!';
-  }
-
-  if (!values.categories) {
-    errors.categories = 'Enter some categories';
-  }
-
-  if (!values.content) {
-    errors.content = 'Enter some content please';
-  }
-  return errors;
-}
 
 const mapStateToProps = state => {
   const { browser, responsiveDrawer } = state;
@@ -232,14 +98,8 @@ const mapDispatchToProps = dispatch => {
     },
     setResponsive: isResponsive => {
       dispatch(setResponsive(isResponsive));
-    },
-    createPost: () => {
-      dispatch(createPost());
     }
   };
 };
 
-export default reduxForm({
-  validate,
-  form: 'PostsNewForm'
-})(connect(mapStateToProps, mapDispatchToProps)(AddPosts));
+export default connect(mapStateToProps, mapDispatchToProps)(AddPosts);

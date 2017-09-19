@@ -1,11 +1,13 @@
 // Node modules
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 // src
-import '../styles/App.css';
+// import '../styles/App.css';
+import FamiliesNav from '../components/families/FamiliesNav';
+import FamiliesHeader from '../components/families/FamiliesHeader';
+import FamiliesMain from '../components/families/FamiliesMain';
 
 // Material-ui
 import {
@@ -16,14 +18,7 @@ import {
   toggleDrawerDock,
   setResponsive
 } from '../material-ui-responsive-drawer/index.js';
-import { List, ListItem } from 'material-ui/List';
 import FlatButton from 'material-ui/FlatButton';
-import HomeIcon from 'material-ui/svg-icons/action/home';
-import DashboardIcon from 'material-ui/svg-icons/action/dashboard';
-import PostsIcon from 'material-ui/svg-icons/action/chrome-reader-mode';
-import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
-import SearchIcon from 'material-ui/svg-icons/action/search';
-import AboutIcon from 'material-ui/svg-icons/action/question-answer';
 import SvgIcon from 'material-ui/SvgIcon';
 
 // inline styles
@@ -34,13 +29,6 @@ const styles = {
   },
   drawer_header_container: {
     padding: '10px'
-  },
-  iconStyles: {
-    marginTop: 10
-  },
-  linkText: {
-    textDecoration: 'none',
-    color: '#4f4f4f'
   }
 };
 
@@ -52,56 +40,7 @@ class Families extends Component {
           <ResponsiveDrawer openSecondary={false}>
             <div style={styles.drawer_container}>
               <div style={styles.drawer_header_container}>
-                <List>
-                  <ListItem
-                    onTouchTap={this.handleClose}
-                    leftIcon={<HomeIcon style={styles.iconStyles} />}
-                  >
-                    <Link style={styles.linkText} to="/">
-                      Home
-                    </Link>
-                  </ListItem>
-                  <ListItem
-                    onTouchTap={this.handleClose}
-                    leftIcon={<DashboardIcon />}
-                  >
-                    <Link style={styles.linkText} to="/containers/Dashboard">
-                      Dashboard
-                    </Link>
-                  </ListItem>
-                  <ListItem
-                    onTouchTap={this.handleClose}
-                    leftIcon={<SearchIcon />}
-                  >
-                    <Link style={styles.linkText} to="/containers/Search">
-                      Search
-                    </Link>
-                  </ListItem>
-                  <ListItem
-                    onTouchTap={this.handleClose}
-                    leftIcon={<PostsIcon />}
-                  >
-                    <Link style={styles.linkText} to="/containers/Posts">
-                      Posts
-                    </Link>
-                  </ListItem>
-                  <ListItem
-                    onTouchTap={this.handleClose}
-                    leftIcon={<AddPostsIcon />}
-                  >
-                    <Link style={styles.linkText} to="/containers/AddPosts">
-                      Add Posts
-                    </Link>
-                  </ListItem>
-                  <ListItem
-                    onTouchTap={this.handleClose}
-                    leftIcon={<AboutIcon />}
-                  >
-                    <Link style={styles.linkText} to="/containers/About">
-                      About
-                    </Link>
-                  </ListItem>
-                </List>
+                <FamiliesNav />
               </div>
             </div>
           </ResponsiveDrawer>
@@ -125,21 +64,9 @@ class Families extends Component {
                 />
               }
             />
-            <div className="container">
-              <header>
-                <svg
-                  fill="#1fbcd3"
-                  height="48"
-                  viewBox="0 0 24 24"
-                  width="48"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM8 17.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5zM9.5 8c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5S9.5 9.38 9.5 8zm6.5 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-                </svg>
-                <h3>FAMILIES</h3>
-              </header>
-            </div>
+
+            <FamiliesHeader />
+            <FamiliesMain />
           </BodyContainer>
         </div>
       </div>

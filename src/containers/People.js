@@ -4,9 +4,8 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 // src
-import PostsNav from '../components/posts/PostsNav';
-import PostsHeader from '../components/posts/PostsHeader';
-import PostsMain from '../components/posts/PostsMain';
+import PeopleNav from '../components/people/PeopleNav';
+import PeopleHeader from '../components/people/PeopleHeader';
 
 // Material-ui
 import {
@@ -31,7 +30,7 @@ const styles = {
   }
 };
 
-class Posts extends Component {
+class People extends Component {
   render() {
     return (
       <div>
@@ -39,7 +38,7 @@ class Posts extends Component {
           <ResponsiveDrawer openSecondary={false}>
             <div style={styles.drawer_container}>
               <div style={styles.drawer_header_container}>
-                <PostsNav />
+                <PeopleNav />
               </div>
             </div>
           </ResponsiveDrawer>
@@ -48,7 +47,7 @@ class Posts extends Component {
               title={'FAMILY HISTORY SEEKER'}
               iconElementRight={
                 <FlatButton
-                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/Dashboard.js"
+                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/About.js"
                   target="_blank"
                   secondary={true}
                   icon={
@@ -63,10 +62,9 @@ class Posts extends Component {
                 />
               }
             />
-            <main class="container">
-              <PostsHeader />
-              <PostsMain />
-            </main>
+            <div className="container">
+              <PeopleHeader />
+            </div>
           </BodyContainer>
         </div>
       </div>
@@ -74,7 +72,7 @@ class Posts extends Component {
   }
 }
 
-Posts.propTypes = {
+People.propTypes = {
   toggleDrawerOpen: PropTypes.func.isRequired,
   toggleDrawerDock: PropTypes.func.isRequired,
   setResponsive: PropTypes.func.isRequired
@@ -102,4 +100,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Posts);
+export default connect(mapStateToProps, mapDispatchToProps)(People);

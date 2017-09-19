@@ -11,11 +11,12 @@ import reducers from './reducers';
 import { responsiveStoreEnhancer } from 'redux-responsive';
 
 // Routes
-import App from './App.js';
+import Home from './Home.js';
 import Dashboard from './containers/Dashboard';
 import Search from './containers/Search';
 import Posts from './containers/Posts';
 import Families from './containers/Families';
+import People from './containers/People';
 import AddPosts from './containers/AddPosts';
 import About from './containers/About';
 
@@ -32,11 +33,12 @@ render(
     <MuiThemeProvider>
       <BrowserRouter>
         <Switch>
-          <Route exact path="/" component={App} />
+          <Route exact path="/" component={Home} />
           <Route path="/containers/Dashboard" component={Dashboard} />
           <Route path="/containers/Search" component={Search} />
           <Route path="/containers/Posts" component={Posts} />
           <Route path="/containers/Families" component={Families} />
+          <Route path="/containers/People" component={People} />
           <Route path="/containers/AddPosts" component={AddPosts} />
           <Route path="/containers/About" component={About} />
         </Switch>
