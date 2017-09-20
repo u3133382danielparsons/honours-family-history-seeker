@@ -24,7 +24,7 @@ class HomeHeader extends Component {
             <path d="M0 0h24v24H0z" fill="none" />
           </svg>
         </IconButton>
-        <Subheader style={styles.subheaderColor}>SEARCH TROVE</Subheader>
+        <Subheader style={styles.subheaderColor}>HOME</Subheader>
       </header>
     );
   }
