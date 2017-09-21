@@ -13,6 +13,7 @@ class AboutHeader extends Component {
   render() {
     return (
       <header>
+        <Subheader>FAMILY HISTORY SEEKER</Subheader>
         <IconButton tooltip="ABOUT FAMILY HISTORY SEEKER PAGE">
           <svg
             fill="#1fbcd3"

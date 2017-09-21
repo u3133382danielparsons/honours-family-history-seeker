@@ -45,7 +45,6 @@ class Home extends Component {
           </ResponsiveDrawer>
           <BodyContainer openSecondary={false}>
             <ResponsiveAppBar
-              title={'FAMILY HISTORY SEEKER'}
               iconElementRight={
                 <FlatButton
                   href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/App.js"
@@ -63,6 +62,7 @@ class Home extends Component {
                 />
               }
             />
+
             <HomeHeader />
             <HomeMain />
           </BodyContainer>

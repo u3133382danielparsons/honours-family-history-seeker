@@ -13,6 +13,7 @@ class HomeHeader extends Component {
   render() {
     return (
       <header>
+        <Subheader>FAMILY HISTORY SEEKER</Subheader>
         <IconButton tooltip="HOME PAGE">
           <svg
             fill="#1fbcd3"

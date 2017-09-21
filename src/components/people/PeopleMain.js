@@ -20,7 +20,7 @@ class PeopleMain extends Component {
               rightIcon={<ActionInfo />}
             />
             <ListItem
-              primaryText="Truganini"
+              primaryText="Truganini - negotiator, diplomat and guerilla fighter"
               secondaryText={
                 <p>
                   One of the foremost Tasmanian Aboriginal leaders of the 1800s,

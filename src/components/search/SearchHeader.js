@@ -12,6 +12,7 @@ class SearchHeader extends Component {
   render() {
     return (
       <header>
+        <Subheader>FAMILY HISTORY SEEKER</Subheader>
         <IconButton tooltip="SEARCH PAGE">
           <svg
             fill="#1fbcd3"

@@ -13,6 +13,7 @@ class AddPostsHeader extends Component {
   render() {
     return (
       <header>
+        <Subheader>FAMILY HISTORY SEEKER</Subheader>
         <IconButton tooltip="ADD POSTS PAGE">
           <svg
             fill="#1fbcd3"

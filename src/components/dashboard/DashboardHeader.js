@@ -12,6 +12,7 @@ class DashboardHeader extends Component {
   render() {
     return (
       <header>
+        <Subheader>FAMILY HISTORY SEEKER</Subheader>
         <IconButton tooltip="DASHBOARD PAGE">
           <svg
             fill="#1fbcd3"
