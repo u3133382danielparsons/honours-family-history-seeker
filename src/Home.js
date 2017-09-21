@@ -47,7 +47,7 @@ class Home extends Component {
             <ResponsiveAppBar
               iconElementRight={
                 <FlatButton
-                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/App.js"
+                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/Home.js"
                   target="_blank"
                   secondary={true}
                   icon={
