@@ -63,7 +63,7 @@ class Posts extends Component {
                 />
               }
             />
-            <main class="container">
+            <main className="container">
               <PostsHeader />
               <PostsMain />
             </main>

@@ -9,7 +9,6 @@ class SearchForm extends Component {
     super(props);
 
     this.state = { term: '' };
-
     this.onInputChange = this.onInputChange.bind(this);
     this.onFormSubmit = this.onFormSubmit.bind(this);
   }
@@ -18,6 +17,7 @@ class SearchForm extends Component {
   }
   onFormSubmit(event) {
     event.preventDefault();
+
     this.props.fetchArticle(this.state.term);
     this.setState({ term: '' });
   }
@@ -34,7 +34,11 @@ class SearchForm extends Component {
               onChange={this.onInputChange}
             />
             <span className="input-group-btn">
-              <button type="submit" className="btn btn-secondary">
+              <button
+                type="submit"
+                className="btn btn-secondary"
+                disabled={!this.state.term}
+              >
                 Submit
               </button>
             </span>

@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 // src
 import PeopleNav from '../components/people/PeopleNav';
 import PeopleHeader from '../components/people/PeopleHeader';
+import PeopleMain from '../components/people/PeopleMain';
 
 // Material-ui
 import {
@@ -62,9 +63,8 @@ class People extends Component {
                 />
               }
             />
-            <div className="container">
-              <PeopleHeader />
-            </div>
+            <PeopleHeader />
+            <PeopleMain />
           </BodyContainer>
         </div>
       </div>

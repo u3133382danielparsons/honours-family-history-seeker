@@ -64,8 +64,10 @@ class Dashboard extends Component {
                 />
               }
             />
-            <DashboardHeader />
-            <DashboardMain />
+            <div id="BackgroundGradient">
+              <DashboardHeader />
+              <DashboardMain />
+            </div>
           </BodyContainer>
         </div>
       </div>

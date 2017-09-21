@@ -1,12 +1,8 @@
+/* styles for the entire site */
 html,
 body {
   font-family: 'Roboto', sans-serif;
 }
-
-body {
-  padding: 5%;
-}
-
 img {
   width: 100%;
   height: auto;

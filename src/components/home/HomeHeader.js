@@ -4,7 +4,8 @@ import Subheader from 'material-ui/Subheader';
 
 const styles = {
   subheaderColor: {
-    color: '#1fbcd3'
+    color: '#1fbcd3',
+    marginLeft: '0.39%'
   }
 };
 
