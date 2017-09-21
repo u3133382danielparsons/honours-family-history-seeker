@@ -19,6 +19,13 @@ import Families from './containers/Families';
 import People from './containers/People';
 import AddPosts from './containers/AddPosts';
 import About from './containers/About';
+import Georgiana from './components/people/women/Georgiana';
+import Truganini from './components/people/women/Truganini';
+import Chisholm from './components/people/women/Chisholm';
+import Mary from './components/people/women/Mary';
+import Vida from './components/people/women/Vida';
+import Molly from './components/people/women/Molly';
+import Hicks from './components/people/women/Hicks';
 
 // Material-ui theme
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
@@ -41,6 +48,22 @@ render(
           <Route path="/containers/People" component={People} />
           <Route path="/containers/AddPosts" component={AddPosts} />
           <Route path="/containers/About" component={About} />
+          <Route
+            path="/components/people/women/Georgiana"
+            component={Georgiana}
+          />
+          <Route
+            path="/components/people/women/Truganini"
+            component={Truganini}
+          />
+          <Route
+            path="/components/people/women/Chisholm"
+            component={Chisholm}
+          />
+          <Route path="/components/people/women/Mary" component={Mary} />
+          <Route path="/components/people/women/Vida" component={Vida} />
+          <Route path="/components/people/women/Molly" component={Molly} />
+          <Route path="/components/people/women/Hicks" component={Hicks} />
         </Switch>
       </BrowserRouter>
     </MuiThemeProvider>

@@ -17,6 +17,18 @@ class AddPostsMain extends Component {
     );
   }
 
+  renderTextArea(field) {
+    const { meta: { touched, error } } = field;
+    const className = `form-group ${touched && error ? 'has-danger' : ''}`;
+    return (
+      <div className={className}>
+        <label>{field.label}</label>
+        <textarea className="form-control" type="text" {...field.input} />
+        <div className="text-help">{touched ? error : ''}</div>
+      </div>
+    );
+  }
+
   onSubmit(values) {
     this.props.createPost(values);
   }
@@ -39,7 +51,7 @@ class AddPostsMain extends Component {
           <Field
             label="ARTICLE CONTENT"
             name="content"
-            component={this.renderField}
+            component={this.renderTextArea}
           />
 
           <button type="submit" className="btn btn-primary">

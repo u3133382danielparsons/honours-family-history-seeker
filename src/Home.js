@@ -19,7 +19,6 @@ import {
 } from './material-ui-responsive-drawer/index.js';
 import FlatButton from 'material-ui/FlatButton';
 import SvgIcon from 'material-ui/SvgIcon';
-import HomeIcon from 'material-ui/svg-icons/action/home';
 
 const styles = {
   drawer_container: {
