@@ -13,20 +13,13 @@ class PeopleMain extends Component {
           <List>
             <ListItem
               primaryText="The life of Georgiana McCrae - an aristocratic woman in early Melbourne"
-              secondaryText={
-                <p>Georgiana McCrae was a daughter of the Duke of Gordon.</p>
-              }
+              secondaryText={<p>Daughter of the Duke of Gordon.</p>}
               leftAvatar={<Avatar src={Georgiana} />}
               rightIcon={<ActionInfo />}
             />
             <ListItem
               primaryText="Truganini - negotiator, diplomat and guerilla fighter"
-              secondaryText={
-                <p>
-                  One of the foremost Tasmanian Aboriginal leaders of the 1800s,
-                  a negotiator and spokesperson for her people.
-                </p>
-              }
+              secondaryText={<p>Tasmanian Aboriginal leader.</p>}
               leftAvatar={<Avatar src={Trugannie} />}
               rightIcon={<ActionInfo />}
             />
