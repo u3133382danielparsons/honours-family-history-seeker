@@ -10,6 +10,7 @@ import MaryAv from './img/mary.jpg';
 import VidaAv from './img/vida.jpg';
 import MollyAv from './img/molly.jpg';
 import HicksAv from './img/hicks.jpg';
+import SpenceAv from './img/spence.jpg';
 
 class PeopleMain extends Component {
   render() {
@@ -72,6 +73,14 @@ class PeopleMain extends Component {
                 primaryText="Mary Ann Hicks"
                 secondaryText={<p>14 children in total!</p>}
                 leftAvatar={<Avatar src={HicksAv} />}
+                rightIcon={<ActionInfo />}
+              />
+            </Link>
+            <Link to="../components/people/women/Spence">
+              <ListItem
+                primaryText="Catherine Helen Spence"
+                secondaryText={<p>South Australian Suffragist</p>}
+                leftAvatar={<Avatar src={SpenceAv} />}
                 rightIcon={<ActionInfo />}
               />
             </Link>

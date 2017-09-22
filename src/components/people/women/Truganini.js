@@ -21,13 +21,7 @@ import IconButton from 'material-ui/IconButton';
 import Subheader from 'material-ui/Subheader';
 import SvgIcon from 'material-ui/SvgIcon';
 import Paper from 'material-ui/Paper';
-import {
-  Card,
-  CardTitle,
-  CardHeader,
-  CardText,
-  CardActions
-} from 'material-ui/Card';
+import { Card, CardTitle, CardText, CardActions } from 'material-ui/Card';
 // inline styles
 const styles = {
   drawer_container: {

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { List, ListItem } from 'material-ui/List';
 import { Toolbar, ToolbarGroup, ToolbarTitle } from 'material-ui/Toolbar';
-import { Card, CardText } from 'material-ui/Card';
+import { Card, CardHeader, CardText, CardActions } from 'material-ui/Card';
+import FlatButton from 'material-ui/FlatButton';
 
 class FamiliesMain extends Component {
   render() {
@@ -11,25 +12,482 @@ class FamiliesMain extends Component {
           <div className="col-sm-6">
             <Toolbar>
               <ToolbarGroup>
+                <ToolbarTitle text="The Spence Family" />
+              </ToolbarGroup>
+            </Toolbar>
+            <Card>
+              <List>
+                <ListItem>
+                  <CardHeader>David Spence</CardHeader>
+                  <CardText>
+                    Born 28 Apr 1789 in Earlston, Berwickshire, Scotland.
+                    Husband of Helen (Brodie) Spence — married 24 Sep 1815 in
+                    Whitekirk, East Lothian, Scotland. Died 29 May 1846 in
+                    Adelaide, South Australia, Australia.
+                  </CardText>
+                  <CardActions>
+                    <FlatButton label="Trove">
+                      <a
+                        href="https://www.wikitree.com/wiki/Spence-2461#Biography"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        David Spence - WikiTree
+                      </a>
+                    </FlatButton>
+                  </CardActions>
+                </ListItem>
+                <ListItem>
+                  Helen Spence formerly Brodie. Together with her husband David
+                  she had eight children - Agnes Spence, Janet (Spence) Murray,
+                  William Richard Spence, John Brodie Spence, Catherine Helen
+                  Spence, David Wauchope Spence, Mary Brodie (Spence) Wren and
+                  Eliza Spence.
+                  <CardHeader>Obituary Notices.</CardHeader>
+                  <CardText>
+                    DEATH OF AN AGED PIONEER COLONIST. We have received
+                    information of the death of Mrs. Helen Brodie Spence, at
+                    College Town, on December 8, at the good old age of 96. The
+                    deceased lady had been identified with South Australia as
+                    one of that band of brave women who came out with their
+                    husbands in the early days of settlement in this colony, and
+                    bore the trials and vicissitudes of a colonist's life with
+                    the enduring courage which has so marked the lives of our
+                    women pioneers and rendered them fitting helpmates for those
+                    to whom this province owes its development. Mrs. Spence was
+                    the widow of the late Mr. David Spence, sen., who was the
+                    first Town Clerk of Adelaide, and she came out to South
+                    Australia with him in 1839. One of her daughters is Miss C.
+                    H. Spence, so well known through her literary labours and
+                    the prominent part she takes in charitable organisations ;
+                    while Mr. J. B. Spence, formerly Commissioner of Public
+                    Works and Chief Secretary, is a son of deceased. There are
+                    two other sons and a married daughter in one of the other
+                    colonics.
+                  </CardText>
+                  <CardActions>
+                    <FlatButton label="Trove">
+                      <a
+                        href="http://trove.nla.gov.au/newspaper/article/199853680?browse=ndp%3Abrowse%2Ftitle%2FE%2Ftitle%2F966%2F1887%2F12%2F09%2Fpage%2F22410755%2Farticle%2F199853680"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        Evening Journal (Adelaide, SA : 1869 - 1912) Fri 9 Dec
+                        1887 Page 2 Obituary Notices
+                      </a>
+                    </FlatButton>
+                  </CardActions>
+                </ListItem>
+
+                <ListItem>
+                  <CardHeader>Agnes Spence</CardHeader>
+                  <CardText>
+                    Agnes was born in 1818. She was the daughter of David Spence
+                    and Helen Brodie. She passed away about 1835. Died of
+                    consumption at the age of 16
+                  </CardText>
+                </ListItem>
+
+                <ListItem>
+                  <CardHeader>Janet Murray (Spence)</CardHeader>
+                  <CardText>
+                    The name Jessie is a Scottish pet name for Janet Jessie
+                    (1821-1888) married Andrew Murray (1813-1880) in 1841. They
+                    had ten children, not all of whom survived. From 1877 the
+                    family lived at Yarragon, Gippsland, Victoria where sister
+                    Catherine Helen Spence often visited. Children are Catherine
+                    Helen Murray, known as Nina (1852-1933), and Margaret Brodie
+                    Murray, known as Madge (1858-1935), who worked as a
+                    postmistress. John David Murray (1850-1922) and George
+                    Houston Murray (1854-1938). Janet died on the 21st November,
+                    1888 at her residence, Gippsland, in consequence of an
+                    accident.
+                  </CardText>
+                </ListItem>
+
+                <ListItem>
+                  <CardHeader>William Richard Spence</CardHeader>
+                  <CardText>
+                    William Richard was born in 1822. William Richard is the
+                    child of David Spence and Helen Brodie. From the
+                    Autobiography of Catherine Helen Spence - "My eldest brother
+                    William, was not successful in the country, and went to
+                    Western Australia for some years, and later to New Zealand,
+                    where he died in his eightieth year".
+                  </CardText>
+                </ListItem>
+                <ListItem>
+                  <CardHeader>John Brodie Spence</CardHeader>
+                  <CardText>
+                    John Brodie was born in 1824. He was the son of David Spence
+                    and Helen Brodie. He passed away in 1902. John Brodie Spence
+                    (15 May 1824 – 7 December 1902), born in Melrose, Scotland,
+                    was a prominent banker and politician in the early days of
+                    South Australia. He was a brother of the reformer Catherine
+                    Helen Spence. He arrived in South Australia on 31 October
+                    1839 on the Palmyra with his mother Helen Brodie Spence
+                    (1791–1887). Other children of David and Helen on the
+                    passenger list were his sisters Catherine, Jessie, Helen and
+                    Mary and brother William. His father David Spence
+                    (1790–1846), solicitor and first Town Clerk of Adelaide
+                    arrived earlier (13 October 1839) on the Dumfries. The
+                    family was struggling to make ends meet, so after some seven
+                    months he and his brother went farming, without much
+                    success, and he moved to Adelaide in 1845, joining either
+                    the Bank of Adelaide or the Bank of South Australia, where
+                    he remained for seven years. He was afterwards for five
+                    years official assignee and curator of intestate estates,
+                    then in 1856 accountant in the Railway Department, and from
+                    1859 to 1864 Official Assignee and Curator of Intestate
+                    Estates. but left that office for the management of the
+                    English and Scottish Bank (soon to become English, Scottish
+                    and Australian Chartered Bank) which he held till 1878.
+                    Between around 1879 and 1881 he was involved with Arthur
+                    Harvey in land development at The Grange and East Adelaide.
+                    He was elected a member of the Legislative Council in 1881,
+                    second on the poll with Henry Ayers, W. C. Buik, James
+                    Rankine, John Pickering, and R. A. Tarlton. He was Chief
+                    Secretary in the Downer Government from June to October
+                    1885, when he retired to take the position of Commissioner
+                    of Public Works. In June 1886 he again took office as Chief
+                    Secretary, retiring the following month. On 5 February 1896,
+                    he was appointed one of the first five trustees of the State
+                    Bank, and was Chairman of the board at the time of his
+                    death.
+                  </CardText>
+                  <CardActions>
+                    <FlatButton label="Wiki Tree">
+                      <a
+                        href="https://www.wikitree.com/wiki/Spence-2462"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        John Brodie Spence
+                      </a>
+                    </FlatButton>
+                  </CardActions>
+                </ListItem>
+
+                <ListItem>
+                  <CardHeader>Catherine Helen Spence</CardHeader>
+                  <CardText>
+                    Catherine Helen Spence (1825-1910), writer, preacher,
+                    reformer and feminist, was born on 31 October 1825 near
+                    Melrose, Scotland, daughter of David Spence, lawyer and
+                    banker, and his wife Helen, née Brodie. In 1839 David's
+                    wheat speculations failed and Catherine could not further
+                    her education in Edinburgh. The family migrated to South
+                    Australia in the Palmyra, arriving in November. David was
+                    clerk to the first Adelaide Municipal Council in 1840-43. In
+                    Adelaide Spence became a governess and set out to fulfil her
+                    childhood ambition to be 'a teacher first and a great writer
+                    afterwards'. The first novel about Australia written by a
+                    woman, Clara Morison: A Tale of South Australia During the
+                    Gold Fever, was published in London (1854) in 2 volumes,
+                    followed by Tender and True: A Colonial Tale in 2 volumes
+                    (1856); both were anonymous. Mr. Hogarth's Will, 3 volumes
+                    (1865) was the first to bear her name as author, then came
+                    The Author's Daughter (1868) also in 3 volumes. 'Gathered
+                    In' was serialized in the Adelaide Observer in 1881-82, and
+                    'Handfasted', submitted for a prize offered by the Sydney
+                    Mail in about 1880, was rejected as 'calculated to loosen
+                    the marriage tie … too socialistic and therefore dangerous',
+                    and remains in manuscript. Though never popular, these works
+                    won respect; but she stopped writing novels because her
+                    ambition changed as she grew older. An Agnostic's Progress
+                    from the Known to the Unknown (1884) and A Week in the
+                    Future (1889) were her last major fiction. In her
+                    Autobiography (1910) she wrote, discerningly, 'my work on
+                    newspapers and reviews is more characteristic of me, and
+                    intrinsically better work than I have done in fiction'. By
+                    1878 she had overcome her diffidence and won repute as a
+                    literary critic and social commentator, with articles in
+                    South Australian newspapers as well as in the Cornhill
+                    Magazine, Fortnightly Review and Melbourne Review. In
+                    becoming a regular, paid contributor of the South Australian
+                    Register she was able to express her keen interest in the
+                    colony and its future, and she obtained a ready forum for
+                    her chosen causes. In 1872 Spence helped Caroline Emily
+                    Clark to found the Boarding-Out Society, to board orphaned,
+                    destitute and reformed delinquent children in the homes of
+                    families, and visit them to check on their behaviour and
+                    treatment. She was an official of the society in 1872-86 and
+                    worked strenuously as a visitor. When the State Children's
+                    Council was established in 1886 she became a member, and was
+                    later a member of the Destitute Board. Most of her work for
+                    education was done with her pen. Spence supported the
+                    foundation of kindergartens and a government secondary
+                    school for girls. In 1877 she was appointed to the School
+                    Board for East Torrens, an ineffectual and short-lived body.
+                    Her book, The Laws We Live Under (1880), was the first
+                    social studies textbook used in Australian schools, and
+                    anticipated similar courses in the other colonies by twenty
+                    years. Spence had become an enthusiast for electoral reform
+                    in 1859 when she read J. S. Mill's review of Thomas Hare's
+                    system of proportional representation. In 1861 she wrote,
+                    printed (at her brother's expense) and distributed A Plea
+                    for Pure Democracy. Mr. Hare's Reform Bill Applied to South
+                    Australia, but she commented, 'it did not set the Torrens on
+                    fire'. Though she later claimed that the system had been her
+                    life's major cause, she ignored it between 1861 and 1892,
+                    except to inject a discussion of it into Mr. Hogarth's Will
+                    and visit Hare when she was holidaying in Britain in
+                    1864-65. She had initially presented Hare's scheme as a
+                    means of ensuring representation of minorities by men of
+                    virtue, learning and intelligence, which was seen as
+                    conservative support of privilege. In 1892 she propounded
+                    the modified Hare-Spence system as the only way of attaining
+                    truly proportionate representation of political parties, an
+                    argument well suited to the current political climate of the
+                    colony. By then Spence had acquired greater confidence and
+                    become an accomplished public speaker, a process that had
+                    begun when she read papers to the South Australian
+                    Institute, being the first woman to do so, and brought her
+                    acclaim when she addressed the Australasian conferences on
+                    charity in 1891 and 1892. About 1856, after much doubt and
+                    distress over the doctrines of the Church of Scotland in
+                    which she had been raised, she joined the Unitarian
+                    Christian Church. In 1878 she substituted for the minister
+                    by reading a published sermon, and the same year seized an
+                    opportunity to deliver one of her own. Later she frequently
+                    preached in Adelaide, and occasionally in Melbourne and
+                    Sydney. R. Barr Smith gave financial backing for her
+                    campaign for proportional representation; it was supported
+                    by the nascent Labor Party and several small populist and
+                    socialist groups, and was launched with widespread public
+                    meetings in 1892-93. In 1893 Spence went to the Chicago
+                    World Fair to address the International Conference on
+                    Charities and Correction, the Proportional Representation
+                    Congress, the Single Tax Conference, the Peace Conference,
+                    and a gathering in the Women's Building. She then lectured
+                    and preached across the United States, visited Britain and
+                    Switzerland and returned to South Australia in 1894. Next
+                    year she formed the Effective Voting League of South
+                    Australia. She ran for the Federal Convention in 1897,
+                    becoming Australia's first female political candidate, and
+                    came twenty-second out of thirty-three candidates. In 1899
+                    and 1900 she campaigned unsuccessfully for the introduction
+                    of 'effective voting' in Federal elections, and in 1902-10
+                    her supporters introduced proportional representation bills
+                    into the South Australian parliament. The heterogeneous
+                    executive of her Effective Voting League exemplified her
+                    non-party and probably personal following. Spence was 67
+                    when she began her campaign, white-haired, short, stout,
+                    energetic, with a 'carrying' but not strident Scot's burr,
+                    and a direct, natural, sometimes brusque manner. She aroused
+                    much enthusiasm, especially for herself as a woman
+                    transcending social restrictions on permissible activities.
+                    Spence joined the fight for female suffrage in 1891 and
+                    became a vice-president of the Women's Suffrage League of
+                    South Australia. After South Australian women were
+                    enfranchised in 1894, she supported campaigns in New South
+                    Wales and Victoria and spoke at meetings of the Women's
+                    League, a body formed in Adelaide for the political
+                    education of women. She urged the establishment of a local
+                    organization affiliated with the International Council of
+                    Women. This work also won her acclaim; she had become a
+                    symbol of what Australian women could attempt. When she died
+                    on 3 April 1910 she was mourned as 'The Grand Old Woman of
+                    Australia'. She had lived with her parents (her father died
+                    in 1843, her mother in 1886) and had raised three families
+                    of orphaned children in succession. Her estate was sworn at
+                    £215. Her portrait hangs in the South Australian Art
+                    Gallery.
+                  </CardText>
+                  <CardActions>
+                    <FlatButton label="Project Gutenberg">
+                      <a
+                        href="http://www.gutenberg.org/files/4220/4220-h/4220-h.htm"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        Autobiography of Catherine Helen Spence
+                      </a>
+                    </FlatButton>
+                  </CardActions>
+                  <CardActions>
+                    <FlatButton label="By Susan Eade">
+                      <a
+                        href="http://www.gutenberg.org/files/4220/4220-h/4220-h.htm"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        Spence, Catherine Helen (1825–1910)
+                      </a>
+                    </FlatButton>
+                  </CardActions>
+                </ListItem>
+
+                <ListItem>
+                  <CardHeader>David Wauchope Spence</CardHeader>
+                  <CardText>
+                    David Wauchope was born in 1828. He is the son of David
+                    Spence and Helen Brodie. 1839 - David Wauchope, had been
+                    left behind for his education with the three maiden aunts,
+                    but he came out about the end of that year, and began life
+                    in the office of the Burra Mine at a small salary. He did
+                    not marry during his lifetime and died in 1890 at Ballarat,
+                    Victoria.
+                  </CardText>
+                </ListItem>
+                <ListItem>
+                  <CardHeader>Mary Brodie (Spence) Wren</CardHeader>
+                  <CardText>
+                    Mary Brodie was born in 1830. She is the daughter of David
+                    Spence and Helen Brodie. Marriage Notice - At
+                    Pulteney-street, Adelaide, on the 19th instant, by the Rev.
+                    Robert Haining, Mr. William John Wren to Mary Brodie,
+                    youngest daughter of the late David Spence, Esq., solicitor,
+                    Adelaide. Together they had three children:
+                    <ListItem>1856 WREN Charles William</ListItem>
+                    <ListItem>
+                      1858 WREN Margaret Brodie 1862 WREN Eleanor Brodie
+                    </ListItem>
+                    <ListItem>1862 WREN Eleanor Brodie</ListItem>
+                  </CardText>
+                  <CardActions>
+                    <FlatButton label="Trove">
+                      <a
+                        href="http://trove.nla.gov.au/newspaper/article/49299582?searchTerm=spence%20-%20wren&searchLimits=dateFrom=1855-01-01|||dateTo=1855-12-31"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        Marriage Notice
+                      </a>
+                    </FlatButton>
+                  </CardActions>
+                </ListItem>
+                <ListItem>
+                  <CardHeader>Eliza Spence</CardHeader>
+                  <CardText>
+                    Eliza was born in 1833. She was the daughter of David Spence
+                    and Helen Brodie. She passed away in 1836 age 3.
+                  </CardText>
+                </ListItem>
+              </List>
+            </Card>
+            <hr />
+          </div>
+
+          <div className="col-sm-6">
+            <Toolbar>
+              <ToolbarGroup>
+                <ToolbarTitle
+                  text="The Paterson Family"
+                  subtitle="Andrew Barton Paterson"
+                />
+              </ToolbarGroup>
+            </Toolbar>
+            <Card>
+              <List>
+                <ListItem>
+                  <CardHeader>Andrew Barton Paterson</CardHeader>
+                  <CardText>
+                    Andrew Barton "Banjo" Paterson. Australian bush poet,
+                    solicitor, journalist, war correspondent and soldier, was
+                    born on 17 February 1864 at Narrambla near Orange, New South
+                    Wales, eldest of seven children of Andrew Bogle Paterson
+                    (d.1889), grazier, and his native-born wife Rose Isabella,
+                    daughter of Robert Barton of Boree Nyrang station, near
+                    Orange. On 8 April 1903 he married Alice Emily Walker, of
+                    Tenterfield Station, in St Stephen's Presbyterian Church, in
+                    Tenterfield, New South Wales.[13] Their first home was in
+                    Queen Street, Woollahra. The Patersons had two children,
+                    Grace (born in 1904) and Hugh (born in 1906).
+                  </CardText>
+                </ListItem>
+
+                <ListItem>
+                  <CardHeader>Rose Florence Lumsdaine (Paterson)</CardHeader>
+                  <CardText>
+                    Rose Florence Lumsdaine (Paterson) born October 1865 and
+                    died May 1931. Daughter of Andrew Bogle Paterson and Rose
+                    Isabella Paterson. Sister of Andrew Barton (Banjo) Paterson.
+                    Married Reverend Edwin Sandys Lumsdaine and mother to Beryl
+                    Doris Kennedy; Ruth Lumsdaine; Edwin Lumsdaine and Rosamund
+                    Lumsdaine.
+                  </CardText>
+                </ListItem>
+
+                <ListItem>
+                  <CardHeader>Andrew Bogle Paterson</CardHeader>
+                  <CardText>
+                    Andrew Bogle Paterson (b.1833, d.1889), grazier, married to
+                    Rose Isabella, daughter of Robert Barton of Boree Nyrang
+                    station, near Orange. Father to Andrew Barton 'Banjo'
+                    Paterson and Rose Florence Lumsdaine, a lowland Scot, he
+                    migrated to New South Wales about 1850, eventually taking up
+                    Buckinbah station at Obley in the Orange district.
+                  </CardText>
+                </ListItem>
+
+                <ListItem>
+                  <CardHeader>Isabella Paterson (Barton).</CardHeader>
+                  <CardText>
+                    Isabella Paterson daughter to Robert Johnston Barton and
+                    Emily Mason Barton. Sister to Charles Hampden H Barton.
+                    Married to Andrew Bogle Paterson with seven children. Mother
+                    of Andrew Barton Paterson, Rose Florence Paterson, Emily
+                    Jessie Paterson, Mary Edith (Paterson) Huntley, Hamilton
+                    Howison Paterson, Grace Paterson and Gwendolen Alexa
+                    Paterson. It appears only Andrew and Rose reached adulthood.
+                  </CardText>
+                </ListItem>
+
+                <ListItem>
+                  <CardHeader>Alice Emily Paterson formerly Walker</CardHeader>
+                  <CardText>
+                    Alice Emily Paterson, wife to Andrew Barton 'Banjo'
+                    Paterson. Born 1877 in Tenterfield, NSW, Australia, died in
+                    June 1963 (86). Mother to Hugh and Grace Paterson. It
+                    appears Grace Paterson died in childhood.
+                  </CardText>
+                </ListItem>
+                <ListItem>
+                  <CardHeader>Hugh Barton Paterson</CardHeader>
+                  <CardText>
+                    Hugh Barton Paterson is the son of Andrew Barton 'Banjo'
+                    Patersons and Emily Walker. Born 1906 in Woollahra, New
+                    South Wales, Australia. Hugh served in the 20th Brigade
+                    A.I.F as a Private and is listed as a driver. He was a Rat
+                    of Tobruk and served in the Middle East until 1942, then
+                    transfered to the AA Amenities unit and discharched after
+                    WW2 as a Lieutenant. He married Rhona Maria Gledstanes
+                    White.
+                  </CardText>
+                </ListItem>
+                <ListItem>
+                  <CardHeader>Alice Emily Paterson formerly Walker</CardHeader>
+                  <CardText>Wife .</CardText>
+                </ListItem>
+              </List>
+            </Card>
+            <hr />
+          </div>
+
+          <div className="col-sm-6">
+            <Toolbar>
+              <ToolbarGroup>
                 <ToolbarTitle text="The Bryant Family" />
               </ToolbarGroup>
             </Toolbar>
             <Card>
               <List>
                 <ListItem>
-                  Matthew Bryant and Mary Mills
+                  <CardHeader>Matthew Bryant</CardHeader>
+
                   <CardText>
-                    Matthew and Mary were married in Bridgewater in 1784 and the
-                    older four of their ten children were born there. Matthew
-                    died in 1815 and Many about 1829? Matthew Bryant and Mary
-                    Mills who were tenants of Curry Pool, a farm of some 390
-                    acres in Charlinch and Spaxton parishes in Somerset from
+                    Matthew and Mary Mills were married in Bridgewater in 1784
+                    and the older four of their ten children were born there.
+                    Matthew died in 1815 and Many about 1829? Matthew Bryant and
+                    Mary Mills who were tenants of Curry Pool, a farm of some
+                    390 acres in Charlinch and Spaxton parishes in Somerset from
                     1791. On their death George held the lease of Curry Pool
                     Farm.
                   </CardText>
                 </ListItem>
                 <ListItem>
-                  George Bryant
+                  <CardHeader>George Bryant</CardHeader>
                   <CardText>
                     George was born in 1789. George still the lease of Curry
                     Pool the property until it was sold in October 1833 and he
@@ -50,7 +508,7 @@ class FamiliesMain extends Component {
                 </ListItem>
 
                 <ListItem>
-                  Francis Bryant
+                  <CardHeader>Francis Bryant</CardHeader>
                   <CardText>
                     Francis Bryant was born in 1795. Francis had married Jane
                     Carver about 1815. They sailed to Van Diemen's Land with
@@ -74,7 +532,7 @@ class FamiliesMain extends Component {
                 </ListItem>
 
                 <ListItem>
-                  James Bryant
+                  <CardHeader>James Bryant</CardHeader>
                   <CardText>
                     James Bryant was born in 1799. Of the brothers, James and
                     Edmund, both bachelors, went first. They wrote jointly, from
@@ -97,7 +555,7 @@ class FamiliesMain extends Component {
                 </ListItem>
 
                 <ListItem>
-                  Edmund Bryant
+                  <CardHeader>Edmund Bryant</CardHeader>
                   <CardText>
                     Edmund Bryant was born in 1803. Edmund had departed again
                     for England in the brig Woodlark, 196 tons, on 4 April 1824.
@@ -134,62 +592,13 @@ class FamiliesMain extends Component {
           <div className="col-sm-6">
             <Toolbar>
               <ToolbarGroup>
-                <ToolbarTitle text="The Scarlett Family" />
-              </ToolbarGroup>
-            </Toolbar>
-            <Card>
-              <List>
-                <ListItem>
-                  Sir James Scarlett
-                  <CardText>
-                    James Scarlett became Attorney-General and Lord Chief Baron
-                    of the Exchequer.
-                  </CardText>
-                </ListItem>
-                <ListItem>
-                  Lord Abinger
-                  <CardText>
-                    Lord Abinger is the sixth baron, descended from the advocate
-                    Sir James Scarlett. Lord Abinger was a barrister by
-                    profession and he lived in the traditions of the bar as the
-                    deadlies cross-examiner who ever handled a witness in the
-                    box.
-                  </CardText>
-                </ListItem>
-
-                <ListItem>
-                  Hugh Scarlett
-                  <CardText>
-                    Major H.R. Scarlett was brother to Lord Abinger. Hugh
-                    Scarlett was A.D.C. (Senior Aide) to Sir William Macgregor
-                    when Governor of Queensland. Hugh married Miss Marjorie
-                    McPhillarny of New South Wales.
-                  </CardText>
-                </ListItem>
-
-                <ListItem>
-                  L.F. Scarlett
-                  <CardText>
-                    L.F. Scarlett is the youngest brother of Lord Abinger. L.F.
-                    Scarlett was lent to the Australian Navy, and was lost in
-                    the submarine AE1 in the South Seas.
-                  </CardText>
-                </ListItem>
-              </List>
-            </Card>
-            <hr />
-          </div>
-
-          <div className="col-sm-6">
-            <Toolbar>
-              <ToolbarGroup>
                 <ToolbarTitle text="The Gray Family" subtitle="Montecollum" />
               </ToolbarGroup>
             </Toolbar>
             <Card>
               <List>
                 <ListItem>
-                  John Thomas Gray
+                  <CardHeader>John Thomas Gray</CardHeader>
                   <CardText>
                     Married to Annie with six sons and three daughters. John
                     Gray came from the South Coast and after a short sojourn at
@@ -203,7 +612,7 @@ class FamiliesMain extends Component {
                 </ListItem>
 
                 <ListItem>
-                  Annie Gray
+                  <CardHeader>Annie Gray</CardHeader>
                   <CardText>
                     Annie and her husband John both originated from Foxground on
                     the South coast. Annie Gray was highly respected by a large
@@ -212,44 +621,44 @@ class FamiliesMain extends Component {
                 </ListItem>
 
                 <ListItem>
-                  Daniel Gray
+                  <CardHeader>Daniel Gray</CardHeader>
                   <CardText>Daniel Gray was based in Milla Milla.</CardText>
                 </ListItem>
 
                 <ListItem>
-                  Joseph Gray
+                  <CardHeader>Joseph Gray</CardHeader>
                   <CardText>Joseph Gray was based in Burringbar.</CardText>
                 </ListItem>
                 <ListItem>
-                  Jack Gray
+                  <CardHeader>Jack Gray</CardHeader>
                   <CardText>Jack Gray was based in Mullumbimby.</CardText>
                 </ListItem>
                 <ListItem>
-                  Samuel Gray
+                  <CardHeader>Samuel Gray</CardHeader>
                   <CardText>Samuel Gray was based in Montecollum.</CardText>
                 </ListItem>
                 <ListItem>
-                  Lewis Gray
+                  <CardHeader>Lewis Gray</CardHeader>
                   <CardText>Lewis Gray was based in Montecollum.</CardText>
                 </ListItem>
                 <ListItem>
-                  Ernest Gray
+                  <CardHeader>Ernest Gray</CardHeader>
                   <CardText>Ernest Gray was based in Montecollum.</CardText>
                 </ListItem>
                 <ListItem>
-                  Mrs H.R. Bower
+                  <CardHeader>Mrs H.R. Bower</CardHeader>
                   <CardText>
                     Daughter to John and Annie. Based in Mullumbimby.
                   </CardText>
                 </ListItem>
                 <ListItem>
-                  Mrs C. Lindsay
+                  <CardHeader>Mrs C. Lindsay</CardHeader>
                   <CardText>
                     Daughter to John and Annie. Based in Mullumbimby.
                   </CardText>
                 </ListItem>
                 <ListItem>
-                  Mrs. C. Bryen
+                  <CardHeader>Mrs. C. Bryen</CardHeader>
                   <CardText>
                     Daughter to John and Annie. Based in Sydney.
                   </CardText>
@@ -263,101 +672,6 @@ class FamiliesMain extends Component {
             <Toolbar>
               <ToolbarGroup>
                 <ToolbarTitle
-                  text="The Paterson Family"
-                  subtitle="Andrew Barton Paterson"
-                />
-              </ToolbarGroup>
-            </Toolbar>
-            <Card>
-              <List>
-                <ListItem>
-                  Andrew Barton Paterson
-                  <CardText>
-                    Andrew Barton "Banjo" Paterson. Australian bush poet,
-                    solicitor, journalist, war correspondent and soldier, was
-                    born on 17 February 1864 at Narrambla near Orange, New South
-                    Wales, eldest of seven children of Andrew Bogle Paterson
-                    (d.1889), grazier, and his native-born wife Rose Isabella,
-                    daughter of Robert Barton of Boree Nyrang station, near
-                    Orange. On 8 April 1903 he married Alice Emily Walker, of
-                    Tenterfield Station, in St Stephen's Presbyterian Church, in
-                    Tenterfield, New South Wales.[13] Their first home was in
-                    Queen Street, Woollahra. The Patersons had two children,
-                    Grace (born in 1904) and Hugh (born in 1906).
-                  </CardText>
-                </ListItem>
-
-                <ListItem>
-                  Rose Florence Lumsdaine (Paterson)
-                  <CardText>
-                    Rose Florence Lumsdaine (Paterson) born October 1865 and
-                    died May 1931. Daughter of Andrew Bogle Paterson and Rose
-                    Isabella Paterson. Sister of Andrew Barton (Banjo) Paterson.
-                    Married Reverend Edwin Sandys Lumsdaine and mother to Beryl
-                    Doris Kennedy; Ruth Lumsdaine; Edwin Lumsdaine and Rosamund
-                    Lumsdaine.
-                  </CardText>
-                </ListItem>
-
-                <ListItem>
-                  Andrew Bogle Paterson
-                  <CardText>
-                    Andrew Bogle Paterson (b.1833, d.1889), grazier, married to
-                    Rose Isabella, daughter of Robert Barton of Boree Nyrang
-                    station, near Orange. Father to Andrew Barton 'Banjo'
-                    Paterson and Rose Florence Lumsdaine, a lowland Scot, he
-                    migrated to New South Wales about 1850, eventually taking up
-                    Buckinbah station at Obley in the Orange district.
-                  </CardText>
-                </ListItem>
-
-                <ListItem>
-                  Isabella Paterson (Barton).
-                  <CardText>
-                    Isabella Paterson daughter to Robert Johnston Barton and
-                    Emily Mason Barton. Sister to Charles Hampden H Barton.
-                    Married to Andrew Bogle Paterson with seven children. Mother
-                    of Andrew Barton Paterson, Rose Florence Paterson, Emily
-                    Jessie Paterson, Mary Edith (Paterson) Huntley, Hamilton
-                    Howison Paterson, Grace Paterson and Gwendolen Alexa
-                    Paterson. It appears only Andrew and Rose reached adulthood.
-                  </CardText>
-                </ListItem>
-
-                <ListItem>
-                  Alice Emily Paterson formerly Walker
-                  <CardText>
-                    Alice Emily Paterson, wife to Andrew Barton 'Banjo'
-                    Paterson. Born 1877 in Tenterfield, NSW, Australia, died in
-                    June 1963 (86). Mother to Hugh and Grace Paterson. It
-                    appears Grace Paterson died in childhood.
-                  </CardText>
-                </ListItem>
-                <ListItem>
-                  Hugh Barton Paterson
-                  <CardText>
-                    Hugh Barton Paterson is the son of Andrew Barton 'Banjo'
-                    Patersons and Emily Walker. Born 1906 in Woollahra, New
-                    South Wales, Australia. Hugh served in the 20th Brigade
-                    A.I.F as a Private and is listed as a driver. He was a Rat
-                    of Tobruk and served in the Middle East until 1942, then
-                    transfered to the AA Amenities unit and discharched after
-                    WW2 as a Lieutenant. He married Rhona Maria Gledstanes
-                    White.
-                  </CardText>
-                </ListItem>
-                <ListItem>
-                  Alice Emily Paterson formerly Walker
-                  <CardText>Wife .</CardText>
-                </ListItem>
-              </List>
-            </Card>
-            <hr />
-          </div>
-          <div className="col-sm-6">
-            <Toolbar>
-              <ToolbarGroup>
-                <ToolbarTitle
                   text="The Hollingworth and King Families"
                   subtitle="A Timber History"
                 />
@@ -366,7 +680,7 @@ class FamiliesMain extends Component {
             <Card>
               <List>
                 <ListItem>
-                  Thomas Nicholsan Hollingworth
+                  <CardHeader>Thomas Nicholsan Hollingworth</CardHeader>
                   <CardText>
                     THOMAS Nicholson Hollingworth, the founder of the
                     Hollingworth family in our area, was a convict sentenced in
@@ -394,7 +708,7 @@ class FamiliesMain extends Component {
                 </ListItem>
 
                 <ListItem>
-                  Ann Hollingworth (King)
+                  <CardHeader>Ann Hollingworth (King)</CardHeader>
                   <CardText>
                     Ann was a daughter of William Parrott King and his wife
                     Hannah (nee Barrett) who had arrived as immigrants.
@@ -402,7 +716,7 @@ class FamiliesMain extends Component {
                 </ListItem>
 
                 <ListItem>
-                  William Parrot King
+                  <CardHeader>William Parrot King</CardHeader>
                   <CardText>
                     William King had obtained work first as a shepherd and then
                     as a bullock driver. For some years he hauled cedar logs to
@@ -413,7 +727,7 @@ class FamiliesMain extends Component {
                 </ListItem>
 
                 <ListItem>
-                  Thomas King.
+                  <CardHeader>Thomas King.</CardHeader>
                   <CardText>
                     Thomas King was the brother to William and therefore the
                     uncle to their children. Thomas King had been apprenticed as
@@ -429,7 +743,7 @@ class FamiliesMain extends Component {
                 </ListItem>
 
                 <ListItem>
-                  Joseph Nicholsan Hollingworth
+                  <CardHeader>Joseph Nicholsan Hollingworth</CardHeader>
                   <CardText>
                     Joseph married Annie McAndrew Ross in 1892 and in 1902 he
                     purchased Glasgow's sawmill at Mullumbimby. He moved his
@@ -447,7 +761,7 @@ class FamiliesMain extends Component {
                   </CardText>
                 </ListItem>
                 <ListItem>
-                  David John Hollingworth
+                  <CardHeader>David John Hollingworth</CardHeader>
                   <CardText>
                     David Hollingworth began working at the timber mill in 1916
                     at the age of 14 years. At 17 his father died, David was
@@ -459,7 +773,7 @@ class FamiliesMain extends Component {
                   </CardText>
                 </ListItem>
                 <ListItem>
-                  Nicholson (Nick) Hollingworth
+                  <CardHeader>Nicholson (Nick) Hollingworth</CardHeader>
                   <CardText>
                     Nicholson (Nick) Hollingworth is the fifth generation of his
                     family to be involved with the timber industry. A book, The
@@ -472,26 +786,53 @@ class FamiliesMain extends Component {
                     also learn some of the history of those mills.
                   </CardText>
                 </ListItem>
+              </List>
+            </Card>
+            <hr />
+          </div>
+
+          <div className="col-sm-6">
+            <Toolbar>
+              <ToolbarGroup>
+                <ToolbarTitle text="The Scarlett Family" />
+              </ToolbarGroup>
+            </Toolbar>
+            <Card>
+              <List>
                 <ListItem>
-                  Ernest Gray
-                  <CardText>Ernest Gray was based in Montecollum.</CardText>
-                </ListItem>
-                <ListItem>
-                  Mrs H.R. Bower
+                  <CardHeader>Sir James Scarlett</CardHeader>
                   <CardText>
-                    Daughter to John and Annie. Based in Mullumbimby.
+                    James Scarlett became Attorney-General and Lord Chief Baron
+                    of the Exchequer.
                   </CardText>
                 </ListItem>
                 <ListItem>
-                  Mrs C. Lindsay
+                  <CardHeader>Lord Abinger</CardHeader>
                   <CardText>
-                    Daughter to John and Annie. Based in Mullumbimby.
+                    Lord Abinger is the sixth baron, descended from the advocate
+                    Sir James Scarlett. Lord Abinger was a barrister by
+                    profession and he lived in the traditions of the bar as the
+                    deadlies cross-examiner who ever handled a witness in the
+                    box.
                   </CardText>
                 </ListItem>
+
                 <ListItem>
-                  Mrs. C. Bryen
+                  <CardHeader>Hugh Scarlett</CardHeader>
                   <CardText>
-                    Daughter to John and Annie. Based in Sydney.
+                    Major H.R. Scarlett was brother to Lord Abinger. Hugh
+                    Scarlett was A.D.C. (Senior Aide) to Sir William Macgregor
+                    when Governor of Queensland. Hugh married Miss Marjorie
+                    McPhillarny of New South Wales.
+                  </CardText>
+                </ListItem>
+
+                <ListItem>
+                  <CardHeader>L.F. Scarlett</CardHeader>
+                  <CardText>
+                    L.F. Scarlett is the youngest brother of Lord Abinger. L.F.
+                    Scarlett was lent to the Australian Navy, and was lost in
+                    the submarine AE1 in the South Seas.
                   </CardText>
                 </ListItem>
               </List>

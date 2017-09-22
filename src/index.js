@@ -26,6 +26,7 @@ import Mary from './components/people/women/Mary';
 import Vida from './components/people/women/Vida';
 import Molly from './components/people/women/Molly';
 import Hicks from './components/people/women/Hicks';
+import Spence from './components/people/women/Spence';
 
 // Material-ui theme
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
@@ -64,6 +65,7 @@ render(
           <Route path="/components/people/women/Vida" component={Vida} />
           <Route path="/components/people/women/Molly" component={Molly} />
           <Route path="/components/people/women/Hicks" component={Hicks} />
+          <Route path="/components/people/women/Spence" component={Spence} />
         </Switch>
       </BrowserRouter>
     </MuiThemeProvider>

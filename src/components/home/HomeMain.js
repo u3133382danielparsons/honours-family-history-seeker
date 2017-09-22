@@ -35,6 +35,9 @@ import Clancy from '../../img/paterson/Clancy.png';
 import Three from '../../img/paterson/three.png';
 import HollingworthAv from '../../img/hollingworth/HollingworthAv.jpg';
 import Sawmill from '../../img/hollingworth/sawmill.jpg';
+import JohnSpenceAv from '../../img/spence/John-Brodie-Spence.jpg';
+import CatherineSpence from '../../img/spence/Catherine-Spence.jpg';
+import HighPriestess from '../../img/spence/high-priestess.png';
 
 class HomeMain extends Component {
   render() {
@@ -72,6 +75,8 @@ class HomeMain extends Component {
                     The Melbourne Age, Tuesday 26th June, 1917
                   </a>
                 </FlatButton>
+              </CardActions>
+              <CardActions>
                 <FlatButton label="Wikipedia">
                   <a
                     href="https://en.wikipedia.org/wiki/James_Scarlett,_1st_Baron_Abinger"
@@ -276,6 +281,83 @@ class HomeMain extends Component {
                     alt="A TALE OF FOUR BROTHERS"
                   >
                     A TALE OF FOUR BROTHERS
+                  </a>
+                </FlatButton>
+              </CardActions>
+            </Card>
+            <hr />
+          </div>
+
+          <div className="col-md-6 col-lg-12">
+            <Card>
+              <CardHeader
+                title="Spence Family"
+                subtitle="John Brodie Spence"
+                avatar={JohnSpenceAv}
+              />
+              <CardMedia
+                overlay={
+                  <CardTitle subtitle="Oil painting of Spence by Maude Gordon, c. 1900." />
+                }
+              >
+                <img
+                  src={CatherineSpence}
+                  alt="Oil Painting of Catherine Helen Spence"
+                />
+              </CardMedia>
+              <CardActions>
+                <CardTitle title="Spence Family" subtitle="South Australia" />
+                <CardText>
+                  David Spence and Helen Brodie Spence sailed out from Melsrose,
+                  Scotland to South Australia on the <i>Palmyra</i> in the year
+                  1839. The colony had experienced several years of drought, the
+                  contrast to native Scotland made made their daughter Catherine
+                  Helen spence feel, "inclined to go and cut my throat".
+                </CardText>
+                <CardText>
+                  Catherine Helen Spence was the fifth child of David and Helen.
+                  She grew up to become a famous reformist and is a leading
+                  figure in winning the right for Australian women to vote.
+                </CardText>
+                <CardText>
+                  John Brodie Spence is the brother of Catherine Helen Spence
+                  and he gained fame as a prominent South Australian Banker.
+                </CardText>
+                <CardActions>
+                  <FlatButton label="Project Gutenberg">
+                    <a
+                      href="http://www.gutenberg.org/files/4220/4220-h/4220-h.htm"
+                      rel="noreferrer noopener"
+                      target="_blank"
+                    >
+                      Autobiography by Catherine Helen Spence
+                    </a>
+                  </FlatButton>
+                </CardActions>
+                <CardActions>
+                  <FlatButton>
+                    <a
+                      href="https://en.wikipedia.org/wiki/John_Brodie_Spence"
+                      rel="noreferrer noopener"
+                      target="_blank"
+                    >
+                      John Brodie Spence
+                    </a>
+                  </FlatButton>
+                </CardActions>
+              </CardActions>
+              <CardMedia>
+                <img src={HighPriestess} alt="Courtesy of Trove" />
+              </CardMedia>
+              <CardActions>
+                <FlatButton label="CATHERINE HELEN SPENCE">
+                  <a
+                    href="http://trove.nla.gov.au/newspaper/article/166449131?browse=ndp%3Abrowse%2Ftitle%2FQ%2Ftitle%2F824%2F1899%2F10%2F19%2Fpage%2F19461171%2Farticle%2F166449131"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                    alt="wikitree"
+                  >
+                    HIGH PRIESTESS OF EFFECTIVE VOTING
                   </a>
                 </FlatButton>
               </CardActions>
