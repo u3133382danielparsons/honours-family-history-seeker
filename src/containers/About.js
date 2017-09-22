@@ -62,8 +62,11 @@ class About extends Component {
                 />
               }
             />
-            <div className="container">
+            <div id="BackgroundGradient">
               <AboutHeader />
+            </div>
+            <div className="container">
+              <h4>Main here</h4>
             </div>
           </BodyContainer>
         </div>

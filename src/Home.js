@@ -61,8 +61,9 @@ class Home extends Component {
                 />
               }
             />
-
-            <HomeHeader />
+            <div id="BackgroundGradient">
+              <HomeHeader />
+            </div>
             <HomeMain />
           </BodyContainer>
         </div>

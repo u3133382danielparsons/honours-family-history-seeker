@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 // src
-import PeopleNav from '../components/people/PeopleNav';
-import PeopleHeader from '../components/people/PeopleHeader';
-import PeopleMain from '../components/people/PeopleMain';
+import DataNav from '../components/data/DataNav';
+import DataHeader from '../components/data/DataHeader';
+import DataMain from '../components/data/DataMain';
 
 // Material-ui
 import {
@@ -17,6 +17,7 @@ import {
   toggleDrawerDock,
   setResponsive
 } from '../material-ui-responsive-drawer/index.js';
+
 import FlatButton from 'material-ui/FlatButton';
 import SvgIcon from 'material-ui/SvgIcon';
 
@@ -31,7 +32,7 @@ const styles = {
   }
 };
 
-class People extends Component {
+class Data extends Component {
   render() {
     return (
       <div>
@@ -39,7 +40,7 @@ class People extends Component {
           <ResponsiveDrawer openSecondary={false}>
             <div style={styles.drawer_container}>
               <div style={styles.drawer_header_container}>
-                <PeopleNav />
+                <DataNav />
               </div>
             </div>
           </ResponsiveDrawer>
@@ -47,7 +48,7 @@ class People extends Component {
             <ResponsiveAppBar
               iconElementRight={
                 <FlatButton
-                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/About.js"
+                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/Dashboard.js"
                   target="_blank"
                   secondary={true}
                   icon={
@@ -63,9 +64,9 @@ class People extends Component {
               }
             />
             <div id="BackgroundGradient">
-              <PeopleHeader />
+              <DataHeader />
             </div>
-            <PeopleMain />
+            <DataMain />
           </BodyContainer>
         </div>
       </div>
@@ -73,7 +74,7 @@ class People extends Component {
   }
 }
 
-People.propTypes = {
+Data.propTypes = {
   toggleDrawerOpen: PropTypes.func.isRequired,
   toggleDrawerDock: PropTypes.func.isRequired,
   setResponsive: PropTypes.func.isRequired
@@ -101,4 +102,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(People);
+export default connect(mapStateToProps, mapDispatchToProps)(Data);

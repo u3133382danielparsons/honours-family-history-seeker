@@ -62,9 +62,10 @@ class Search extends Component {
                 />
               }
             />
-
-            <main className="container">
+            <div id="BackgroundGradient">
               <SearchHeader />
+            </div>
+            <main className="container">
               <SearchForm />
               <SearchList />
             </main>

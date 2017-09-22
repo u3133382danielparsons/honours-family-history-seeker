@@ -62,8 +62,10 @@ class Posts extends Component {
                 />
               }
             />
-            <main className="container">
+            <div id="BackgroundGradient">
               <PostsHeader />
+            </div>
+            <main className="container">
               <PostsMain />
             </main>
           </BodyContainer>

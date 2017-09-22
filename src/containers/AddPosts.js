@@ -62,8 +62,10 @@ class AddPosts extends Component {
                 />
               }
             />
-            <div className="container">
+            <div id="BackgroundGradient">
               <AddPostsHeader />
+            </div>
+            <div className="container">
               <AddPostsMain />
             </div>
           </BodyContainer>

@@ -63,8 +63,9 @@ class Families extends Component {
                 />
               }
             />
-
-            <FamiliesHeader />
+            <div id="BackgroundGradient">
+              <FamiliesHeader />
+            </div>
             <FamiliesMain />
           </BodyContainer>
         </div>

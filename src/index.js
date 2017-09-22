@@ -19,6 +19,8 @@ import Families from './containers/Families';
 import People from './containers/People';
 import AddPosts from './containers/AddPosts';
 import About from './containers/About';
+import Data from './containers/Data';
+
 import Georgiana from './components/people/women/Georgiana';
 import Truganini from './components/people/women/Truganini';
 import Chisholm from './components/people/women/Chisholm';
@@ -49,6 +51,8 @@ render(
           <Route path="/containers/People" component={People} />
           <Route path="/containers/AddPosts" component={AddPosts} />
           <Route path="/containers/About" component={About} />
+          <Route path="/containers/Data" component={Data} />
+
           <Route
             path="/components/people/women/Georgiana"
             component={Georgiana}
