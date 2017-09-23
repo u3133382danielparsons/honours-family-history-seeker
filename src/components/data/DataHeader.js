@@ -13,7 +13,7 @@ class DataHeader extends Component {
     return (
       <header>
         <Subheader>FAMILY HISTORY SEEKER</Subheader>
-        <IconButton tooltip="DATA VIZ PAGE">
+        <IconButton tooltip="FAMILY HISTORY SEEKER DATA VIZ PAGE">
           <svg
             fill="#000000"
             height="48"

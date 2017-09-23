@@ -4,9 +4,10 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 // src
-import DataNav from '../components/data/DataNav';
-import DataHeader from '../components/data/DataHeader';
-import DataMain from '../components/data/DataMain';
+
+import VideosNav from '../components/videos/VideosNav';
+import VideosHeader from '../components/videos/VideosHeader';
+import VideosMain from '../components/videos/VideosMain';
 
 // Material-ui
 import {
@@ -17,7 +18,6 @@ import {
   toggleDrawerDock,
   setResponsive
 } from '../material-ui-responsive-drawer/index.js';
-
 import FlatButton from 'material-ui/FlatButton';
 import SvgIcon from 'material-ui/SvgIcon';
 
@@ -32,7 +32,7 @@ const styles = {
   }
 };
 
-class Data extends Component {
+class Videos extends Component {
   render() {
     return (
       <div>
@@ -40,7 +40,7 @@ class Data extends Component {
           <ResponsiveDrawer openSecondary={false}>
             <div style={styles.drawer_container}>
               <div style={styles.drawer_header_container}>
-                <DataNav />
+                <VideosNav />
               </div>
             </div>
           </ResponsiveDrawer>
@@ -48,7 +48,7 @@ class Data extends Component {
             <ResponsiveAppBar
               iconElementRight={
                 <FlatButton
-                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/Data.js"
+                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/Videos.js"
                   target="_blank"
                   secondary={true}
                   icon={
@@ -64,9 +64,9 @@ class Data extends Component {
               }
             />
             <div id="BackgroundGradient">
-              <DataHeader />
+              <VideosHeader />
             </div>
-            <DataMain />
+            <VideosMain />
           </BodyContainer>
         </div>
       </div>
@@ -74,7 +74,7 @@ class Data extends Component {
   }
 }
 
-Data.propTypes = {
+Videos.propTypes = {
   toggleDrawerOpen: PropTypes.func.isRequired,
   toggleDrawerDock: PropTypes.func.isRequired,
   setResponsive: PropTypes.func.isRequired
@@ -102,4 +102,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Data);
+export default connect(mapStateToProps, mapDispatchToProps)(Videos);

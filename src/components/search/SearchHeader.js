@@ -13,7 +13,7 @@ class SearchHeader extends Component {
     return (
       <header>
         <Subheader>FAMILY HISTORY SEEKER</Subheader>
-        <IconButton tooltip="SEARCH PAGE">
+        <IconButton tooltip="FAMILY HISTORY SEEKER SEARCH PAGE">
           <svg
             fill="#1fbcd3"
             height="48"

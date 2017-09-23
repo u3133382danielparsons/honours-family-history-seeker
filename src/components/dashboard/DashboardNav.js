@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { List, ListItem } from 'material-ui/List';
+
+// Sidebar Icons
 import HomeIcon from 'material-ui/svg-icons/action/home';
 import SearchIcon from 'material-ui/svg-icons/action/search';
 import PostsIcon from 'material-ui/svg-icons/action/chrome-reader-mode';
 import FamiliesIcon from 'material-ui/svg-icons/social/people';
 import PeopleIcon from 'material-ui/svg-icons/social/person';
-import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
 import DataVizIcon from 'material-ui/svg-icons/editor/insert-chart';
+import VideosIcon from 'material-ui/svg-icons/notification/ondemand-video';
+import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
 import AboutIcon from 'material-ui/svg-icons/action/question-answer';
 
 const styles = {
@@ -49,14 +52,19 @@ class DashboardNav extends Component {
             People
           </Link>
         </ListItem>
-        <ListItem onTouchTap={this.handleClose} leftIcon={<AddPostsIcon />}>
-          <Link style={styles.linkText} to="/containers/AddPosts">
-            Add Posts
-          </Link>
-        </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<DataVizIcon />}>
           <Link style={styles.linkText} to="/containers/Data">
             Data Viz
+          </Link>
+        </ListItem>
+        <ListItem onTouchTap={this.handleClose} leftIcon={<VideosIcon />}>
+          <Link style={styles.linkText} to="/containers/Videos">
+            Data Viz
+          </Link>
+        </ListItem>
+        <ListItem onTouchTap={this.handleClose} leftIcon={<AddPostsIcon />}>
+          <Link style={styles.linkText} to="/containers/AddPosts">
+            Add Posts
           </Link>
         </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<AboutIcon />}>

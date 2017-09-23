@@ -14,7 +14,7 @@ class PeopleHeader extends Component {
     return (
       <header>
         <Subheader>FAMILY HISTORY SEEKER</Subheader>
-        <IconButton tooltip="PEOPLE PAGE">
+        <IconButton tooltip="FAMILY HISTORY SEEKER PEOPLE PAGE">
           <svg
             fill="#1fbcd3"
             height="48"

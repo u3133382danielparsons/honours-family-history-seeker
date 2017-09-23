@@ -14,7 +14,7 @@ class HomeHeader extends Component {
     return (
       <header>
         <Subheader>FAMILY HISTORY SEEKER</Subheader>
-        <IconButton tooltip="HOME PAGE">
+        <IconButton tooltip="FAMILY HISTORY SEEKER HOME PAGE">
           <svg
             fill="#1fbcd3"
             height="48"

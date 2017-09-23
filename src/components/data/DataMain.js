@@ -6,7 +6,7 @@ import TreeSixty from './charts/austStateSixty.png';
 import TreeSeventeen from './charts/austStateSeventeen.png';
 
 const style = {
-  width: 320,
+  width: 300,
   marginBottom: 20
 };
 
@@ -18,20 +18,7 @@ class DataMain extends Component {
           <div className="col-sm-6">
             <Paper style={style} zDepth={5}>
               <iframe
-                title="Big Chart"
-                width="320"
-                height="480"
-                frameborder="0"
-                scrolling="no"
-                src="https://plot.ly/~u3133382/9.embed?link=false"
-              />
-            </Paper>
-          </div>
-
-          <div className="col-sm-6">
-            <Paper style={style} zDepth={5}>
-              <iframe
-                title="Big Plotly chart"
+                title="Newspapers By State"
                 width="320"
                 height="480"
                 frameborder="0"
@@ -44,7 +31,7 @@ class DataMain extends Component {
           <div className="col-sm-6">
             <Paper style={style} zDepth={5}>
               <iframe
-                title="Big Area Graph"
+                title="Current Population for Australian States/Territories"
                 width="320"
                 height="480"
                 frameborder="0"
@@ -56,7 +43,23 @@ class DataMain extends Component {
 
           <div className="col-sm-6">
             <Paper style={style} zDepth={5}>
-              <img src={AreaCurrentSixty} alt="Area Chart" />
+              <iframe
+                title="Australian State Populations 1960"
+                width="320"
+                height="480"
+                frameborder="0"
+                scrolling="no"
+                src="https://plot.ly/~u3133382/9.embed?link=false"
+              />
+            </Paper>
+          </div>
+
+          <div className="col-sm-6">
+            <Paper style={style} zDepth={5}>
+              <img
+                src={AreaCurrentSixty}
+                alt="Area Australian State Population 1960"
+              />
             </Paper>
           </div>
 
@@ -75,7 +78,7 @@ class DataMain extends Component {
 
           <div className="col-sm-6">
             <Paper style={style} zDepth={5}>
-              <img src={Pie} alt="Pie Chart" />
+              <img src={Pie} alt="Newspapers Pie Chart" />
             </Paper>
           </div>
 

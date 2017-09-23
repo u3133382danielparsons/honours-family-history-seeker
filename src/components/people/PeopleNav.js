@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { List, ListItem } from 'material-ui/List';
+
+// Sidebar Icons
 import HomeIcon from 'material-ui/svg-icons/action/home';
 import DashboardIcon from 'material-ui/svg-icons/action/dashboard';
 import SearchIcon from 'material-ui/svg-icons/action/search';
 import PostsIcon from 'material-ui/svg-icons/action/chrome-reader-mode';
 import FamiliesIcon from 'material-ui/svg-icons/social/people';
+import DataVizIcon from 'material-ui/svg-icons/editor/insert-chart';
+import VideosIcon from 'material-ui/svg-icons/notification/ondemand-video';
 import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
 import AboutIcon from 'material-ui/svg-icons/action/question-answer';
 
@@ -46,6 +50,16 @@ class PeopleNav extends Component {
         <ListItem onTouchTap={this.handleClose} leftIcon={<FamiliesIcon />}>
           <Link style={styles.linkText} to="/containers/Families">
             Families
+          </Link>
+        </ListItem>
+        <ListItem onTouchTap={this.handleClose} leftIcon={<DataVizIcon />}>
+          <Link style={styles.linkText} to="/containers/Data">
+            Data Viz
+          </Link>
+        </ListItem>
+        <ListItem onTouchTap={this.handleClose} leftIcon={<VideosIcon />}>
+          <Link style={styles.linkText} to="/containers/Videos">
+            Videos
           </Link>
         </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<AddPostsIcon />}>

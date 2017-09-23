@@ -7,6 +7,7 @@ import SearchIcon from 'material-ui/svg-icons/action/search';
 import PostsIcon from 'material-ui/svg-icons/action/chrome-reader-mode';
 import FamiliesIcon from 'material-ui/svg-icons/social/people';
 import PeopleIcon from 'material-ui/svg-icons/social/person';
+import VideosIcon from 'material-ui/svg-icons/notification/ondemand-video';
 import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
 import AboutIcon from 'material-ui/svg-icons/action/question-answer';
 
@@ -52,6 +53,11 @@ class DataNav extends Component {
         <ListItem onTouchTap={this.handleClose} leftIcon={<PeopleIcon />}>
           <Link style={styles.linkText} to="/containers/People">
             People
+          </Link>
+        </ListItem>
+        <ListItem onTouchTap={this.handleClose} leftIcon={<VideosIcon />}>
+          <Link style={styles.linkText} to="/containers/Videos">
+            Videos
           </Link>
         </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<AddPostsIcon />}>
