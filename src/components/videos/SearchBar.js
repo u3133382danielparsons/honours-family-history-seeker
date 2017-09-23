@@ -5,7 +5,12 @@ class SearchBar extends React.Component {
   render() {
     return (
       <form className="input-group search-form">
-        <input type="text" className="form-control" ref="search" />
+        <input
+          type="text"
+          className="form-control"
+          ref="search"
+          placeholder="Enter a search query"
+        />
         <span className="input-group-btn">
           <button
             className="btn btn-secondary"

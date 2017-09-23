@@ -8,12 +8,10 @@ const Item = ({ video, onVideoSelect }) => {
   return (
     <ListItem className="media" onClick={() => onVideoSelect(video)}>
       <div className="media-left">
-        <button href="#">
-          <img className="media-object" src={imageUrl} alt="{title}" />
-        </button>
+        <img className="media-object" src={imageUrl} alt="{title}" />
       </div>
-      <div className="media-body">
-        <h5 className="media-heading">{snippet.title}</h5>
+      <div>
+        <h6>{snippet.title}</h6>
       </div>
       <hr />
     </ListItem>
