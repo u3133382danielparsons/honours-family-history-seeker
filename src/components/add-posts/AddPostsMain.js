@@ -10,8 +10,12 @@ class AddPostsMain extends Component {
     const className = `form-group ${touched && error ? 'has-danger' : ''}`;
     return (
       <div className={className}>
-        <label>{field.label}</label>
-        <input className="form-control" type="text" {...field.input} />
+        <input
+          placeholder={field.label}
+          className="form-control"
+          type="text"
+          {...field.input}
+        />
         <div className="text-help">{touched ? error : ''}</div>
       </div>
     );
@@ -22,8 +26,12 @@ class AddPostsMain extends Component {
     const className = `form-group ${touched && error ? 'has-danger' : ''}`;
     return (
       <div className={className}>
-        <label>{field.label}</label>
-        <textarea className="form-control" type="text" {...field.input} />
+        <textarea
+          placeholder={field.label}
+          className="form-control"
+          type="text"
+          {...field.input}
+        />
         <div className="text-help">{touched ? error : ''}</div>
       </div>
     );
@@ -36,24 +44,25 @@ class AddPostsMain extends Component {
   render() {
     const { handleSubmit } = this.props;
     return (
-      <div className="container">
+      <div className="container pad-bottom">
         <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
           <Field
-            label="ARTICLE HEADING"
+            label="ENTER THE ARTICLE HEADING . . ."
             name="title"
             component={this.renderField}
           />
+          <br />
           <Field
-            label="NEWSPAPER TITLE"
+            label="ENTER THE NEWSPAPER TITLE . . ."
             name="categories"
             component={this.renderField}
           />
+          <br />
           <Field
-            label="ARTICLE CONTENT"
+            label="ENTER THE ARTICLES CONTENT . . ."
             name="content"
             component={this.renderTextArea}
           />
-
           <button type="submit" className="btn btn-primary">
             Submit
           </button>
@@ -70,11 +79,11 @@ function validate(values) {
   // console.log(values)
   const errors = {};
   if (!values.title) {
-    errors.title = 'Enter a title!';
+    errors.title = 'The articles title is required!';
   }
 
   if (!values.categories) {
-    errors.categories = 'Enter some categories';
+    errors.categories = 'The Newspaper title is required!';
   }
 
   if (!values.content) {

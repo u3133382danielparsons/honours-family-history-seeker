@@ -24,11 +24,11 @@ class SearchForm extends Component {
   render() {
     return (
       <div>
-        <h3 className="basic-search">Make a Basic Search</h3>
+        <h3 className="basic-search">Make a Basic Search of Trove</h3>
         <div className="search-form">
           <form onSubmit={this.onFormSubmit} className="input-group">
             <input
-              placeholder="Enter a name"
+              placeholder="Enter a name . . ."
               className="form-control"
               value={this.state.term}
               onChange={this.onInputChange}
@@ -44,6 +44,9 @@ class SearchForm extends Component {
             </span>
           </form>
         </div>
+        <header>
+          <h4> SEARCH RESULTS BELOW</h4>
+        </header>
       </div>
     );
   }

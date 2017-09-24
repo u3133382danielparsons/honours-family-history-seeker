@@ -7,6 +7,7 @@ import { connect } from 'react-redux';
 import DashboardNav from '../components/dashboard/DashboardNav';
 import DashboardHeader from '../components/dashboard/DashboardHeader';
 import DashboardMain from '../components/dashboard/DashboardMain';
+import Footer from '../components/Footer';
 
 // Material-ui
 import {
@@ -46,6 +47,7 @@ class Dashboard extends Component {
           </ResponsiveDrawer>
           <BodyContainer openSecondary={false}>
             <ResponsiveAppBar
+              title="DASHBOARD"
               iconElementRight={
                 <FlatButton
                   href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/Dashboard.js"
@@ -63,9 +65,12 @@ class Dashboard extends Component {
                 />
               }
             />
-            <div id="BackgroundGradient">
+            <div className="BackgroundGradient">
               <DashboardHeader />
               <DashboardMain />
+            </div>
+            <div className="footer-background">
+              <Footer />
             </div>
           </BodyContainer>
         </div>

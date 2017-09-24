@@ -8,6 +8,7 @@ import { connect } from 'react-redux';
 import VideosNav from '../components/videos/VideosNav';
 import VideosHeader from '../components/videos/VideosHeader';
 import VideosMain from '../components/videos/VideosMain';
+import Footer from '../components/Footer';
 
 // Material-ui
 import {
@@ -46,6 +47,7 @@ class Videos extends Component {
           </ResponsiveDrawer>
           <BodyContainer openSecondary={false}>
             <ResponsiveAppBar
+              title="VIDEOS"
               iconElementRight={
                 <FlatButton
                   href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/Videos.js"
@@ -63,10 +65,13 @@ class Videos extends Component {
                 />
               }
             />
-            <div id="BackgroundGradient">
+            <div className="BackgroundGradient">
               <VideosHeader />
             </div>
             <VideosMain />
+            <div className="footer-background">
+              <Footer />
+            </div>
           </BodyContainer>
         </div>
       </div>

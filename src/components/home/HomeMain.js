@@ -44,7 +44,7 @@ class HomeMain extends Component {
     return (
       <main className="container">
         <div className="row">
-          <div className="col-md-6 col-lg-12">
+          <div className="col-md-6 col-lg-4">
             <Card>
               <CardHeader
                 title="Sir James Scarlett"
@@ -91,7 +91,7 @@ class HomeMain extends Component {
             <hr />
           </div>
 
-          <div className="col-md-6 col-lg-12">
+          <div className="col-md-6 col-lg-4">
             <Card>
               <CardHeader
                 title="The Gray Family"
@@ -148,7 +148,7 @@ class HomeMain extends Component {
             <hr />
           </div>
 
-          <div className="col-md-6 col-lg-12">
+          <div className="col-md-6 col-lg-4">
             <Card>
               <CardHeader
                 title="Hollingworth Family"
@@ -232,7 +232,7 @@ class HomeMain extends Component {
             <hr />
           </div>
 
-          <div className="col-md-6 col-lg-12">
+          <div className="col-md-6 col-lg-4">
             <Card>
               <CardHeader
                 title="Bryant Family"
@@ -288,7 +288,7 @@ class HomeMain extends Component {
             <hr />
           </div>
 
-          <div className="col-md-6 col-lg-12">
+          <div className="col-md-6 col-lg-4">
             <Card>
               <CardHeader
                 title="Spence Family"
@@ -365,7 +365,7 @@ class HomeMain extends Component {
             <hr />
           </div>
 
-          <div className="col-md-6 col-lg-12">
+          <div className="col-md-6 col-lg-4">
             <Card>
               <CardHeader
                 title="The Paterson Family"

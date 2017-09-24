@@ -8,6 +8,7 @@ import { connect } from 'react-redux';
 import FamiliesNav from '../components/families/FamiliesNav';
 import FamiliesHeader from '../components/families/FamiliesHeader';
 import FamiliesMain from '../components/families/FamiliesMain';
+import Footer from '../components/Footer';
 
 // Material-ui
 import {
@@ -46,6 +47,7 @@ class Families extends Component {
           </ResponsiveDrawer>
           <BodyContainer openSecondary={false}>
             <ResponsiveAppBar
+              title="FAMILIES"
               iconElementRight={
                 <FlatButton
                   href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/Dashboard.js"
@@ -63,10 +65,13 @@ class Families extends Component {
                 />
               }
             />
-            <div id="BackgroundGradient">
+            <div className="BackgroundGradient">
               <FamiliesHeader />
             </div>
             <FamiliesMain />
+            <div className="footer-background">
+              <Footer />
+            </div>
           </BodyContainer>
         </div>
       </div>

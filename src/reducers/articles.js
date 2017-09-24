@@ -6,7 +6,5 @@ export default function(state = [], action) {
       return [action.payload.data, ...state];
     default:
   }
-  // console.log('Action received', action);
-  // console.log('reducers/article.js', state);
   return state;
 }

@@ -7,6 +7,7 @@ import { connect } from 'react-redux';
 import PeopleNav from '../components/people/PeopleNav';
 import PeopleHeader from '../components/people/PeopleHeader';
 import PeopleMain from '../components/people/PeopleMain';
+import Footer from '../components/Footer';
 
 // Material-ui
 import {
@@ -45,6 +46,7 @@ class People extends Component {
           </ResponsiveDrawer>
           <BodyContainer openSecondary={false}>
             <ResponsiveAppBar
+              title="PEOPLE"
               iconElementRight={
                 <FlatButton
                   href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/About.js"
@@ -62,10 +64,13 @@ class People extends Component {
                 />
               }
             />
-            <div id="BackgroundGradient">
+            <div className="BackgroundGradient">
               <PeopleHeader />
             </div>
             <PeopleMain />
+            <div className="footer-background">
+              <Footer />
+            </div>
           </BodyContainer>
         </div>
       </div>

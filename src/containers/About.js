@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 // src
-// import '../styles/App.css';
 import AboutNav from '../components/about/AboutNav';
 import AboutHeader from '../components/about/AboutHeader';
+import Footer from '../components/Footer';
 
 // Material-ui
 import {
@@ -45,6 +45,7 @@ class About extends Component {
           </ResponsiveDrawer>
           <BodyContainer openSecondary={false}>
             <ResponsiveAppBar
+              title="ABOUT"
               iconElementRight={
                 <FlatButton
                   href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/About.js"
@@ -62,11 +63,22 @@ class About extends Component {
                 />
               }
             />
-            <div id="BackgroundGradient">
+            <div className="BackgroundGradient">
               <AboutHeader />
             </div>
             <div className="container">
               <h4>Main here</h4>
+              <h4>Main here</h4>
+              <h4>Main here</h4>
+              <h4>Main here</h4>
+              <h4>Main here</h4>
+              <h4>Main here</h4>
+              <h4>Main here</h4>
+              <h4>Main here</h4>
+              <h4>Main here</h4>
+            </div>
+            <div className="footer-background">
+              <Footer />
             </div>
           </BodyContainer>
         </div>

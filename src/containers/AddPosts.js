@@ -7,6 +7,7 @@ import { connect } from 'react-redux';
 import AddPostsNav from '../components/add-posts/AddPostsNav';
 import AddPostsHeader from '../components/add-posts/AddPostsHeader';
 import AddPostsMain from '../components/add-posts/AddPostsMain';
+import Footer from '../components/Footer';
 
 // Material-ui
 import {
@@ -45,9 +46,10 @@ class AddPosts extends Component {
           </ResponsiveDrawer>
           <BodyContainer openSecondary={false}>
             <ResponsiveAppBar
+              title="ADD POSTS"
               iconElementRight={
                 <FlatButton
-                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/Dashboard.js"
+                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/AddPosts.js"
                   target="_blank"
                   secondary={true}
                   icon={
@@ -62,11 +64,14 @@ class AddPosts extends Component {
                 />
               }
             />
-            <div id="BackgroundGradient">
+            <div className="BackgroundGradient">
               <AddPostsHeader />
             </div>
             <div className="container">
               <AddPostsMain />
+            </div>
+            <div className="footer-background">
+              <Footer />
             </div>
           </BodyContainer>
         </div>

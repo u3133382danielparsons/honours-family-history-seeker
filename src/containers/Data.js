@@ -7,6 +7,7 @@ import { connect } from 'react-redux';
 import DataNav from '../components/data/DataNav';
 import DataHeader from '../components/data/DataHeader';
 import DataMain from '../components/data/DataMain';
+import Footer from '../components/Footer';
 
 // Material-ui
 import {
@@ -63,10 +64,13 @@ class Data extends Component {
                 />
               }
             />
-            <div id="BackgroundGradient">
+            <div className="BackgroundGradient">
               <DataHeader />
             </div>
             <DataMain />
+            <div className="footer-background">
+              <Footer />
+            </div>
           </BodyContainer>
         </div>
       </div>

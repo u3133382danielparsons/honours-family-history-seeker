@@ -58,7 +58,7 @@ class SearchNav extends Component {
         </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<VideosIcon />}>
           <Link style={styles.linkText} to="/containers/Videos">
-            Data Viz
+            Videos
           </Link>
         </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<AddPostsIcon />}>

@@ -12,7 +12,53 @@ header {
   margin-top: 80px;
   margin-bottom: 60px;
 }
+footer {
+  display: flex;
+}
+footer h4 {
+  text-align: center;
+  flex: 1;
+}
+
+.float-right {
+  float: right;
+}
 
 h6 {
   padding-top: 10px;
+}
+
+.pad-bottom {
+  padding-bottom: 20px;
+}
+
+.BackgroundGradient > header {
+  margin-top: 64px;
+}
+.BackgroundGradient {
+  background: #d3361f;
+  background: -webkit-linear-gradient(#e45d49, #6c1c10);
+  background: -moz-linear-gradient(#e45d49, #6c1c10);
+  background: linear-gradient(#e45d49, #6c1c10);
+}
+
+.hovered a:hover {
+  opacity: 0.8;
+}
+
+footer {
+  text-align: center;
+}
+
+.list-horizontal-display > div {
+  display: inline-block;
+}
+footer a:hover {
+  opacity: 0.6;
+}
+.footer-background {
+  background: #1fd390;
+  background: -webkit-linear-gradient(#a7a7a7, #808080);
+  background: -moz-linear-gradient(#a7a7a7, #808080);
+  background: linear-gradient(#a7a7a7, #808080);
 }

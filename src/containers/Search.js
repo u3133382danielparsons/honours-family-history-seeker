@@ -8,6 +8,7 @@ import SearchNav from '../components/search/SearchNav';
 import SearchHeader from '../components/search/SearchHeader';
 import SearchForm from '../components/search/SearchForm';
 import SearchList from '../components/search/SearchList';
+import Footer from '../components/Footer';
 
 // Material-ui
 import {
@@ -45,6 +46,7 @@ class Search extends Component {
           </ResponsiveDrawer>
           <BodyContainer openSecondary={false}>
             <ResponsiveAppBar
+              title="SEARCH"
               iconElementRight={
                 <FlatButton
                   href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/Search.js"
@@ -62,13 +64,16 @@ class Search extends Component {
                 />
               }
             />
-            <div id="BackgroundGradient">
+            <div className="BackgroundGradient">
               <SearchHeader />
             </div>
             <main className="container">
               <SearchForm />
               <SearchList />
             </main>
+            <div className="footer-background">
+              <Footer />
+            </div>
           </BodyContainer>
         </div>
       </div>
