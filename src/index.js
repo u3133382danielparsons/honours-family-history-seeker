@@ -34,6 +34,7 @@ import Spence from './components/people/women/Spence';
 
 // Material-ui theme
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
 // For Android phones
 import registerServiceWorker from './registerServiceWorker';
 

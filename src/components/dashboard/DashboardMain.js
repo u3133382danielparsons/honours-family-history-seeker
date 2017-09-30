@@ -11,6 +11,7 @@ import DataVizIcon from 'material-ui/svg-icons/editor/insert-chart';
 import VideosIcon from 'material-ui/svg-icons/notification/ondemand-video';
 import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
 import AboutIcon from 'material-ui/svg-icons/action/question-answer';
+import ListIcon from 'material-ui/svg-icons/action/list';
 import IconButton from 'material-ui/IconButton';
 import Subheader from 'material-ui/Subheader';
 
@@ -149,13 +150,14 @@ class DashboardMain extends Component {
           </div>
 
           <div className="col-sm-6 col-lg-4">
-            <Link to="/">
+            <Link to="https://url-list.herokuapp.com">
               <IconButton
                 iconStyle={styles.largeIcon}
                 style={styles.large}
-                tooltip="HOME PAGE"
+                tooltip="URL LIST PAGE"
               >
-                <HomeIcon />
+                <ListIcon />
+                <Subheader>URL LIST</Subheader>
               </IconButton>
             </Link>
           </div>

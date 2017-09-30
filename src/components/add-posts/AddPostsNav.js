@@ -11,66 +11,42 @@ import FamiliesIcon from 'material-ui/svg-icons/social/people';
 import PeopleIcon from 'material-ui/svg-icons/social/person';
 import DataVizIcon from 'material-ui/svg-icons/editor/insert-chart';
 import VideosIcon from 'material-ui/svg-icons/notification/ondemand-video';
+import ListIcon from 'material-ui/svg-icons/action/list';
 import AboutIcon from 'material-ui/svg-icons/action/question-answer';
-
-const styles = {
-  linkText: {
-    textDecoration: 'none',
-    color: '#4f4f4f'
-  }
-};
 
 class AddPostsNav extends Component {
   render() {
     return (
-      <List>
-        <ListItem
-          onTouchTap={this.handleClose}
-          leftIcon={<HomeIcon style={styles.iconStyles} />}
-        >
-          <Link style={styles.linkText} to="/">
-            Home
-          </Link>
+      <List className="nav-link">
+        <ListItem onTouchTap={this.handleClose} leftIcon={<HomeIcon />}>
+          <Link to="/">Home</Link>
         </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<DashboardIcon />}>
-          <Link style={styles.linkText} to="/containers/Dashboard">
-            Dashboard
-          </Link>
+          <Link to="/containers/Dashboard">Dashboard</Link>
         </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<SearchIcon />}>
-          <Link style={styles.linkText} to="/containers/Search">
-            Search
-          </Link>
+          <Link to="/containers/Search">Search</Link>
         </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<PostsIcon />}>
-          <Link style={styles.linkText} to="/containers/Posts">
-            Posts
-          </Link>
+          <Link to="/containers/Posts">Posts</Link>
         </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<FamiliesIcon />}>
-          <Link style={styles.linkText} to="/containers/Families">
-            Families
-          </Link>
+          <Link to="/containers/Families">Families</Link>
         </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<PeopleIcon />}>
-          <Link style={styles.linkText} to="/containers/People">
-            People
-          </Link>
+          <Link to="/containers/People">People</Link>
         </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<DataVizIcon />}>
-          <Link style={styles.linkText} to="/containers/Data">
-            Data Viz
-          </Link>
+          <Link to="/containers/Data">Data Viz</Link>
         </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<VideosIcon />}>
-          <Link style={styles.linkText} to="/containers/Videos">
-            Videos
-          </Link>
+          <Link to="/containers/Videos">Videos</Link>
+        </ListItem>
+        <ListItem onTouchTap={this.handleClose} leftIcon={<ListIcon />}>
+          <a href="https://url-list.herokuapp.com">Url List</a>
         </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<AboutIcon />}>
-          <Link style={styles.linkText} to="/containers/About">
-            About
-          </Link>
+          <Link to="/containers/About">About</Link>
         </ListItem>
       </List>
     );
