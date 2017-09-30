@@ -7,6 +7,12 @@ img {
   width: 100%;
   height: auto;
 }
+.nav-link a {
+  color: #4f4f4f;
+}
+.url-link a:hover {
+  text-decoration: underline;
+}
 header {
   text-align: center;
   margin-top: 80px;
@@ -14,6 +20,8 @@ header {
 }
 footer {
   display: flex;
+  text-align: center;
+  padding-top: 30px;
 }
 footer h4 {
   text-align: center;
@@ -46,12 +54,16 @@ h6 {
   opacity: 0.8;
 }
 
-footer {
-  text-align: center;
-}
-
 .list-horizontal-display > div {
   display: inline-block;
+}
+
+.has-danger {
+  color: #c73232;
+}
+
+.placeholder-text {
+  font-size: 18px;
 }
 footer a:hover {
   opacity: 0.6;

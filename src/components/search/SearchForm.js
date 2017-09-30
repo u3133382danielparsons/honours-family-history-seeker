@@ -3,7 +3,8 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { fetchArticle } from '../../actions/index';
 import './css/styles.css';
-//
+import { Form, FormControl, Button } from 'react-bootstrap';
+
 class SearchForm extends Component {
   constructor(props) {
     super(props);
@@ -19,6 +20,12 @@ class SearchForm extends Component {
     event.preventDefault();
 
     this.props.fetchArticle(this.state.term);
+    alert(
+      'Searching the trove database for articles containing the name "' +
+        this.state.term +
+        '"'
+    );
+
     this.setState({ term: '' });
   }
   render() {
@@ -26,26 +33,26 @@ class SearchForm extends Component {
       <div>
         <h3 className="basic-search">Make a Basic Search of Trove</h3>
         <div className="search-form">
-          <form onSubmit={this.onFormSubmit} className="input-group">
-            <input
-              placeholder="Enter a name . . ."
-              className="form-control"
+          <Form onSubmit={this.onFormSubmit} className="input-group">
+            <FormControl
+              placeholder="Enter a name please . . ."
+              className="placeholder-text"
               value={this.state.term}
               onChange={this.onInputChange}
             />
             <span className="input-group-btn">
-              <button
+              <Button
                 type="submit"
-                className="btn btn-secondary"
+                className="btn btn-info"
                 disabled={!this.state.term}
               >
                 Submit
-              </button>
+              </Button>
             </span>
-          </form>
+          </Form>
         </div>
         <header>
-          <h4> SEARCH RESULTS BELOW</h4>
+          <h4>SEARCH RESULTS APPEAR BELOW</h4>
         </header>
       </div>
     );

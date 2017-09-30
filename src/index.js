@@ -21,6 +21,7 @@ import Data from './containers/Data';
 import Videos from './containers/Videos';
 import AddPosts from './containers/AddPosts';
 import About from './containers/About';
+import ArticlesList from './containers/ArticlesList';
 
 import Georgiana from './components/people/women/Georgiana';
 import Truganini from './components/people/women/Truganini';
@@ -53,6 +54,7 @@ render(
           <Route path="/containers/Data" component={Data} />
           <Route path="/containers/Videos" component={Videos} />
           <Route path="/containers/AddPosts" component={AddPosts} />
+          <Route path="/containers/ArticlesList" component={ArticlesList} />
           <Route path="/containers/About" component={About} />
 
           <Route

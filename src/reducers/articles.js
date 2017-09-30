@@ -1,4 +1,4 @@
-import { FETCH_ARTICLE } from '../actions/index';
+import { FETCH_ARTICLE } from '../actions';
 
 export default function(state = [], action) {
   switch (action.type) {

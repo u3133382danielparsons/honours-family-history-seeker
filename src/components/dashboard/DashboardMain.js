@@ -105,6 +105,7 @@ class DashboardMain extends Component {
                 tooltip="PEOPLES PAGE"
               >
                 <PeopleIcon />
+                <Subheader>PEOPLE</Subheader>
               </IconButton>
             </Link>
           </div>
@@ -117,6 +118,7 @@ class DashboardMain extends Component {
                 tooltip="DATA VIZ PAGE"
               >
                 <DataVizIcon />
+                <Subheader>DATA VIZ</Subheader>
               </IconButton>
             </Link>
           </div>
@@ -128,6 +130,7 @@ class DashboardMain extends Component {
                 tooltip="VIDEOS PAGE"
               >
                 <VideosIcon />
+                <Subheader>VIDEOS</Subheader>
               </IconButton>
             </Link>
           </div>

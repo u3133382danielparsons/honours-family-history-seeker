@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 // src
-
 import VideosNav from '../components/videos/VideosNav';
 import VideosHeader from '../components/videos/VideosHeader';
 import VideosMain from '../components/videos/VideosMain';

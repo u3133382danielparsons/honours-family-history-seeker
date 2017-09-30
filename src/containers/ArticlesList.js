@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 // src
-import AboutNav from '../components/about/AboutNav';
-import AboutHeader from '../components/about/AboutHeader';
-import AboutMain from '../components/about/AboutMain';
+import ArticlesListNav from '../components/articles-list/ArticlesListNav';
+import ArticlesListHeader from '../components/articles-list/ArticlesListHeader';
+import ArticlesListMain from '../components/articles-list/ArticlesListMain';
 
 import Footer from '../components/Footer';
 
@@ -33,7 +33,7 @@ const styles = {
   }
 };
 
-class About extends Component {
+class UrlList extends Component {
   render() {
     return (
       <div>
@@ -41,16 +41,16 @@ class About extends Component {
           <ResponsiveDrawer openSecondary={false}>
             <div style={styles.drawer_container}>
               <div style={styles.drawer_header_container}>
-                <AboutNav />
+                <ArticlesListNav />
               </div>
             </div>
           </ResponsiveDrawer>
           <BodyContainer openSecondary={false}>
             <ResponsiveAppBar
-              title="ABOUT"
+              title="ARTICLES"
               iconElementRight={
                 <FlatButton
-                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/About.js"
+                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/ArticlesList.js"
                   target="_blank"
                   secondary={true}
                   icon={
@@ -66,10 +66,10 @@ class About extends Component {
               }
             />
             <div className="BackgroundGradient">
-              <AboutHeader />
+              <ArticlesListHeader />
             </div>
             <div className="container">
-              <AboutMain />
+              <ArticlesListMain />
             </div>
             <div className="footer-background">
               <Footer />
@@ -81,7 +81,7 @@ class About extends Component {
   }
 }
 
-About.propTypes = {
+UrlList.propTypes = {
   toggleDrawerOpen: PropTypes.func.isRequired,
   toggleDrawerDock: PropTypes.func.isRequired,
   setResponsive: PropTypes.func.isRequired
@@ -109,4 +109,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(About);
+export default connect(mapStateToProps, mapDispatchToProps)(UrlList);

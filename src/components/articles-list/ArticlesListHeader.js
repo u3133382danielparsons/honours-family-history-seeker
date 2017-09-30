@@ -9,12 +9,12 @@ const styles = {
   }
 };
 
-class VideosHeader extends Component {
+class UrlListHeader extends Component {
   render() {
     return (
       <header>
         <Subheader>FAMILY HISTORY SEEKER</Subheader>
-        <IconButton tooltip="FAMILY HISTORY SEEKER VIDEOS PAGE">
+        <IconButton tooltip="FAMILY HISTORY SEEKER ARTICLES LIST PAGE">
           <svg
             fill="#1fbcd3"
             height="48"
@@ -22,14 +22,14 @@ class VideosHeader extends Component {
             width="48"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path d="M0 0h24v24H0V0z" fill="none" />
-            <path d="M21 3H3c-1.11 0-2 .89-2 2v12c0 1.1.89 2 2 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.11-.9-2-2-2zm0 14H3V5h18v12zm-5-6l-7 4V7z" />
+            <path d="M4 14h4v-4H4v4zm0 5h4v-4H4v4zM4 9h4V5H4v4zm5 5h12v-4H9v4zm0 5h12v-4H9v4zM9 5v4h12V5H9z" />
+            <path d="M0 0h24v24H0z" fill="none" />
           </svg>
         </IconButton>
-        <Subheader style={styles.subheaderColor}>VIDEOS</Subheader>
+        <Subheader style={styles.subheaderColor}>Article List</Subheader>
       </header>
     );
   }
 }
 
-export default VideosHeader;
+export default UrlListHeader;
