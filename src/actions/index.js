@@ -36,6 +36,9 @@ export function createPost(values, callback) {
   const request = axios
     .post(`${ROOT_URL}/posts${POST_API_KEY}`, values)
     .then(() => callback());
+  alert(
+    'The articles heading, the newspaper it was published in and the articles content have been sent to the POSTS page.'
+  );
   return {
     type: CREATE_POST,
     payload: request

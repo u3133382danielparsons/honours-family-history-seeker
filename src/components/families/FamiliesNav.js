@@ -12,6 +12,7 @@ import DataVizIcon from 'material-ui/svg-icons/editor/insert-chart';
 import VideosIcon from 'material-ui/svg-icons/notification/ondemand-video';
 import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
 import ListIcon from 'material-ui/svg-icons/action/list';
+import ProfileIcon from 'material-ui/svg-icons/action/perm-identity';
 import AboutIcon from 'material-ui/svg-icons/action/question-answer';
 
 class FamiliesNav extends Component {
@@ -44,6 +45,9 @@ class FamiliesNav extends Component {
         </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<ListIcon />}>
           <a href="https://url-list.herokuapp.com">Url List</a>
+        </ListItem>
+        <ListItem onTouchTap={this.handleClose} leftIcon={<ProfileIcon />}>
+          <Link to="/containers/Profile">Profile</Link>
         </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<AboutIcon />}>
           <Link to="/containers/About">About</Link>

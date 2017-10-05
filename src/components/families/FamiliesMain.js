@@ -398,7 +398,7 @@ class FamiliesMain extends Component {
                 </ListItem>
 
                 <ListItem>
-                  <CardHeader>Rose Florence Lumsdaine (Paterson)</CardHeader>
+                  <CardHeader>Rose Florence Lumsdaine</CardHeader>
                   <CardText>
                     Rose Florence Lumsdaine (Paterson) born October 1865 and
                     died May 1931. Daughter of Andrew Bogle Paterson and Rose

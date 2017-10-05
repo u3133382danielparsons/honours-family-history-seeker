@@ -12,6 +12,8 @@ import VideosIcon from 'material-ui/svg-icons/notification/ondemand-video';
 import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
 import AboutIcon from 'material-ui/svg-icons/action/question-answer';
 import ListIcon from 'material-ui/svg-icons/action/list';
+import ProfileIcon from 'material-ui/svg-icons/action/perm-identity';
+
 import IconButton from 'material-ui/IconButton';
 import Subheader from 'material-ui/Subheader';
 
@@ -145,6 +147,19 @@ class DashboardMain extends Component {
               >
                 <AboutIcon />
                 <Subheader>ABOUT</Subheader>
+              </IconButton>
+            </Link>
+          </div>
+
+          <div className="col-sm-6 col-lg-4">
+            <Link to="/containers/Profile">
+              <IconButton
+                iconStyle={styles.largeIcon}
+                style={styles.large}
+                tooltip="PROFILE PAGE"
+              >
+                <ProfileIcon />
+                <Subheader>PROFILE</Subheader>
               </IconButton>
             </Link>
           </div>
