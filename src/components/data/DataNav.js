@@ -4,6 +4,7 @@ import { List, ListItem } from 'material-ui/List';
 import HomeIcon from 'material-ui/svg-icons/action/home';
 import DashboardIcon from 'material-ui/svg-icons/action/dashboard';
 import SearchIcon from 'material-ui/svg-icons/action/search';
+import GalleryIcon from 'material-ui/svg-icons/image/photo-library';
 import PostsIcon from 'material-ui/svg-icons/action/chrome-reader-mode';
 import FamiliesIcon from 'material-ui/svg-icons/social/people';
 import PeopleIcon from 'material-ui/svg-icons/social/person';
@@ -25,6 +26,9 @@ class DataNav extends Component {
         </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<SearchIcon />}>
           <Link to="/containers/Search">Search</Link>
+        </ListItem>
+        <ListItem onTouchTap={this.handleClose} leftIcon={<GalleryIcon />}>
+          <Link to="/containers/Gallery">Gallery</Link>
         </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<PostsIcon />}>
           <Link to="/containers/Posts">Posts</Link>

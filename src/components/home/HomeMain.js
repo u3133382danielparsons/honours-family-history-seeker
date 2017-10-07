@@ -151,6 +151,139 @@ class HomeMain extends Component {
           <div className="col-md-6 col-lg-4">
             <Card>
               <CardHeader
+                title="Bryant Family"
+                subtitle="Van Diemen's Land"
+                avatar={bryantTas}
+              />
+              <CardMedia
+                overlay={<CardTitle title="" subtitle="Tasmania 1820s" />}
+              >
+                <img src={hobartLand} alt="The Bryant Family" />
+              </CardMedia>
+              <CardTitle
+                title=""
+                subtitle=" From Somerset England (1820), to Van Diemen's Land"
+              />
+              <CardText>
+                This is the story of four Bryant brothers; George born 1789;
+                Francis 1795; James 1799 and Edmund 1803, who emigrated to Van
+                Diemen’s Land. They were sons of Matthew Bryant and Mary Mills
+                who were tenants of Curry Pool, a farm of some 390 acres in
+                Charlinch and Spaxton parishes in Somerset from 1791. Matthew
+                and Mary were married in Bridgwater in 1784 and the older four
+                of their ten children were born there. He died in 1815 and she
+                about 1829. From that time George held the lease of Curry Pool
+                Farm.
+              </CardText>
+              <CardText>
+                During the 1820’s a great many respectable settlers arrived in
+                Van Diemen’s Land], bringing the letters of recommendation from
+                the Home authorities which entitled them to land. Immigration of
+                persons with capital was encouraged by Lieut. Governor Arthur,
+                who saw immigration as the servant of transportation. The
+                convict system was based on assignment, and men of capital were
+                needed to maintain it. Land policy in the 1820’s discriminated
+                against the less wealthy settler, as the size of land grants was
+                proportional to the amount of capital held. The need for
+                recommend- ation to the Governor and the high cost of travel to
+                Van Diemen’s Land also discouraged the poorer person.
+              </CardText>
+              <CardActions>
+                <FlatButton label="Tasmanian Ancestory p.8.">
+                  <a
+                    href="http://www.tasfhs.org/Volume%2019.pdf"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                    alt="A TALE OF FOUR BROTHERS"
+                  >
+                    A TALE OF FOUR BROTHERS
+                  </a>
+                </FlatButton>
+              </CardActions>
+            </Card>
+            <hr />
+          </div>
+
+          <div className="col-md-12">
+            <Card>
+              <CardHeader
+                title="Spence Family"
+                subtitle="John Brodie Spence"
+                avatar={JohnSpenceAv}
+              />
+              <CardMedia
+                overlay={
+                  <CardTitle subtitle="Oil painting of Spence by Maude Gordon, c. 1900." />
+                }
+              >
+                <img
+                  src={CatherineSpence}
+                  alt="Oil Painting of Catherine Helen Spence"
+                />
+              </CardMedia>
+              <CardActions>
+                <CardTitle title="Spence Family" subtitle="South Australia" />
+                <CardText>
+                  David Spence and Helen Brodie Spence sailed out from Melsrose,
+                  Scotland to South Australia on the <i>Palmyra</i> in the year
+                  1839. The colony had experienced several years of drought, the
+                  contrast to native Scotland made made their daughter Catherine
+                  Helen spence feel, "inclined to go and cut my throat".
+                </CardText>
+                <CardText>
+                  Catherine Helen Spence was the fifth child of David and Helen.
+                  She grew up to become a famous reformist and is a leading
+                  figure in winning the right for Australian women to vote.
+                </CardText>
+                <CardText>
+                  John Brodie Spence is the brother of Catherine Helen Spence
+                  and he gained fame as a prominent South Australian Banker.
+                </CardText>
+                <CardActions>
+                  <FlatButton label="Project Gutenberg">
+                    <a
+                      href="http://www.gutenberg.org/files/4220/4220-h/4220-h.htm"
+                      rel="noreferrer noopener"
+                      target="_blank"
+                    >
+                      Autobiography by Catherine Helen Spence
+                    </a>
+                  </FlatButton>
+                </CardActions>
+                <CardActions>
+                  <FlatButton>
+                    <a
+                      href="https://en.wikipedia.org/wiki/John_Brodie_Spence"
+                      rel="noreferrer noopener"
+                      target="_blank"
+                    >
+                      John Brodie Spence
+                    </a>
+                  </FlatButton>
+                </CardActions>
+              </CardActions>
+              <CardMedia>
+                <img src={HighPriestess} alt="Courtesy of Trove" />
+              </CardMedia>
+              <CardActions>
+                <FlatButton label="CATHERINE HELEN SPENCE">
+                  <a
+                    href="http://trove.nla.gov.au/newspaper/article/166449131?browse=ndp%3Abrowse%2Ftitle%2FQ%2Ftitle%2F824%2F1899%2F10%2F19%2Fpage%2F19461171%2Farticle%2F166449131"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                    alt="wikitree"
+                  >
+                    HIGH PRIESTESS OF EFFECTIVE VOTING
+                  </a>
+                </FlatButton>
+              </CardActions>
+            </Card>
+            <hr />
+          </div>
+
+          <div className="col-md-6 col-lg-4">
+            <Card>
+              <CardHeader
                 title="Hollingworth Family"
                 subtitle="Joseph Nicholsan Hollingworth"
                 avatar={HollingworthAv}
@@ -225,139 +358,6 @@ class HomeMain extends Component {
                     alt="wikitree"
                   >
                     HOLLINGWORTH FAMILY TREE
-                  </a>
-                </FlatButton>
-              </CardActions>
-            </Card>
-            <hr />
-          </div>
-
-          <div className="col-md-6 col-lg-4">
-            <Card>
-              <CardHeader
-                title="Bryant Family"
-                subtitle="Van Diemen's Land"
-                avatar={bryantTas}
-              />
-              <CardMedia
-                overlay={<CardTitle title="" subtitle="Tasmania 1820s" />}
-              >
-                <img src={hobartLand} alt="The Bryant Family" />
-              </CardMedia>
-              <CardTitle
-                title=""
-                subtitle=" From Somerset England (1820), to Van Diemen's Land"
-              />
-              <CardText>
-                This is the story of four Bryant brothers; George born 1789;
-                Francis 1795; James 1799 and Edmund 1803, who emigrated to Van
-                Diemen’s Land. They were sons of Matthew Bryant and Mary Mills
-                who were tenants of Curry Pool, a farm of some 390 acres in
-                Charlinch and Spaxton parishes in Somerset from 1791. Matthew
-                and Mary were married in Bridgwater in 1784 and the older four
-                of their ten children were born there. He died in 1815 and she
-                about 1829. From that time George held the lease of Curry Pool
-                Farm.
-              </CardText>
-              <CardText>
-                During the 1820’s a great many respectable settlers arrived in
-                Van Diemen’s Land], bringing the letters of recommendation from
-                the Home authorities which entitled them to land. Immigration of
-                persons with capital was encouraged by Lieut. Governor Arthur,
-                who saw immigration as the servant of transportation. The
-                convict system was based on assignment, and men of capital were
-                needed to maintain it. Land policy in the 1820’s discriminated
-                against the less wealthy settler, as the size of land grants was
-                proportional to the amount of capital held. The need for
-                recommend- ation to the Governor and the high cost of travel to
-                Van Diemen’s Land also discouraged the poorer person.
-              </CardText>
-              <CardActions>
-                <FlatButton label="Tasmanian Ancestory p.8.">
-                  <a
-                    href="http://www.tasfhs.org/Volume%2019.pdf"
-                    rel="noreferrer noopener"
-                    target="_blank"
-                    alt="A TALE OF FOUR BROTHERS"
-                  >
-                    A TALE OF FOUR BROTHERS
-                  </a>
-                </FlatButton>
-              </CardActions>
-            </Card>
-            <hr />
-          </div>
-
-          <div className="col-md-6 col-lg-4">
-            <Card>
-              <CardHeader
-                title="Spence Family"
-                subtitle="John Brodie Spence"
-                avatar={JohnSpenceAv}
-              />
-              <CardMedia
-                overlay={
-                  <CardTitle subtitle="Oil painting of Spence by Maude Gordon, c. 1900." />
-                }
-              >
-                <img
-                  src={CatherineSpence}
-                  alt="Oil Painting of Catherine Helen Spence"
-                />
-              </CardMedia>
-              <CardActions>
-                <CardTitle title="Spence Family" subtitle="South Australia" />
-                <CardText>
-                  David Spence and Helen Brodie Spence sailed out from Melsrose,
-                  Scotland to South Australia on the <i>Palmyra</i> in the year
-                  1839. The colony had experienced several years of drought, the
-                  contrast to native Scotland made made their daughter Catherine
-                  Helen spence feel, "inclined to go and cut my throat".
-                </CardText>
-                <CardText>
-                  Catherine Helen Spence was the fifth child of David and Helen.
-                  She grew up to become a famous reformist and is a leading
-                  figure in winning the right for Australian women to vote.
-                </CardText>
-                <CardText>
-                  John Brodie Spence is the brother of Catherine Helen Spence
-                  and he gained fame as a prominent South Australian Banker.
-                </CardText>
-                <CardActions>
-                  <FlatButton label="Project Gutenberg">
-                    <a
-                      href="http://www.gutenberg.org/files/4220/4220-h/4220-h.htm"
-                      rel="noreferrer noopener"
-                      target="_blank"
-                    >
-                      Autobiography by Catherine Helen Spence
-                    </a>
-                  </FlatButton>
-                </CardActions>
-                <CardActions>
-                  <FlatButton>
-                    <a
-                      href="https://en.wikipedia.org/wiki/John_Brodie_Spence"
-                      rel="noreferrer noopener"
-                      target="_blank"
-                    >
-                      John Brodie Spence
-                    </a>
-                  </FlatButton>
-                </CardActions>
-              </CardActions>
-              <CardMedia>
-                <img src={HighPriestess} alt="Courtesy of Trove" />
-              </CardMedia>
-              <CardActions>
-                <FlatButton label="CATHERINE HELEN SPENCE">
-                  <a
-                    href="http://trove.nla.gov.au/newspaper/article/166449131?browse=ndp%3Abrowse%2Ftitle%2FQ%2Ftitle%2F824%2F1899%2F10%2F19%2Fpage%2F19461171%2Farticle%2F166449131"
-                    rel="noreferrer noopener"
-                    target="_blank"
-                    alt="wikitree"
-                  >
-                    HIGH PRIESTESS OF EFFECTIVE VOTING
                   </a>
                 </FlatButton>
               </CardActions>

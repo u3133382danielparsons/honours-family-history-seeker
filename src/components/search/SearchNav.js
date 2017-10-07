@@ -5,6 +5,7 @@ import { List, ListItem } from 'material-ui/List';
 // Sidebar Icons
 import HomeIcon from 'material-ui/svg-icons/action/home';
 import DashboardIcon from 'material-ui/svg-icons/action/dashboard';
+import GalleryIcon from 'material-ui/svg-icons/image/photo-library';
 import PostsIcon from 'material-ui/svg-icons/action/chrome-reader-mode';
 import FamiliesIcon from 'material-ui/svg-icons/social/people';
 import PeopleIcon from 'material-ui/svg-icons/social/person';
@@ -24,6 +25,9 @@ class SearchNav extends Component {
         </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<DashboardIcon />}>
           <Link to="/containers/Dashboard">Dashboard</Link>
+        </ListItem>
+        <ListItem onTouchTap={this.handleClose} leftIcon={<GalleryIcon />}>
+          <Link to="/containers/Gallery">Gallery</Link>
         </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<PostsIcon />}>
           <Link to="/containers/Posts">Posts</Link>

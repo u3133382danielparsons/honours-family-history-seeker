@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 import HomeIcon from 'material-ui/svg-icons/action/home';
 import SearchIcon from 'material-ui/svg-icons/action/search';
+import GalleryIcon from 'material-ui/svg-icons/image/photo-library';
 import PostsIcon from 'material-ui/svg-icons/action/chrome-reader-mode';
 import FamiliesIcon from 'material-ui/svg-icons/social/people';
 import PeopleIcon from 'material-ui/svg-icons/social/person';
@@ -57,6 +58,19 @@ class DashboardMain extends Component {
               >
                 <SearchIcon />
                 <Subheader>SEARCH</Subheader>
+              </IconButton>
+            </Link>
+          </div>
+
+          <div className="col-sm-6 col-lg-4">
+            <Link to="/containers/Gallery">
+              <IconButton
+                iconStyle={styles.largeIcon}
+                style={styles.large}
+                tooltip="VIEW THE GALLERY"
+              >
+                <GalleryIcon />
+                <Subheader>GALLERY</Subheader>
               </IconButton>
             </Link>
           </div>

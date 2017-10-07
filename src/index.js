@@ -14,6 +14,7 @@ import { responsiveStoreEnhancer } from 'redux-responsive';
 import Home from './Home.js';
 import Dashboard from './containers/Dashboard';
 import Search from './containers/Search';
+import Gallery from './containers/Gallery';
 import Posts from './containers/Posts';
 import Families from './containers/Families';
 import People from './containers/People';
@@ -24,6 +25,7 @@ import About from './containers/About';
 import Profile from './containers/Profile';
 import ArticlesList from './containers/ArticlesList';
 
+// People
 import Georgiana from './components/people/women/Georgiana';
 import Truganini from './components/people/women/Truganini';
 import Chisholm from './components/people/women/Chisholm';
@@ -50,6 +52,7 @@ render(
           <Route exact path="/" component={Home} />
           <Route path="/containers/Dashboard" component={Dashboard} />
           <Route path="/containers/Search" component={Search} />
+          <Route path="/containers/Gallery" component={Gallery} />
           <Route path="/containers/Posts" component={Posts} />
           <Route path="/containers/Families" component={Families} />
           <Route path="/containers/People" component={People} />
