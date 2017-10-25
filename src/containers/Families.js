@@ -68,7 +68,7 @@ class Families extends Component {
             <div className="BackgroundGradient">
               <FamiliesHeader />
             </div>
-            <FamiliesMain />
+
             <div className="footer-background">
               <Footer />
             </div>
