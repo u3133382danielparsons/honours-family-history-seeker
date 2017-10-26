@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import IconButton from 'material-ui/IconButton';
 import Subheader from 'material-ui/Subheader';
 
 const styles = {
@@ -13,7 +12,7 @@ class DashboardHeader extends Component {
     return (
       <header>
         <Subheader>FAMILY HISTORY SEEKER</Subheader>
-        <IconButton tooltip="FAMILY HISTORY SEEKER DASHBOARD PAGE">
+        <object title="FAMILY HISTORY SEEKER DASHBOARD PAGE">
           <svg
             fill="#1fbcd3"
             height="48"
@@ -24,7 +23,7 @@ class DashboardHeader extends Component {
             <path d="M0 0h24v24H0z" fill="none" />
             <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z" />
           </svg>
-        </IconButton>
+        </object>
         <Subheader style={styles.subheaderColor}>DASHBOARD</Subheader>
       </header>
     );

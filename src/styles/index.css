@@ -7,8 +7,18 @@ img {
   width: 100%;
   height: auto;
 }
+object:hover {
+  opacity: 0.7;
+}
 .nav-link a {
   color: #4f4f4f;
+}
+.nav-link a:hover {
+  font-size: 1.61em;
+  -webkit-transition: color 2s, font-size 2s;
+  -moz-transition: color 2s, font-size 2s;
+  -o-transition: color 2s, font-size 2s;
+  transition: color 2s, font-size 2s;
 }
 .url-link a:hover {
   text-decoration: underline;
@@ -19,7 +29,6 @@ header {
   margin-bottom: 60px;
 }
 footer {
-  display: flex;
   text-align: center;
   padding-top: 30px;
 }
@@ -56,6 +65,8 @@ h6 {
 
 .list-horizontal-display > div {
   display: inline-block;
+  padding-left: 10px;
+  font-size: 0;
 }
 
 .has-danger {
@@ -65,12 +76,132 @@ h6 {
 .placeholder-text {
   font-size: 18px;
 }
-footer a:hover {
-  opacity: 0.6;
+.fb {
+  color: #3b5998;
 }
+.fb:hover {
+  font-size: 3em;
+  color: #3b5998;
+  -webkit-transition: color 2s, font-size 2s;
+  -moz-transition: color 2s, font-size 2s;
+  -o-transition: color 2s, font-size 2s;
+  transition: color 2s, font-size 2s;
+}
+.twitter {
+  color: #00aced;
+}
+.twitter:hover {
+  font-size: 3em;
+  color: #00aced;
+  -webkit-transition: color 2s, font-size 2s;
+  -moz-transition: color 2s, font-size 2s;
+  -o-transition: color 2s, font-size 2s;
+  transition: color 2s, font-size 2s;
+}
+
+.instagram {
+  color: #9b6954;
+}
+.instagram:hover {
+  font-size: 3em;
+  color: #9b6954;
+  -webkit-transition: color 2s, font-size 2s;
+  -moz-transition: color 2s, font-size 2s;
+  -o-transition: color 2s, font-size 2s;
+  transition: color 2s, font-size 2s;
+}
+.pinterest {
+  color: #c92228;
+}
+.pinterest:hover {
+  font-size: 3em;
+  color: #c92228;
+  -webkit-transition: color 2s, font-size 2s;
+  -moz-transition: color 2s, font-size 2s;
+  -o-transition: color 2s, font-size 2s;
+  transition: color 2s, font-size 2s;
+}
+.github {
+  color: #4078c0;
+}
+.github:hover {
+  font-size: 3em;
+  color: #4078c0;
+  -webkit-transition: color 2s, font-size 2s;
+  -moz-transition: color 2s, font-size 2s;
+  -o-transition: color 2s, font-size 2s;
+  transition: color 2s, font-size 2s;
+}
+.tumblr {
+  color: #35465c;
+}
+.tumblr:hover {
+  font-size: 3em;
+  color: #35465c;
+  -webkit-transition: color 2s, font-size 2s;
+  -moz-transition: color 2s, font-size 2s;
+  -o-transition: color 2s, font-size 2s;
+  transition: color 2s, font-size 2s;
+}
+.blogger:hover {
+  font-size: 3em;
+  color: #053eff;
+  -webkit-transition: color 2s, font-size 2s;
+  -moz-transition: color 2s, font-size 2s;
+  -o-transition: color 2s, font-size 2s;
+  transition: color 2s, font-size 2s;
+}
+.behance {
+  color: #053eff;
+}
+.behance:hover {
+  font-size: 3em;
+  color: #053eff;
+  -webkit-transition: color 2s, font-size 2s;
+  -moz-transition: color 2s, font-size 2s;
+  -o-transition: color 2s, font-size 2s;
+  transition: color 2s, font-size 2s;
+}
+.google-plus {
+  color: #d34836;
+}
+.google-plus:hover {
+  font-size: 3em;
+  color: #d34836;
+  -webkit-transition: color 2s, font-size 2s;
+  -moz-transition: color 2s, font-size 2s;
+  -o-transition: color 2s, font-size 2s;
+  transition: color 2s, font-size 2s;
+}
+.youtube {
+  color: #bb0000;
+}
+.youtube:hover {
+  font-size: 3em;
+  color: #bb0000;
+  -webkit-transition: color 2s, font-size 2s;
+  -moz-transition: color 2s, font-size 2s;
+  -o-transition: color 2s, font-size 2s;
+  transition: color 2s, font-size 2s;
+}
+.ok {
+  color: #ed812b;
+}
+.ok:hover {
+  color: #ed812b;
+  font-size: 3em;
+  -webkit-transition: color 2s, font-size 2s;
+  -moz-transition: color 2s, font-size 2s;
+  -o-transition: color 2s, font-size 2s;
+  transition: color 2s, font-size 2s;
+}
+footer a {
+  font-size: 1em;
+}
+
 .footer-background {
-  background: #1fd390;
-  background: -webkit-linear-gradient(#a7a7a7, #808080);
-  background: -moz-linear-gradient(#a7a7a7, #808080);
-  background: linear-gradient(#a7a7a7, #808080);
+  background: #ededed;
+  background: -webkit-linear-gradient(#ededed, #a6a6a6);
+  background: -moz-linear-gradient(#ededed, #a6a6a6);
+  background: linear-gradient(#ededed, #a6a6a6);
 }

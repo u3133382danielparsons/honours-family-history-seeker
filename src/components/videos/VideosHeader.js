@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import IconButton from 'material-ui/IconButton';
 import Subheader from 'material-ui/Subheader';
 
 const styles = {
@@ -14,7 +13,7 @@ class VideosHeader extends Component {
     return (
       <header>
         <Subheader>FAMILY HISTORY SEEKER</Subheader>
-        <IconButton tooltip="FAMILY HISTORY SEEKER VIDEOS PAGE">
+        <object title="FAMILY HISTORY SEEKER VIDEOS PAGE">
           <svg
             fill="#1fbcd3"
             height="48"
@@ -25,7 +24,7 @@ class VideosHeader extends Component {
             <path d="M0 0h24v24H0V0z" fill="none" />
             <path d="M21 3H3c-1.11 0-2 .89-2 2v12c0 1.1.89 2 2 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.11-.9-2-2-2zm0 14H3V5h18v12zm-5-6l-7 4V7z" />
           </svg>
-        </IconButton>
+        </object>
         <Subheader style={styles.subheaderColor}>VIDEOS</Subheader>
       </header>
     );

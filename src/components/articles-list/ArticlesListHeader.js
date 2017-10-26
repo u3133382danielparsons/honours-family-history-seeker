@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import IconButton from 'material-ui/IconButton';
 import Subheader from 'material-ui/Subheader';
 
 const styles = {
@@ -14,7 +13,7 @@ class UrlListHeader extends Component {
     return (
       <header>
         <Subheader>FAMILY HISTORY SEEKER</Subheader>
-        <IconButton tooltip="FAMILY HISTORY SEEKER ARTICLES LIST PAGE">
+        <object title="FAMILY HISTORY SEEKER ARTICLES LIST PAGE">
           <svg
             fill="#1fbcd3"
             height="48"
@@ -25,7 +24,7 @@ class UrlListHeader extends Component {
             <path d="M4 14h4v-4H4v4zm0 5h4v-4H4v4zM4 9h4V5H4v4zm5 5h12v-4H9v4zm0 5h12v-4H9v4zM9 5v4h12V5H9z" />
             <path d="M0 0h24v24H0z" fill="none" />
           </svg>
-        </IconButton>
+        </object>
         <Subheader style={styles.subheaderColor}>Article List</Subheader>
       </header>
     );
