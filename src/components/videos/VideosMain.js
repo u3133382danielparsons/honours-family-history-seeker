@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { fetchTube } from '../../actions/index';
-import SearchBar from './SearchBar';
 import VideoList from './List';
 import Detail from './Detail';
 
@@ -32,9 +31,7 @@ class VideosMain extends Component {
     return (
       <div className="container">
         <div className="row">
-          <div className="col-md-12">
-            <SearchBar onSearchTerm={this.search.bind(this)} />
-          </div>
+          <div className="col-md-12" />
         </div>
         <div className="row">
           <div className="col-md-8">

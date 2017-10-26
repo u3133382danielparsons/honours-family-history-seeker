@@ -15,7 +15,7 @@ class DataHeader extends Component {
         <Subheader>FAMILY HISTORY SEEKER</Subheader>
         <IconButton tooltip="FAMILY HISTORY SEEKER DATA VIZ PAGE">
           <svg
-            fill="#000000"
+            fill="#1fbcd3"
             height="48"
             viewBox="0 0 24 24"
             width="48"
