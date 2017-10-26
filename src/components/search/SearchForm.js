@@ -18,15 +18,15 @@ class SearchForm extends Component {
   }
   onFormSubmit(event) {
     event.preventDefault();
-
     this.props.fetchArticle(this.state.term);
-    alert(
-      'Searching the trove database for articles containing the name "' +
-        this.state.term +
-        '"'
-    );
-
     this.setState({ term: '' });
+
+    alert(
+      'Wait a few seconds while searching the trove database for articles containing the name"' +
+        this.state.term +
+        '"' +
+        '. Articles will appear below the search field. Make sure CORS is enabled.'
+    );
   }
   render() {
     return (
@@ -37,7 +37,7 @@ class SearchForm extends Component {
             <FormControl
               placeholder="Enter a name please . . ."
               className="placeholder-text"
-              value={this.state.term}
+              defaultValue={this.state.term}
               onChange={this.onInputChange}
             />
             <span className="input-group-btn">

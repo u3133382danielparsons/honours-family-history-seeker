@@ -51,7 +51,7 @@ class GalleryMain extends Component {
             </CardText>
           </Card>
         </div>
-
+        <hr />
         <div className="col-md-6">
           <Card>
             <CardMedia
@@ -81,7 +81,7 @@ class GalleryMain extends Component {
             <CardText />
           </Card>
         </div>
-
+        <hr />
         <div className="col-md-12">
           <Card>
             <CardMedia
@@ -106,7 +106,7 @@ class GalleryMain extends Component {
             <CardText />
           </Card>
         </div>
-
+        <hr />
         <div className="col-md-6">
           <Card>
             <CardMedia
@@ -132,7 +132,7 @@ class GalleryMain extends Component {
             </CardText>
           </Card>
         </div>
-
+        <hr />
         <div className="col-md-6">
           <Card>
             <CardMedia
@@ -158,7 +158,7 @@ class GalleryMain extends Component {
             <CardText />
           </Card>
         </div>
-
+        <hr />
         <div className="col-md-6">
           <Card>
             <CardMedia
@@ -171,22 +171,9 @@ class GalleryMain extends Component {
             >
               <img src={scarlettFamily} alt="The Scarlett Family" />
             </CardMedia>
-            <CardText>
-              <CardActions>
-                <FlatButton label="Chinese Australians">
-                  <a
-                    href="http://chineseaustralia.org/category/books/"
-                    rel="noreferrer noopener"
-                    target="_blank"
-                  >
-                    by Kate Bagnall
-                  </a>
-                </FlatButton>
-              </CardActions>
-            </CardText>
           </Card>
         </div>
-
+        <hr />
         <div className="col-md-6">
           <Card>
             <CardMedia overlay={<CardTitle subtitle="Catherine Spence" />}>
@@ -208,6 +195,7 @@ class GalleryMain extends Component {
             </CardText>
           </Card>
         </div>
+        <hr />
 
         <div className="col-md-12">
           <Card>
@@ -233,7 +221,7 @@ class GalleryMain extends Component {
             <CardText />
           </Card>
         </div>
-
+        <hr />
         <div className="col-md-6">
           <Card>
             <CardMedia overlay={<CardTitle subtitle="An 1850s Family" />}>
@@ -254,6 +242,7 @@ class GalleryMain extends Component {
             </CardText>
           </Card>
         </div>
+        <hr />
       </div>
     );
   }
