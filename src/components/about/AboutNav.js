@@ -12,7 +12,8 @@ import FamiliesIcon from 'material-ui/svg-icons/social/people';
 import PeopleIcon from 'material-ui/svg-icons/social/person';
 import DataVizIcon from 'material-ui/svg-icons/editor/insert-chart';
 import VideosIcon from 'material-ui/svg-icons/notification/ondemand-video';
-import ListIcon from 'material-ui/svg-icons/action/list';
+import FamilyMembersIcon from 'material-ui/svg-icons/social/people-outline';
+// import ListIcon from 'material-ui/svg-icons/action/list';
 import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
 import ProfileIcon from 'material-ui/svg-icons/action/perm-identity';
 
@@ -47,8 +48,11 @@ class AboutNav extends Component {
         <ListItem onTouchTap={this.handleClose} leftIcon={<VideosIcon />}>
           <Link to="/containers/Videos">Videos</Link>
         </ListItem>
-        <ListItem onTouchTap={this.handleClose} leftIcon={<ListIcon />}>
-          <a href="https://url-list.herokuapp.com">Url List</a>
+        <ListItem
+          onTouchTap={this.handleClose}
+          leftIcon={<FamilyMembersIcon />}
+        >
+          <Link to="/containers/FamilyMembers">Family Members</Link>
         </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<AddPostsIcon />}>
           <Link to="/containers/AddPosts">Add Posts</Link>

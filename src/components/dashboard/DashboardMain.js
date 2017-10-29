@@ -10,9 +10,11 @@ import FamiliesIcon from 'material-ui/svg-icons/social/people';
 import PeopleIcon from 'material-ui/svg-icons/social/person';
 import DataVizIcon from 'material-ui/svg-icons/editor/insert-chart';
 import VideosIcon from 'material-ui/svg-icons/notification/ondemand-video';
+import FamilyMembersIcon from 'material-ui/svg-icons/social/people-outline';
+
 import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
 import AboutIcon from 'material-ui/svg-icons/action/question-answer';
-import ListIcon from 'material-ui/svg-icons/action/list';
+// import ListIcon from 'material-ui/svg-icons/action/list';
 import ProfileIcon from 'material-ui/svg-icons/action/perm-identity';
 
 import IconButton from 'material-ui/IconButton';
@@ -153,6 +155,19 @@ class DashboardMain extends Component {
           </div>
 
           <div className="col-sm-6 col-lg-4">
+            <Link to="/containers/FamilyMembers">
+              <IconButton
+                iconStyle={styles.largeIcon}
+                style={styles.large}
+                tooltip="FAMILY MEMBERS PAGE"
+              >
+                <FamilyMembersIcon />
+                <Subheader>MEMBERS</Subheader>
+              </IconButton>
+            </Link>
+          </div>
+
+          <div className="col-sm-6 col-lg-4">
             <Link to="/containers/About">
               <IconButton
                 iconStyle={styles.largeIcon}
@@ -179,14 +194,14 @@ class DashboardMain extends Component {
           </div>
 
           <div className="col-sm-6 col-lg-4">
-            <Link to="https://url-list.herokuapp.com">
+            <Link to="/containers/FamilyMembers">
               <IconButton
                 iconStyle={styles.largeIcon}
                 style={styles.large}
-                tooltip="URL LIST PAGE"
+                tooltip="FAMILY MEMBERS PAGE"
               >
-                <ListIcon />
-                <Subheader>URL LIST</Subheader>
+                <FamilyMembersIcon />
+                <Subheader>MEMBERS</Subheader>
               </IconButton>
             </Link>
           </div>

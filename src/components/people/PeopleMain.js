@@ -11,6 +11,11 @@ import VidaAv from './img/vida.jpg';
 import MollyAv from './img/molly.jpg';
 import HicksAv from './img/hicks.jpg';
 import SpenceAv from './img/spence.jpg';
+import bryantTas from '../../img/bryant/Tasmania2015.jpg';
+import HollingworthAv from '../../img/hollingworth/HollingworthAv.jpg';
+import grayAv from '../../img/gray/grayAv.jpg';
+import patersonAv from '../../img/paterson/hat.jpg';
+import scarlettAv from '../../img/scarlett/scarlettAv.jpg';
 
 class PeopleMain extends Component {
   render() {
@@ -81,6 +86,48 @@ class PeopleMain extends Component {
                 primaryText="Catherine Helen Spence"
                 secondaryText={<p>South Australian Suffragist</p>}
                 leftAvatar={<Avatar src={SpenceAv} />}
+                rightIcon={<ActionInfo />}
+              />
+            </Link>
+            <Link to="../components/people/men/BryantBrothers">
+              <ListItem
+                primaryText="A Tale of Brothers - W.S. Griffith"
+                secondaryText={
+                  <p>Proud family began with theft of a coat and a gun</p>
+                }
+                leftAvatar={<Avatar src={bryantTas} />}
+                rightIcon={<ActionInfo />}
+              />
+            </Link>
+            <Link to="../components/people/men/ThomasHollingworth">
+              <ListItem
+                primaryText="Thomas Hollingworth"
+                secondaryText={<p>by Margaret Henderson.</p>}
+                leftAvatar={<Avatar src={HollingworthAv} />}
+                rightIcon={<ActionInfo />}
+              />
+            </Link>
+            <Link to="../components/people/men/HenryGray">
+              <ListItem
+                primaryText="Henry William Gray"
+                secondaryText={<p>Life Summary.</p>}
+                leftAvatar={<Avatar src={grayAv} />}
+                rightIcon={<ActionInfo />}
+              />
+            </Link>
+            <Link to="../components/people/men/BanjoPaterson">
+              <ListItem
+                primaryText="BanjoPaterson"
+                secondaryText={<p>A Bush Poet.</p>}
+                leftAvatar={<Avatar src={patersonAv} />}
+                rightIcon={<ActionInfo />}
+              />
+            </Link>
+            <Link to="../components/people/men/LordScarlett">
+              <ListItem
+                primaryText="James Scarlett, 1st Baron Abinger"
+                secondaryText={<p>Lord Abinger.</p>}
+                leftAvatar={<Avatar src={scarlettAv} />}
                 rightIcon={<ActionInfo />}
               />
             </Link>

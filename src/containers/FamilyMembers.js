@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 // src
-import ArticlesListNav from '../components/articles-list/ArticlesListNav';
-import ArticlesListHeader from '../components/articles-list/ArticlesListHeader';
-import ArticlesListMain from '../components/articles-list/ArticlesListMain';
+import FamilyMembersNav from '../components/family-members/FamilyMembersNav';
+import FamilyMembersHeader from '../components/family-members/FamilyMembersHeader';
+import FamilyMembersMain from '../components/family-members/FamilyMembersMain';
 
 import Footer from '../components/Footer';
 
@@ -33,7 +33,7 @@ const styles = {
   }
 };
 
-class UrlList extends Component {
+class FamilyMembers extends Component {
   render() {
     return (
       <div>
@@ -41,13 +41,13 @@ class UrlList extends Component {
           <ResponsiveDrawer openSecondary={false}>
             <div style={styles.drawer_container}>
               <div style={styles.drawer_header_container}>
-                <ArticlesListNav />
+                <FamilyMembersNav />
               </div>
             </div>
           </ResponsiveDrawer>
           <BodyContainer openSecondary={false}>
             <ResponsiveAppBar
-              title="ARTICLES"
+              title="FAMILY MEMBERS"
               iconElementRight={
                 <FlatButton
                   href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/ArticlesList.js"
@@ -66,10 +66,10 @@ class UrlList extends Component {
               }
             />
             <div className="BackgroundGradient">
-              <ArticlesListHeader />
+              <FamilyMembersHeader />
             </div>
-            <div className="container">
-              <ArticlesListMain />
+            <div className="container ">
+              <FamilyMembersMain />
             </div>
             <div className="footer-background">
               <Footer />
@@ -81,7 +81,7 @@ class UrlList extends Component {
   }
 }
 
-UrlList.propTypes = {
+FamilyMembers.propTypes = {
   toggleDrawerOpen: PropTypes.func.isRequired,
   toggleDrawerDock: PropTypes.func.isRequired,
   setResponsive: PropTypes.func.isRequired
@@ -109,4 +109,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(UrlList);
+export default connect(mapStateToProps, mapDispatchToProps)(FamilyMembers);

@@ -21,7 +21,7 @@ export const FETCH_ARTICLE = 'FETCH_ARTICLE';
 export const CREATE_POST = 'create_post';
 export const FETCH_POSTS = 'fetch_posts';
 const ROOT_URL = 'http://reduxblog.herokuapp.com/api';
-const POST_API_KEY = '?key=PAPERCLIP54321';
+const POST_API_KEY = '?key=DANIEL3133382';
 
 export function fetchPosts() {
   const request = axios.get(`${ROOT_URL}/posts${POST_API_KEY}`);
@@ -37,7 +37,7 @@ export function createPost(values, callback) {
     .post(`${ROOT_URL}/posts${POST_API_KEY}`, values)
     .then(() => callback());
   alert(
-    'The articles heading, the newspaper it was published in and the articles content have been sent to the POSTS page.'
+    'This is a demo component. It does not work. It should send the articles heading, the newspaper it was published in and the articles content to the POSTS page.'
   );
   return {
     type: CREATE_POST,

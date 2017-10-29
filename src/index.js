@@ -23,8 +23,7 @@ import Videos from './containers/Videos';
 import AddPosts from './containers/AddPosts';
 import About from './containers/About';
 import Profile from './containers/Profile';
-import ArticlesList from './containers/ArticlesList';
-
+import FamilyMembers from './containers/FamilyMembers';
 // People
 import Georgiana from './components/people/women/Georgiana';
 import Truganini from './components/people/women/Truganini';
@@ -34,6 +33,11 @@ import Vida from './components/people/women/Vida';
 import Molly from './components/people/women/Molly';
 import Hicks from './components/people/women/Hicks';
 import Spence from './components/people/women/Spence';
+import BryantBrothers from './components/people/men/BryantBrothers';
+import ThomasHollingworth from './components/people/men/ThomasHollingworth';
+import HenryGray from './components/people/men/HenryGray';
+import BanjoPaterson from './components/people/men/BanjoPaterson';
+import LordScarlett from './components/people/men/LordScarlett';
 
 // Material-ui theme
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
@@ -59,7 +63,7 @@ render(
           <Route path="/containers/Data" component={Data} />
           <Route path="/containers/Videos" component={Videos} />
           <Route path="/containers/AddPosts" component={AddPosts} />
-          <Route path="/containers/ArticlesList" component={ArticlesList} />
+          <Route path="/containers/FamilyMembers" component={FamilyMembers} />
           <Route path="/containers/Profile" component={Profile} />
           <Route path="/containers/About" component={About} />
 
@@ -80,6 +84,26 @@ render(
           <Route path="/components/people/women/Molly" component={Molly} />
           <Route path="/components/people/women/Hicks" component={Hicks} />
           <Route path="/components/people/women/Spence" component={Spence} />
+          <Route
+            path="/components/people/men/BryantBrothers"
+            component={BryantBrothers}
+          />
+          <Route
+            path="/components/people/men/ThomasHollingworth"
+            component={ThomasHollingworth}
+          />
+          <Route
+            path="/components/people/men/HenryGray"
+            component={HenryGray}
+          />
+          <Route
+            path="/components/people/men/BanjoPaterson"
+            component={BanjoPaterson}
+          />
+          <Route
+            path="/components/people/men/LordScarlett"
+            component={LordScarlett}
+          />
         </Switch>
       </BrowserRouter>
     </MuiThemeProvider>

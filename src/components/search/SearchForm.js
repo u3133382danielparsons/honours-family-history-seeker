@@ -30,7 +30,7 @@ class SearchForm extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="row">
         <h3 className="basic-search">Make a Basic Search of Trove</h3>
         <div className="search-form">
           <Form onSubmit={this.onFormSubmit} className="input-group">

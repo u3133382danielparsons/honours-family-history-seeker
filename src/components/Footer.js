@@ -22,7 +22,7 @@ class Footer extends Component {
             <ListItem>
               <h2>
                 <a
-                  href="https://www.facebook.com/daniel.parsons.96780671"
+                  href="https://www.facebook.com/Family-History-Seeker-1944050212516250/posts/"
                   target="_blank"
                   rel="noopener noreferrer"
                   data-toggle="tooltip"
@@ -67,7 +67,7 @@ class Footer extends Component {
             <ListItem>
               <h2>
                 <a
-                  href="https://au.pinterest.com/danpar20/"
+                  href="https://www.pinterest.com.au/danpar20/family-history-seeker/"
                   target="_blank"
                   rel="noopener noreferrer"
                   data-toggle="tooltip"
@@ -82,7 +82,7 @@ class Footer extends Component {
             <ListItem>
               <h2>
                 <a
-                  href="https://github.com/u3133382danielparsons"
+                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker"
                   target="_blank"
                   rel="noopener noreferrer"
                   data-toggle="tooltip"
@@ -97,7 +97,7 @@ class Footer extends Component {
             <ListItem>
               <h2>
                 <a
-                  href="https://danpar20.tumblr.com"
+                  href="https://family-history-seeker.tumblr.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   data-toggle="tooltip"
@@ -147,7 +147,7 @@ class Footer extends Component {
             <ListItem>
               <h2>
                 <a
-                  href="https://plus.google.com/u/0/110067645684855261427"
+                  href="https://get.google.com/albumarchive/111085325856135709554"
                   target="_blank"
                   rel="noopener noreferrer"
                   data-toggle="tooltip"
@@ -162,7 +162,7 @@ class Footer extends Component {
             <ListItem>
               <h2>
                 <a
-                  href="https://www.youtube.com/channel/UCTyL3c8vfQrQWLpNvMwlHYg?view_as=subscriber"
+                  href="https://www.youtube.com/channel/UCiKN4baVdI0BZahzsATJ5UQ/videos?view_as=subscriber"
                   target="_blank"
                   rel="noopener noreferrer"
                   data-toggle="tooltip"

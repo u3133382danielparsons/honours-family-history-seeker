@@ -435,7 +435,7 @@ class FamiliesMain extends Component {
                 </ListItem>
 
                 <ListItem>
-                  <CardHeader>Alice Emily Paterson formerly Walker</CardHeader>
+                  <CardHeader>Alice Emily Paterson (Walker)</CardHeader>
                   <CardText>
                     Alice Emily Paterson, wife to Andrew Barton 'Banjo'
                     Paterson. Born 1877 in Tenterfield, NSW, Australia, died in
@@ -457,7 +457,7 @@ class FamiliesMain extends Component {
                   </CardText>
                 </ListItem>
                 <ListItem>
-                  <CardHeader>Alice Emily Paterson formerly Walker</CardHeader>
+                  <CardHeader>Alice Emily Paterson (Walker)</CardHeader>
                   <CardText>Wife .</CardText>
                 </ListItem>
               </List>

@@ -14,7 +14,7 @@ object:hover {
   color: #4f4f4f;
 }
 .nav-link a:hover {
-  font-size: 1.61em;
+  font-size: 1.2em;
   -webkit-transition: color 2s, font-size 2s;
   -moz-transition: color 2s, font-size 2s;
   -o-transition: color 2s, font-size 2s;
@@ -69,6 +69,7 @@ h6 {
   font-size: 0;
 }
 
+/* Add Posts Form */
 .has-danger {
   color: #c73232;
 }
@@ -76,6 +77,8 @@ h6 {
 .placeholder-text {
   font-size: 18px;
 }
+
+/* Footer and Social Media Icons */
 .fb {
   color: #3b5998;
 }

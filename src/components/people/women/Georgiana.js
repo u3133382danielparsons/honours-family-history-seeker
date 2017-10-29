@@ -135,6 +135,16 @@ class Georgiana extends Component {
                         Women in colonial times
                       </a>
                     </FlatButton>
+                    <FlatButton label="Australian Dictionary of Biography">
+                      <a
+                        href="http://adb.anu.edu.au/biography/mccrae-georgiana-huntly-2392"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        Australian Dictionary of Biography - McCrae, Georgiana
+                        Huntly (1804–1890) - by Norman Cowper
+                      </a>
+                    </FlatButton>
                   </CardActions>
                 </Card>
               </Paper>
