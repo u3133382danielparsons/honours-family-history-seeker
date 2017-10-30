@@ -4,6 +4,7 @@ import axios from 'axios';
 const TROVE_API_KEY = 'q8db8806ufklvrfj';
 const TROVE_ROOT_URL = `http://api.trove.nla.gov.au/result?key=${TROVE_API_KEY}&zone=newspaper`;
 
+// src/components/SearchForm.js
 export function fetchArticle(name) {
   console.log('name = ', name);
   const url = `${TROVE_ROOT_URL}&q=${name}&encoding=json&reclevel=full`;

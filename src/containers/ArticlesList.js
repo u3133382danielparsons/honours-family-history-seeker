@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 // src
-import FamilyMembersNav from '../components/family-members/FamilyMembersNav';
-import FamilyMembersHeader from '../components/family-members/FamilyMembersHeader';
-import FamilyMembersMain from '../components/family-members/FamilyMembersMain';
+import ArticlesListNav from '../components/ArticlesList/ArticlesListNav';
+import ArticlesListHeader from '../components/ArticlesList/ArticlesListHeader';
+import ArticlesListMain from '../components/ArticlesList/ArticlesListMain';
 
 import Footer from '../components/Footer';
 
@@ -33,7 +33,7 @@ const styles = {
   }
 };
 
-class FamilyMembers extends Component {
+class ArticlesList extends Component {
   render() {
     return (
       <div>
@@ -41,16 +41,16 @@ class FamilyMembers extends Component {
           <ResponsiveDrawer openSecondary={false}>
             <div style={styles.drawer_container}>
               <div style={styles.drawer_header_container}>
-                <FamilyMembersNav />
+                <ArticlesListNav />
               </div>
             </div>
           </ResponsiveDrawer>
           <BodyContainer openSecondary={false}>
             <ResponsiveAppBar
-              title="FAMILY MEMBERS"
+              title="Articles List"
               iconElementRight={
                 <FlatButton
-                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/FamilyMembers.js"
+                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/ArticlesList.js"
                   target="_blank"
                   secondary={true}
                   icon={
@@ -66,10 +66,10 @@ class FamilyMembers extends Component {
               }
             />
             <div className="BackgroundGradient">
-              <FamilyMembersHeader />
+              <ArticlesListHeader />
             </div>
-            <div className="container ">
-              <FamilyMembersMain />
+            <div className="container">
+              <ArticlesListMain />
             </div>
             <div className="footer-background">
               <Footer />
@@ -81,7 +81,7 @@ class FamilyMembers extends Component {
   }
 }
 
-FamilyMembers.propTypes = {
+ArticlesList.propTypes = {
   toggleDrawerOpen: PropTypes.func.isRequired,
   toggleDrawerDock: PropTypes.func.isRequired,
   setResponsive: PropTypes.func.isRequired
@@ -109,4 +109,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(FamilyMembers);
+export default connect(mapStateToProps, mapDispatchToProps)(ArticlesList);

@@ -4,18 +4,17 @@ import { Link } from 'react-router-dom';
 
 import HomeIcon from 'material-ui/svg-icons/action/home';
 import SearchIcon from 'material-ui/svg-icons/action/search';
-import GalleryIcon from 'material-ui/svg-icons/image/photo-library';
-import PostsIcon from 'material-ui/svg-icons/action/chrome-reader-mode';
 import FamiliesIcon from 'material-ui/svg-icons/social/people';
+import FamilyMembersIcon from 'material-ui/svg-icons/social/people-outline';
 import PeopleIcon from 'material-ui/svg-icons/social/person';
 import DataVizIcon from 'material-ui/svg-icons/editor/insert-chart';
 import VideosIcon from 'material-ui/svg-icons/notification/ondemand-video';
-import FamilyMembersIcon from 'material-ui/svg-icons/social/people-outline';
-
-import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
 import AboutIcon from 'material-ui/svg-icons/action/question-answer';
-// import ListIcon from 'material-ui/svg-icons/action/list';
+import ListIcon from 'material-ui/svg-icons/action/list';
 import ProfileIcon from 'material-ui/svg-icons/action/perm-identity';
+import GalleryIcon from 'material-ui/svg-icons/image/photo-library';
+import PostsIcon from 'material-ui/svg-icons/action/chrome-reader-mode';
+import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
 
 import IconButton from 'material-ui/IconButton';
 import Subheader from 'material-ui/Subheader';
@@ -65,32 +64,6 @@ class DashboardMain extends Component {
           </div>
 
           <div className="col-sm-6 col-lg-4">
-            <Link to="/containers/Gallery">
-              <IconButton
-                iconStyle={styles.largeIcon}
-                style={styles.large}
-                tooltip="VIEW THE GALLERY"
-              >
-                <GalleryIcon />
-                <Subheader>GALLERY</Subheader>
-              </IconButton>
-            </Link>
-          </div>
-
-          <div className="col-sm-6 col-lg-4">
-            <Link to="/containers/Posts">
-              <IconButton
-                iconStyle={styles.largeIcon}
-                style={styles.large}
-                tooltip="READ POSTS"
-              >
-                <PostsIcon />
-                <Subheader>POSTS</Subheader>
-              </IconButton>
-            </Link>
-          </div>
-
-          <div className="col-sm-6 col-lg-4">
             <Link to="/containers/Families">
               <IconButton
                 iconStyle={styles.largeIcon}
@@ -99,19 +72,6 @@ class DashboardMain extends Component {
               >
                 <FamiliesIcon />
                 <Subheader>FAMILIES</Subheader>
-              </IconButton>
-            </Link>
-          </div>
-
-          <div className="col-sm-6 col-lg-4">
-            <Link to="/containers/AddPosts">
-              <IconButton
-                iconStyle={styles.largeIcon}
-                style={styles.large}
-                tooltip="ADD POSTS"
-              >
-                <AddPostsIcon />
-                <Subheader>ADD_POSTS</Subheader>
               </IconButton>
             </Link>
           </div>
@@ -155,14 +115,14 @@ class DashboardMain extends Component {
           </div>
 
           <div className="col-sm-6 col-lg-4">
-            <Link to="/containers/FamilyMembers">
+            <Link to="/containers/ArticlesList">
               <IconButton
                 iconStyle={styles.largeIcon}
                 style={styles.large}
                 tooltip="FAMILY MEMBERS PAGE"
               >
-                <FamilyMembersIcon />
-                <Subheader>MEMBERS</Subheader>
+                <ListIcon />
+                <Subheader>ARTICLES LIST</Subheader>
               </IconButton>
             </Link>
           </div>
@@ -194,14 +154,40 @@ class DashboardMain extends Component {
           </div>
 
           <div className="col-sm-6 col-lg-4">
-            <Link to="/containers/FamilyMembers">
+            <Link to="/containers/Gallery">
               <IconButton
                 iconStyle={styles.largeIcon}
                 style={styles.large}
-                tooltip="FAMILY MEMBERS PAGE"
+                tooltip="VIEW THE GALLERY"
               >
-                <FamilyMembersIcon />
-                <Subheader>MEMBERS</Subheader>
+                <GalleryIcon />
+                <Subheader>GALLERY</Subheader>
+              </IconButton>
+            </Link>
+          </div>
+
+          <div className="col-sm-6 col-lg-4">
+            <Link to="/containers/Posts">
+              <IconButton
+                iconStyle={styles.largeIcon}
+                style={styles.large}
+                tooltip="READ POSTS"
+              >
+                <PostsIcon />
+                <Subheader>POSTS</Subheader>
+              </IconButton>
+            </Link>
+          </div>
+
+          <div className="col-sm-6 col-lg-4">
+            <Link to="/containers/AddPosts">
+              <IconButton
+                iconStyle={styles.largeIcon}
+                style={styles.large}
+                tooltip="ADD POSTS"
+              >
+                <AddPostsIcon />
+                <Subheader>ADD_POSTS</Subheader>
               </IconButton>
             </Link>
           </div>

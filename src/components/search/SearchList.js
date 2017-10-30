@@ -844,8 +844,8 @@ class SearchList extends Component {
   }
 }
 
-function mapStateToProps({ articles, articlesTwo }) {
-  return { articles, articlesTwo };
+function mapStateToProps({ articles }) {
+  return { articles };
 }
 
 export default connect(mapStateToProps)(SearchList);

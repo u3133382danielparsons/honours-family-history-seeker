@@ -14,16 +14,18 @@ import { responsiveStoreEnhancer } from 'redux-responsive';
 import Home from './Home.js';
 import Dashboard from './containers/Dashboard';
 import Search from './containers/Search';
-import Gallery from './containers/Gallery';
-import Posts from './containers/Posts';
 import Families from './containers/Families';
+import FamilyMembers from './containers/FamilyMembers';
 import People from './containers/People';
 import Data from './containers/Data';
 import Videos from './containers/Videos';
-import AddPosts from './containers/AddPosts';
+import ArticlesList from './containers/ArticlesList';
 import About from './containers/About';
 import Profile from './containers/Profile';
-import FamilyMembers from './containers/FamilyMembers';
+import Gallery from './containers/Gallery';
+import Posts from './containers/Posts';
+import AddPosts from './containers/AddPosts';
+
 // People
 import Georgiana from './components/people/women/Georgiana';
 import Truganini from './components/people/women/Truganini';
@@ -56,16 +58,17 @@ render(
           <Route exact path="/" component={Home} />
           <Route path="/containers/Dashboard" component={Dashboard} />
           <Route path="/containers/Search" component={Search} />
-          <Route path="/containers/Gallery" component={Gallery} />
-          <Route path="/containers/Posts" component={Posts} />
           <Route path="/containers/Families" component={Families} />
+          <Route path="/containers/FamilyMembers" component={FamilyMembers} />
           <Route path="/containers/People" component={People} />
           <Route path="/containers/Data" component={Data} />
           <Route path="/containers/Videos" component={Videos} />
-          <Route path="/containers/AddPosts" component={AddPosts} />
-          <Route path="/containers/FamilyMembers" component={FamilyMembers} />
+          <Route path="/containers/ArticlesList" component={ArticlesList} />
           <Route path="/containers/Profile" component={Profile} />
           <Route path="/containers/About" component={About} />
+          <Route path="/containers/Gallery" component={Gallery} />
+          <Route path="/containers/Posts" component={Posts} />
+          <Route path="/containers/AddPosts" component={AddPosts} />
 
           <Route
             path="/components/people/women/Georgiana"

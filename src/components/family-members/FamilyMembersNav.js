@@ -6,16 +6,16 @@ import { List, ListItem } from 'material-ui/List';
 import HomeIcon from 'material-ui/svg-icons/action/home';
 import DashboardIcon from 'material-ui/svg-icons/action/dashboard';
 import SearchIcon from 'material-ui/svg-icons/action/search';
-import GalleryIcon from 'material-ui/svg-icons/image/photo-library';
-import PostsIcon from 'material-ui/svg-icons/action/chrome-reader-mode';
 import FamiliesIcon from 'material-ui/svg-icons/social/people';
 import PeopleIcon from 'material-ui/svg-icons/social/person';
 import DataVizIcon from 'material-ui/svg-icons/editor/insert-chart';
 import VideosIcon from 'material-ui/svg-icons/notification/ondemand-video';
-import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
-// import ListIcon from 'material-ui/svg-icons/action/list';
+import ListIcon from 'material-ui/svg-icons/action/list';
 import ProfileIcon from 'material-ui/svg-icons/action/perm-identity';
 import AboutIcon from 'material-ui/svg-icons/action/question-answer';
+import GalleryIcon from 'material-ui/svg-icons/image/photo-library';
+import PostsIcon from 'material-ui/svg-icons/action/chrome-reader-mode';
+import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
 
 class FamilyMembersNav extends Component {
   render() {
@@ -30,12 +30,6 @@ class FamilyMembersNav extends Component {
         <ListItem onTouchTap={this.handleClose} leftIcon={<SearchIcon />}>
           <Link to="/containers/Search">Search</Link>
         </ListItem>
-        <ListItem onTouchTap={this.handleClose} leftIcon={<GalleryIcon />}>
-          <Link to="/containers/Gallery">Gallery</Link>
-        </ListItem>
-        <ListItem onTouchTap={this.handleClose} leftIcon={<PostsIcon />}>
-          <Link to="/containers/Posts">Posts</Link>
-        </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<FamiliesIcon />}>
           <Link to="/containers/Families">Families</Link>
         </ListItem>
@@ -48,15 +42,23 @@ class FamilyMembersNav extends Component {
         <ListItem onTouchTap={this.handleClose} leftIcon={<VideosIcon />}>
           <Link to="/containers/Videos">Videos</Link>
         </ListItem>
-        <ListItem onTouchTap={this.handleClose} leftIcon={<AddPostsIcon />}>
-          <Link to="/containers/AddPosts">Add Posts</Link>
+        <ListItem onTouchTap={this.handleClose} leftIcon={<ListIcon />}>
+          <Link to="/containers/ArticlesList">Articles List</Link>
         </ListItem>
-
         <ListItem onTouchTap={this.handleClose} leftIcon={<ProfileIcon />}>
           <Link to="/containers/Profile">Profile</Link>
         </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<AboutIcon />}>
           <Link to="/containers/About">About</Link>
+        </ListItem>
+        <ListItem onTouchTap={this.handleClose} leftIcon={<GalleryIcon />}>
+          <Link to="/containers/Gallery">Gallery</Link>
+        </ListItem>
+        <ListItem onTouchTap={this.handleClose} leftIcon={<PostsIcon />}>
+          <Link to="/containers/Posts">Posts</Link>
+        </ListItem>
+        <ListItem onTouchTap={this.handleClose} leftIcon={<AddPostsIcon />}>
+          <Link to="/containers/AddPosts">Add Posts</Link>
         </ListItem>
       </List>
     );

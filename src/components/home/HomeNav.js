@@ -5,18 +5,18 @@ import { List, ListItem } from 'material-ui/List';
 // Sidebar Icons
 import DashboardIcon from 'material-ui/svg-icons/action/dashboard';
 import SearchIcon from 'material-ui/svg-icons/action/search';
-import GalleryIcon from 'material-ui/svg-icons/image/photo-library';
-import PostsIcon from 'material-ui/svg-icons/action/chrome-reader-mode';
 import FamiliesIcon from 'material-ui/svg-icons/social/people';
+import FamilyMembersIcon from 'material-ui/svg-icons/social/people-outline';
 import PeopleIcon from 'material-ui/svg-icons/social/person';
 import DataVizIcon from 'material-ui/svg-icons/editor/insert-chart';
 import VideosIcon from 'material-ui/svg-icons/notification/ondemand-video';
 // import ArticlesListIcon from 'material-ui/svg-icons/action/view-list';
-import FamilyMembersIcon from 'material-ui/svg-icons/social/people-outline';
-import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
 import ListIcon from 'material-ui/svg-icons/action/list';
 import ProfileIcon from 'material-ui/svg-icons/action/perm-identity';
 import AboutIcon from 'material-ui/svg-icons/action/question-answer';
+import GalleryIcon from 'material-ui/svg-icons/image/photo-library';
+import PostsIcon from 'material-ui/svg-icons/action/chrome-reader-mode';
+import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
 
 class HomeNav extends Component {
   render() {
@@ -28,14 +28,14 @@ class HomeNav extends Component {
         <ListItem onTouchTap={this.handleClose} leftIcon={<SearchIcon />}>
           <Link to="/containers/Search">Search</Link>
         </ListItem>
-        <ListItem onTouchTap={this.handleClose} leftIcon={<GalleryIcon />}>
-          <Link to="/containers/Gallery">Gallery</Link>
-        </ListItem>
-        <ListItem onTouchTap={this.handleClose} leftIcon={<PostsIcon />}>
-          <Link to="/containers/Posts">Posts</Link>
-        </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<FamiliesIcon />}>
           <Link to="/containers/Families">Families</Link>
+        </ListItem>
+        <ListItem
+          onTouchTap={this.handleClose}
+          leftIcon={<FamilyMembersIcon />}
+        >
+          <Link to="/containers/FamilyMembers">Family Members</Link>
         </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<PeopleIcon />}>
           <Link to="/containers/People">People</Link>
@@ -46,24 +46,23 @@ class HomeNav extends Component {
         <ListItem onTouchTap={this.handleClose} leftIcon={<VideosIcon />}>
           <Link to="/containers/Videos">Videos</Link>
         </ListItem>
-        <ListItem
-          onTouchTap={this.handleClose}
-          leftIcon={<FamilyMembersIcon />}
-        >
-          <Link to="/containers/FamilyMembers">Family Members</Link>
-        </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<ListIcon />}>
           <Link to="/containers/ArticlesList">Articles List</Link>
         </ListItem>
-        <ListItem onTouchTap={this.handleClose} leftIcon={<AddPostsIcon />}>
-          <Link to="/containers/AddPosts">Add Posts</Link>
-        </ListItem>
-
         <ListItem onTouchTap={this.handleClose} leftIcon={<ProfileIcon />}>
           <Link to="/containers/Profile">Profile</Link>
         </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<AboutIcon />}>
           <Link to="/containers/About">About</Link>
+        </ListItem>
+        <ListItem onTouchTap={this.handleClose} leftIcon={<GalleryIcon />}>
+          <Link to="/containers/Gallery">Gallery</Link>
+        </ListItem>
+        <ListItem onTouchTap={this.handleClose} leftIcon={<PostsIcon />}>
+          <Link to="/containers/Posts">Posts</Link>
+        </ListItem>
+        <ListItem onTouchTap={this.handleClose} leftIcon={<AddPostsIcon />}>
+          <Link to="/containers/AddPosts">Add Posts</Link>
         </ListItem>
       </List>
     );
