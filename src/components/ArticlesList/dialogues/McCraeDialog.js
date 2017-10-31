@@ -43,7 +43,7 @@ class McCraeDialog extends Component {
             onRequestClose={this.handleClose}
           >
             <a
-              href="http://trove.nla.gov.au/newspaper/article/118290120?searchTerm=Georgiana%20McCrae&searchLimits="
+              href="http://trove.nla.gov.au/newspaper/article/118290120?browse=ndp%3Abrowse%2Ftitle%2FC%2Ftitle%2F11%2F1994%2F10%2F08%2Fpage%2F13362254%2Farticle%2F118290120"
               rel="noreferrer noopener"
               target="_blank"
             >

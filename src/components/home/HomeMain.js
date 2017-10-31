@@ -7,9 +7,21 @@ import {
   CardTitle,
   CardActions
 } from 'material-ui/Card';
+import { List, ListItem } from 'material-ui/List';
 import FlatButton from 'material-ui/FlatButton';
 
 // Images from 'src/img'
+import McCraeAv from '../../components/people/img/georgiana.jpg';
+import McCraeAuthurs from '../../img/McCrae/GeorgianaMcCraeArthursSeat1846ca.jpg';
+import GordonFifth from '../../img/McCrae/GeorgeFifth.jpg';
+import MotherMcCrae from '../../img/McCrae/motherMcCrae.jpg';
+import GordonFourth from '../../img/McCrae/fourthGordon.jpg';
+import JaneGordon from '../../img/McCrae/janeGordon.jpg';
+import Duchess from '../../img/McCrae/duchess.jpg';
+import Eliza from '../../img/McCrae/eliza.jpg';
+import Charles from '../../img/McCrae/charles.jpg';
+import Bathurst from '../../img/McCrae/Bathurst.jpg';
+import CharlesGordon from '../../img/McCrae/charlesGordon.jpg';
 import grayFamily from '../../img/gray/grayFamily.jpg';
 import grayAv from '../../img/gray/grayAv.jpg';
 import grayArticle from '../../img/gray/grayArtP1.png';
@@ -46,6 +58,148 @@ class HomeMain extends Component {
         <div className="row">
           <div className="col-md-6 col-lg-4">
             <Card>
+              <a
+                href="https://www.geni.com/people/Georgiana-McCrae/6000000043956217248?through=6000000002188526287"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                <CardHeader
+                  title="Georgiana McCrae"
+                  subtitle="Gifted woman who suffered outside of her natural milieu"
+                  avatar={McCraeAv}
+                />
+              </a>
+              <CardText>
+                <CardTitle title="Family Home" subtitle="Authurs Chair" />
+
+                <img src={McCraeAuthurs} alt="McCrae - Authurs Chair 1846ca" />
+                <a
+                  href="https://www.geni.com/people/General-George-Gordon-5th-Duke-of-Gordon/6000000002188526287?through=6000000043956217248"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  <CardHeader
+                    title="Father of Georgiana McCrae"
+                    subtitle="George Gordon 5th Duke of Gordon"
+                    avatar={GordonFifth}
+                  />
+                </a>
+                <a
+                  href="https://www.geni.com/people/Elizabeth-Gordon-Duchess-of-Gordon/6000000008630274289?through=6000000002188526287"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  <CardHeader
+                    title="Mother of Georgiana McCrae"
+                    subtitle="Elizabeth Margaret Gordon (Brodie), Duchess of Gordon"
+                    avatar={MotherMcCrae}
+                  />
+                </a>
+                <a
+                  href="https://www.geni.com/people/Alexander-Gordon-4th-Duke-of-Gordon/6000000003714053753?through=6000000002188526287"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  <CardHeader
+                    title="Father of George Gordon"
+                    subtitle="Alexander Gordon, 4th Duke of Gordon"
+                    avatar={GordonFourth}
+                  />
+                </a>
+                <a
+                  href="https://www.geni.com/people/Jane-Gordon-Duchess-of-Gordon/6000000002188526277?through=6000000003714053753"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  <CardHeader
+                    title="Duchess of Gordon"
+                    subtitle="Jane Gordon (Maxwell), Duchess of Gordon"
+                    avatar={JaneGordon}
+                  />
+                </a>
+                <a
+                  href="https://www.geni.com/people/Charles-Lennox-4th-Duke-of-Richmond-4th-Duke-of-Aubigny/6000000002333825058?through=6000000003484265483"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  <CardHeader
+                    title="Daughter of Alexander Gordon, 4th Duke of Gordon and Jane Gordon"
+                    subtitle="Charlotte Lennox, Duchess of Richmond"
+                    avatar={Duchess}
+                  />
+                </a>
+                <a
+                  href="https://www.geni.com/people/Charlotte-Lennox-Duchess-of-Richmond/6000000003484265483?through=6000000003714053753"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  <CardHeader
+                    title="Husband of Charlotte Lennox, Duchess of Richmond"
+                    subtitle="Charles Lennox, 4th Duke of Richmond, 4th Duke of Aubigny"
+                    avatar={Charles}
+                  />
+                </a>
+                <a
+                  href="https://www.geni.com/people/Charles-Gordon-Lennox-5th-Duke-of-Richmond/6000000003455094926?through=6000000002333825058"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  <CardHeader
+                    title="Father of Charles Lennox"
+                    subtitle="Charles Gordon-Lennox, 5th Duke of Richmond"
+                    avatar={CharlesGordon}
+                  />
+                </a>
+                <a
+                  href="https://www.geni.com/people/Georgina-Countess-Bathurst/6000000002188493290?through=6000000002333825058"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  <CardHeader
+                    title="Sister to Charles-Lennox"
+                    subtitle="Georgina Bathurst (Lennox)"
+                    avatar={Bathurst}
+                  />
+                </a>
+              </CardText>
+              <CardTitle
+                title="Painting by Georgiana McCrae"
+                subtitle="Portrait of Eliza, 1845"
+              />
+              <CardText>
+                <img src={Eliza} alt="Portrait of Eliza, 1845" />
+              </CardText>
+              <CardActions>
+                <List>
+                  <ListItem>
+                    <FlatButton label="National Trust">
+                      <a
+                        href="https://www.nationaltrust.org.au/collections/georgiana-mccrae-artist/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        Georgiana McCrae - Artist
+                      </a>
+                    </FlatButton>
+                  </ListItem>
+                  <ListItem>
+                    <FlatButton label="TROVE">
+                      <a
+                        href="http://trove.nla.gov.au/newspaper/article/118290120?browse=ndp%3Abrowse%2Ftitle%2FC%2Ftitle%2F11%2F1994%2F10%2F08%2Fpage%2F13362254%2Farticle%2F118290120"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        Excellent Painter
+                      </a>
+                    </FlatButton>
+                  </ListItem>
+                </List>
+              </CardActions>
+            </Card>
+            <hr />
+          </div>
+          <div className="col-md-6 col-lg-4">
+            <Card>
               <CardHeader
                 title="Sir James Scarlett"
                 subtitle="James Scarlett, 1st Baron Abinger, (13 December 1769 – 17 April 1844)"
@@ -66,26 +220,30 @@ class HomeMain extends Component {
                 <img src={scarlettArticle} alt="The Scarlett Family" />
               </CardText>
               <CardActions>
-                <FlatButton label="Trove">
-                  <a
-                    href="http://trove.nla.gov.au/newspaper/article/154972483?browse=ndp%3Abrowse%2Ftitle%2FA%2Ftitle%2F809%2F1917%2F06%2F26%2Fpage%2F18601136%2Farticle%2F154972483"
-                    rel="noreferrer noopener"
-                    target="_blank"
-                  >
-                    The Melbourne Age, Tuesday 26th June, 1917
-                  </a>
-                </FlatButton>
-              </CardActions>
-              <CardActions>
-                <FlatButton label="Wikipedia">
-                  <a
-                    href="https://en.wikipedia.org/wiki/James_Scarlett,_1st_Baron_Abinger"
-                    rel="noreferrer noopener"
-                    target="_blank"
-                  >
-                    James Scarlett, 1st Baron Abinger
-                  </a>
-                </FlatButton>
+                <List>
+                  <ListItem>
+                    <FlatButton label="Wikipedia">
+                      <a
+                        href="https://en.wikipedia.org/wiki/James_Scarlett,_1st_Baron_Abinger"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        James Scarlett, 1st Baron Abinger
+                      </a>
+                    </FlatButton>
+                  </ListItem>
+                  <ListItem>
+                    <FlatButton label="TROVE">
+                      <a
+                        href="http://trove.nla.gov.au/newspaper/article/154972483?browse=ndp%3Abrowse%2Ftitle%2FA%2Ftitle%2F809%2F1917%2F06%2F26%2Fpage%2F18601136%2Farticle%2F154972483"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        THE SCARLETT FAMILY
+                      </a>
+                    </FlatButton>
+                  </ListItem>
+                </List>
               </CardActions>
             </Card>
             <hr />
@@ -123,26 +281,32 @@ class HomeMain extends Component {
                 />
               </CardText>
               <CardActions>
-                <FlatButton label="Trove">
-                  <a
-                    href="http://trove.nla.gov.au/newspaper/article/190722784?browse=ndp%3Abrowse%2Ftitle%2FT%2Ftitle%2F1007%2F1922%2F02%2F08%2Fpage%2F21492780%2Farticle%2F190722784"
-                    rel="noreferrer noopener"
-                    target="_blank"
-                    alt="From Trove. The Tweed Daily, Mullimbimby, Feburary 8, 1922."
-                  >
-                    The Tweed Daily, Mullimbimby, Feburary 8, 1922.
-                  </a>
-                </FlatButton>
-                <FlatButton label="Ancestory">
-                  <a
-                    href="http://freepages.history.rootsweb.ancestry.com/~aliens/chapter_2.htm"
-                    rel="noreferrer noopener"
-                    target="_blank"
-                    alt="ALIENS OF THE TWEED AND BRUNSWICK"
-                  >
-                    ALIENS OF THE TWEED AND BRUNSWICK
-                  </a>
-                </FlatButton>
+                <List>
+                  <ListItem>
+                    <FlatButton label="Trove">
+                      <a
+                        href="http://trove.nla.gov.au/newspaper/article/190722784?browse=ndp%3Abrowse%2Ftitle%2FT%2Ftitle%2F1007%2F1922%2F02%2F08%2Fpage%2F21492780%2Farticle%2F190722784"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                        alt="From Trove. The Tweed Daily, Mullimbimby, Feburary 8, 1922."
+                      >
+                        The Tweed Daily, Mullimbimby, Feburary 8, 1922.
+                      </a>
+                    </FlatButton>
+                  </ListItem>
+                  <ListItem>
+                    <FlatButton label="Ancestory">
+                      <a
+                        href="http://freepages.history.rootsweb.ancestry.com/~aliens/chapter_2.htm"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                        alt="ALIENS OF THE TWEED AND BRUNSWICK"
+                      >
+                        ALIENS OF THE TWEED AND BRUNSWICK
+                      </a>
+                    </FlatButton>
+                  </ListItem>
+                </List>
               </CardActions>
             </Card>
             <hr />
@@ -189,16 +353,32 @@ class HomeMain extends Component {
                 Van Diemen’s Land also discouraged the poorer person.
               </CardText>
               <CardActions>
-                <FlatButton label="Tasmanian Ancestory p.8.">
-                  <a
-                    href="http://www.tasfhs.org/Volume%2019.pdf"
-                    rel="noreferrer noopener"
-                    target="_blank"
-                    alt="A TALE OF FOUR BROTHERS"
-                  >
-                    A TALE OF FOUR BROTHERS
-                  </a>
-                </FlatButton>
+                <List>
+                  <ListItem>
+                    <FlatButton label="Tasmanian Ancestory p.8.">
+                      <a
+                        href="http://www.tasfhs.org/Volume%2019.pdf"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                        alt="A TALE OF FOUR BROTHERS"
+                      >
+                        A TALE OF FOUR BROTHERS
+                      </a>
+                    </FlatButton>
+                  </ListItem>
+                  <ListItem>
+                    <FlatButton label="Edmund Bryant">
+                      <a
+                        href="http://trove.nla.gov.au/newspaper/article/8790805?browse=ndp%3Abrowse%2Ftitle%2FH%2Ftitle%2F22%2F1825%2F10%2F29%2Fpage%2F679705%2Farticle%2F8790805"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                        alt=" Hobart Town Gazette, Sat 29 Oct 1825  Page 2"
+                      >
+                        SHIPPING INTELLIGENCE
+                      </a>
+                    </FlatButton>
+                  </ListItem>
+                </List>
               </CardActions>
             </Card>
             <hr />
@@ -266,16 +446,32 @@ class HomeMain extends Component {
                 <img src={HighPriestess} alt="Courtesy of Trove" />
               </CardMedia>
               <CardActions>
-                <FlatButton label="CATHERINE HELEN SPENCE">
-                  <a
-                    href="http://trove.nla.gov.au/newspaper/article/166449131?browse=ndp%3Abrowse%2Ftitle%2FQ%2Ftitle%2F824%2F1899%2F10%2F19%2Fpage%2F19461171%2Farticle%2F166449131"
-                    rel="noreferrer noopener"
-                    target="_blank"
-                    alt="wikitree"
-                  >
-                    HIGH PRIESTESS OF EFFECTIVE VOTING
-                  </a>
-                </FlatButton>
+                <List>
+                  <ListItem>
+                    <FlatButton label="CATHERINE HELEN SPENCE">
+                      <a
+                        href="http://trove.nla.gov.au/newspaper/article/166449131?browse=ndp%3Abrowse%2Ftitle%2FQ%2Ftitle%2F824%2F1899%2F10%2F19%2Fpage%2F19461171%2Farticle%2F166449131"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                        alt="wikitree"
+                      >
+                        HIGH PRIESTESS OF EFFECTIVE VOTING
+                      </a>
+                    </FlatButton>
+                  </ListItem>
+                  <ListItem>
+                    <FlatButton label="CATHERINE HELEN SPENCE">
+                      <a
+                        href="http://trove.nla.gov.au/newspaper/article/126770670?browse=ndp%3Abrowse%2Ftitle%2FM%2Ftitle%2F493%2F1911%2F08%2F19%2Fpage%2F13717221%2Farticle%2F126770670"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                        alt="wikitree"
+                      >
+                        THE CATHERINE SPENCE MEMORIAL.
+                      </a>
+                    </FlatButton>
+                  </ListItem>
+                </List>
               </CardActions>
             </Card>
             <hr />
@@ -340,26 +536,32 @@ class HomeMain extends Component {
                 Byron Shire Council Chambers.
               </CardText>
               <CardActions>
-                <FlatButton label="Hollingworth - Family of Timber Workers">
-                  <a
-                    href="https://www.northernstar.com.au/news/family-of-timber-workers/1873221/"
-                    rel="noreferrer noopener"
-                    target="_blank"
-                    alt="Family of Timber Workers"
-                  >
-                    FAMILY OF TIMBER WORKERS
-                  </a>
-                </FlatButton>
-                <FlatButton label="WIKITREE - HOLLINGWORTH FAMILY TREE">
-                  <a
-                    href="https://www.wikitree.com/genealogy/HOLLINGWORTH"
-                    rel="noreferrer noopener"
-                    target="_blank"
-                    alt="wikitree"
-                  >
-                    HOLLINGWORTH FAMILY TREE
-                  </a>
-                </FlatButton>
+                <List>
+                  <ListItem>
+                    <FlatButton label="Hollingworth">
+                      <a
+                        href="https://www.northernstar.com.au/news/family-of-timber-workers/1873221/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                        alt="Family of Timber Workers"
+                      >
+                        FAMILY OF TIMBER WORKERS
+                      </a>
+                    </FlatButton>
+                  </ListItem>
+                  <ListItem>
+                    <FlatButton label="WIKITREE">
+                      <a
+                        href="https://www.wikitree.com/genealogy/HOLLINGWORTH"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                        alt="wikitree"
+                      >
+                        HOLLINGWORTH FAMILY TREE
+                      </a>
+                    </FlatButton>
+                  </ListItem>
+                </List>
               </CardActions>
             </Card>
             <hr />
@@ -400,16 +602,32 @@ class HomeMain extends Component {
                 <img src={Clancy} alt="Australia's Great Poet" />
               </CardText>
               <CardActions>
-                <FlatButton label="WIKITREE - PATERSON FAMILY TREE">
-                  <a
-                    href="https://www.wikitree.com/genealogy/PATERSON"
-                    rel="noreferrer noopener"
-                    target="_blank"
-                    alt="wikitree"
-                  >
-                    PATERSON FAMILY TREE
-                  </a>
-                </FlatButton>
+                <List>
+                  <ListItem>
+                    <FlatButton label="WIKITREE">
+                      <a
+                        href="https://www.wikitree.com/genealogy/PATERSON"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                        alt="wikitree"
+                      >
+                        PATERSON FAMILY TREE
+                      </a>
+                    </FlatButton>
+                  </ListItem>
+                  <ListItem>
+                    <FlatButton label="BANJO PATTERSON">
+                      <a
+                        href="http://trove.nla.gov.au/newspaper/article/101278457?browse=ndp%3Abrowse%2Ftitle%2FL%2Ftitle%2F423%2F1912%2F05%2F13%2Fpage%2F10533414%2Farticle%2F101278457"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                        alt="Trove"
+                      >
+                        MR. A. B. (BANGO) PATTERSON
+                      </a>
+                    </FlatButton>
+                  </ListItem>
+                </List>
               </CardActions>
             </Card>
             <hr />

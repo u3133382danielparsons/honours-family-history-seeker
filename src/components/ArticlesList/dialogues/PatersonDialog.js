@@ -43,7 +43,7 @@ class PatersonDialog extends Component {
             onRequestClose={this.handleClose}
           >
             <a
-              href="http://trove.nla.gov.au/newspaper/article/101278457?searchTerm=Bango%20Paterson&searchLimits="
+              href="http://trove.nla.gov.au/newspaper/article/101278457?browse=ndp%3Abrowse%2Ftitle%2FL%2Ftitle%2F423%2F1912%2F05%2F13%2Fpage%2F10533414%2Farticle%2F101278457"
               rel="noreferrer noopener"
               target="_blank"
             >

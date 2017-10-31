@@ -43,7 +43,7 @@ class SpenceDialog extends Component {
             onRequestClose={this.handleClose}
           >
             <a
-              href="http://trove.nla.gov.au/newspaper/article/126770670?searchTerm=Catherine%20Spence&searchLimits="
+              href="http://trove.nla.gov.au/newspaper/article/126770670?browse=ndp%3Abrowse%2Ftitle%2FM%2Ftitle%2F493%2F1911%2F08%2F19%2Fpage%2F13717221%2Farticle%2F126770670"
               rel="noreferrer noopener"
               target="_blank"
             >
