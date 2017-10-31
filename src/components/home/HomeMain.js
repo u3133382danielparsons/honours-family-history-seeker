@@ -50,6 +50,8 @@ import Sawmill from '../../img/hollingworth/sawmill.jpg';
 import JohnSpenceAv from '../../img/spence/John-Brodie-Spence.jpg';
 import CatherineSpence from '../../img/spence/Catherine-Spence.jpg';
 import HighPriestess from '../../img/spence/high-priestess.png';
+import ChinnAv from '../../components/people/img/ChinHockUnidentifiable.jpg';
+import ChinnFamily from '../../img/chinn.jpg';
 
 class HomeMain extends Component {
   render() {
@@ -375,6 +377,77 @@ class HomeMain extends Component {
                         alt=" Hobart Town Gazette, Sat 29 Oct 1825  Page 2"
                       >
                         SHIPPING INTELLIGENCE
+                      </a>
+                    </FlatButton>
+                  </ListItem>
+                </List>
+              </CardActions>
+            </Card>
+            <hr />
+          </div>
+
+          <div className="col-md-6 col-lg-4">
+            <Card>
+              <CardHeader
+                title="Kum Mow Chinn"
+                subtitle="Chinese Australian Family"
+                avatar={ChinnAv}
+              />
+              <CardMedia
+                overlay={
+                  <CardTitle
+                    title="Wedding of Elsie May Chinn and Kum Mow"
+                    subtitle="Sydney, 1917"
+                  />
+                }
+              >
+                <img src={ChinnFamily} alt="The Kum Mow Chinn Family" />
+              </CardMedia>
+              <CardTitle
+                title="Chinese Wedding in Sydney"
+                subtitle="The Kum Mow Chinn Family"
+              />
+              <CardText>
+                For the greater part of last week the Chinese community of
+                Sydney were having a royal time, the occasion being a marriage
+                celebrated in both European and Chinese fashions. Money was not
+                spared to make the event a memorable one, and many novel customs
+                incidental to a Chinese wedding were witnessed for the first
+                time by a few privelaged Europeans.
+              </CardText>
+              <CardText>
+                The contracting parties were Mr. Kum Mow, one of the leading
+                Chinese business men of Bathurst, and Miss Elsie May Chinn, of
+                Junee. The European part of the ceremony took place at Christ
+                Church, the Rev, J. Hope officiating. The bride wore a handsome
+                dress of crepe de chine, pearl trimmings and duchesse lace. She
+                was accompanied by Misses Mabel Pen, Daisy Genelck, and Doreen
+                Sing; all of whom wore pale pink crepe de chine over linen and
+                Chantilly lace, with tulle hats to match.
+              </CardText>
+              <CardActions>
+                <List>
+                  <ListItem>
+                    <FlatButton label="Chinese Wedding in Sydney">
+                      <a
+                        href="http://www.tasfhs.org/Volume%2019.pdf"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                        alt="The Tiger's Mouth"
+                      >
+                        Wedding of Elsie May Chinn and Kum Mow
+                      </a>
+                    </FlatButton>
+                  </ListItem>
+                  <ListItem>
+                    <FlatButton label="Edmund Bryant">
+                      <a
+                        href="http://trove.nla.gov.au/newspaper/article/221962375?browse=ndp%3Abrowse%2Ftitle%2FS%2Ftitle%2F1180%2F1917%2F02%2F18%2Fpage%2F24413712%2Farticle%2F221962375"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                        alt=" The Sun (Sydney, NSW : 1910 - 1954) Sun 18 Feb 1917 Page 16"
+                      >
+                        CHINESE WEDDING IN SYDNEY.
                       </a>
                     </FlatButton>
                   </ListItem>

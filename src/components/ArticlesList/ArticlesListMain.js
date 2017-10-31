@@ -10,6 +10,7 @@ import HollingworthDialog from './dialogues/HollingworthDialog';
 import ScarlettDialog from './dialogues/ScarlettDialog';
 import GrayDialog from './dialogues/GrayDialog';
 import BryantDialog from './dialogues/BryantDialog';
+import KumMowChinn from './dialogues/KumMowChinn';
 
 class ArticlesListMain extends Component {
   render() {
@@ -49,6 +50,9 @@ class ArticlesListMain extends Component {
             </div>
             <div className="col-sm-6 col-lg-4">
               <BryantDialog />
+            </div>
+            <div className="col-sm-6 col-lg-4">
+              <KumMowChinn />
             </div>
           </div>
         </main>
