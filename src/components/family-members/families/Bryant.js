@@ -5,7 +5,7 @@ import Menu from 'material-ui/Menu';
 import MenuItem from 'material-ui/MenuItem';
 import { Link } from 'react-router-dom';
 import { Card, CardHeader } from 'material-ui/Card';
-import bryantTas from '../../../img/bryant/Tasmania2015.jpg';
+import BryantTas from '../../../img/bryant/Tasmania2015.jpg';
 
 class Bryant extends Component {
   constructor(props) {
@@ -38,7 +38,7 @@ class Bryant extends Component {
           <CardHeader
             title="Bryant Family"
             subtitle="Family Members"
-            avatar={bryantTas}
+            avatar={BryantTas}
           />
           <div>
             <RaisedButton

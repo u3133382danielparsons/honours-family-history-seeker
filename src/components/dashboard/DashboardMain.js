@@ -77,6 +77,19 @@ class DashboardMain extends Component {
           </div>
 
           <div className="col-sm-6 col-lg-4">
+            <Link to="/containers/FamilyMembers">
+              <IconButton
+                iconStyle={styles.largeIcon}
+                style={styles.large}
+                tooltip="FAMILY MEMBERS PAGE"
+              >
+                <FamilyMembersIcon />
+                <Subheader>FAMILY MEMBERS</Subheader>
+              </IconButton>
+            </Link>
+          </div>
+
+          <div className="col-sm-6 col-lg-4">
             <Link to="/containers/People">
               <IconButton
                 iconStyle={styles.largeIcon}
@@ -119,7 +132,7 @@ class DashboardMain extends Component {
               <IconButton
                 iconStyle={styles.largeIcon}
                 style={styles.large}
-                tooltip="FAMILY MEMBERS PAGE"
+                tooltip="ARTICLES LIST PAGE"
               >
                 <ListIcon />
                 <Subheader>ARTICLES LIST</Subheader>
