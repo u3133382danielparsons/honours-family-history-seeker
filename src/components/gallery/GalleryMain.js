@@ -10,6 +10,12 @@ import {
 import FlatButton from 'material-ui/FlatButton';
 
 // src
+import McCraeGallery from './galleries/McCraeGallery';
+import McCraeGalleryTwo from './galleries/McCraeGalleryTwo';
+import McCraeGalleryThree from './galleries/McCraeGalleryThree';
+import McCraeGalleryFour from './galleries/McCraeGalleryFour';
+import McCraeGalleryFive from './galleries/McCraeGalleryFive';
+
 import hobartLand from '../../img/bryant/hobartLand.jpg';
 import scarlettFamily from '../../img/scarlett/scarlettFamily.jpg';
 import grayFamily from '../../img/gray/grayFamily.jpg';
@@ -24,6 +30,19 @@ class GalleryMain extends Component {
   render() {
     return (
       <div className="row">
+        <div className="col-sm-6 col-lg-4">
+          <McCraeGallery />
+        </div>
+        <div className="col-sm-6 col-lg-4">
+          <McCraeGalleryTwo />
+        </div>
+        <div className="col-sm-6 col-lg-4">
+          <McCraeGalleryThree />
+        </div>
+        <div className="col-sm-6 col-lg-4">
+          <McCraeGalleryFour />
+        </div>
+
         <div className="col-md-6">
           <Card>
             <CardMedia
@@ -37,21 +56,20 @@ class GalleryMain extends Component {
               />
             </CardMedia>
             <CardText>
-              <CardActions>
-                <FlatButton label="Trove">
-                  <a
-                    href="http://trove.nla.gov.au/newspaper/article/154972483?browse=ndp%3Abrowse%2Ftitle%2FA%2Ftitle%2F809%2F1917%2F06%2F26%2Fpage%2F18601136%2Farticle%2F154972483"
-                    rel="noreferrer noopener"
-                    target="_blank"
-                  >
-                    The Melbourne Age, Tuesday 26th June, 1917
-                  </a>
-                </FlatButton>
-              </CardActions>
+              <a
+                href="https://www.nla.gov.au/research-guides/family-history"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                NATIONAL LIBRARY OF AUSTRALIA FAMILY HISTORY
+              </a>
             </CardText>
           </Card>
         </div>
         <hr />
+        <div className="col-sm-6 col-lg-4">
+          <McCraeGalleryFive />
+        </div>
         <div className="col-md-6">
           <Card>
             <CardMedia
@@ -66,47 +84,19 @@ class GalleryMain extends Component {
             </CardMedia>
 
             <CardText>
-              <CardActions>
-                <FlatButton label="Chinese Australians">
-                  <a
-                    href="http://chineseaustralia.org/category/books/"
-                    rel="noreferrer noopener"
-                    target="_blank"
-                  >
-                    by Kate Bagnall
-                  </a>
-                </FlatButton>
-              </CardActions>
+              <a
+                href="http://chineseaustralia.org/category/books/"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                THOUGHTS ON THE HISTORY AND HERITAGE OF CHINESE AUSTRALIA - by
+                Kate Bagnall
+              </a>
             </CardText>
-            <CardText />
           </Card>
         </div>
         <hr />
-        <div className="col-md-12">
-          <Card>
-            <CardMedia
-              overlay={
-                <CardTitle subtitle="Bryant Family Home - Hobart Tasmaina" />
-              }
-            >
-              <img src={hobartLand} alt="Hobart in the 1800s" />
-            </CardMedia>
-            <CardActions>
-              <FlatButton label="Tasmanian Ancestory - Page.8.">
-                <a
-                  href="http://www.tasfhs.org/Volume%2019.pdf"
-                  rel="noreferrer noopener"
-                  target="_blank"
-                  alt="A TALE OF FOUR BROTHERS"
-                >
-                  A TALE OF FOUR BROTHERS
-                </a>
-              </FlatButton>
-            </CardActions>
-            <CardText />
-          </Card>
-        </div>
-        <hr />
+
         <div className="col-md-6">
           <Card>
             <CardMedia
@@ -117,18 +107,14 @@ class GalleryMain extends Component {
               <img src={grayFamily} alt="Hobart in the 1800s" />
             </CardMedia>
             <CardText>
-              <CardActions>
-                <FlatButton label="Ancestory">
-                  <a
-                    href="http://freepages.history.rootsweb.ancestry.com/~aliens/chapter_2.htm"
-                    rel="noreferrer noopener"
-                    target="_blank"
-                    alt="ALIENS OF THE TWEED AND BRUNSWICK"
-                  >
-                    ALIENS OF THE TWEED AND BRUNSWICK
-                  </a>
-                </FlatButton>
-              </CardActions>
+              <a
+                href="http://freepages.history.rootsweb.ancestry.com/~aliens/chapter_2.htm"
+                rel="noreferrer noopener"
+                target="_blank"
+                alt="ALIENS OF THE TWEED AND BRUNSWICK"
+              >
+                ALIENS OF THE TWEED AND BRUNSWICK
+              </a>
             </CardText>
           </Card>
         </div>
@@ -143,19 +129,14 @@ class GalleryMain extends Component {
               <img src={Glover} alt="Glover Family" />
             </CardMedia>
             <CardText>
-              <CardActions>
-                <FlatButton label="Queensland Family Trees">
-                  <a
-                    href="http://www.queenslandfamilytrees.com/getperson.php?personID=I5733&tree=1"
-                    rel="noreferrer noopener"
-                    target="_blank"
-                  >
-                    Julia Sarah Glover
-                  </a>
-                </FlatButton>
-              </CardActions>
+              <a
+                href="http://www.queenslandfamilytrees.com/getperson.php?personID=I5733&tree=1"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                Julia Sarah Glover
+              </a>
             </CardText>
-            <CardText />
           </Card>
         </div>
         <hr />
@@ -180,18 +161,37 @@ class GalleryMain extends Component {
               <img src={CatherineSpence} alt="Catherine Spence" />
             </CardMedia>
             <CardText>
-              <CardActions>
-                <FlatButton label="CATHERINE HELEN SPENCE">
-                  <a
-                    href="http://trove.nla.gov.au/newspaper/article/166449131?browse=ndp%3Abrowse%2Ftitle%2FQ%2Ftitle%2F824%2F1899%2F10%2F19%2Fpage%2F19461171%2Farticle%2F166449131"
-                    rel="noreferrer noopener"
-                    target="_blank"
-                    alt="wikitree"
-                  >
-                    HIGH PRIESTESS OF EFFECTIVE VOTING
-                  </a>
-                </FlatButton>
-              </CardActions>
+              <a
+                href="http://trove.nla.gov.au/newspaper/article/166449131?browse=ndp%3Abrowse%2Ftitle%2FQ%2Ftitle%2F824%2F1899%2F10%2F19%2Fpage%2F19461171%2Farticle%2F166449131"
+                rel="noreferrer noopener"
+                target="_blank"
+                alt="wikitree"
+              >
+                HIGH PRIESTESS OF EFFECTIVE VOTING
+              </a>
+            </CardText>
+          </Card>
+        </div>
+        <hr />
+        <div className="col-md-12">
+          <Card>
+            <CardMedia
+              overlay={
+                <CardTitle subtitle="Bryant Family Home - Hobart Tasmaina" />
+              }
+            >
+              <img src={hobartLand} alt="Hobart in the 1800s" />
+            </CardMedia>
+
+            <CardText>
+              <a
+                href="http://www.tasfhs.org/Volume%2019.pdf"
+                rel="noreferrer noopener"
+                target="_blank"
+                alt="A TALE OF FOUR BROTHERS"
+              >
+                A TALE OF FOUR BROTHERS
+              </a>
             </CardText>
           </Card>
         </div>
@@ -206,19 +206,16 @@ class GalleryMain extends Component {
             >
               <img src={Mckeller} alt="Mckeller Family Victoria c.1900" />
             </CardMedia>
-            <CardActions>
-              <FlatButton label="Victorian State Library">
-                <a
-                  href="https://www.slv.vic.gov.au/whats-on/finding-families"
-                  rel="noreferrer noopener"
-                  target="_blank"
-                  alt="Victorian State Library"
-                >
-                  Finding Families
-                </a>
-              </FlatButton>
-            </CardActions>
-            <CardText />
+            <CardText>
+              <a
+                href="https://www.slv.vic.gov.au/whats-on/finding-families"
+                rel="noreferrer noopener"
+                target="_blank"
+                alt="Victorian State Library"
+              >
+                Finding Families
+              </a>
+            </CardText>
           </Card>
         </div>
         <hr />
