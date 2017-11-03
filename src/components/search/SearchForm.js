@@ -52,7 +52,7 @@ class SearchForm extends Component {
           </Form>
         </div>
         <header>
-          <h4>SEARCH RESULTS APPEAR BELOW</h4>
+          <h4>SEARCH RESULTS SHOULD APPEAR BELOW</h4>
         </header>
       </div>
     );

@@ -22,6 +22,9 @@ import FlatButton from 'material-ui/FlatButton';
 import SvgIcon from 'material-ui/SvgIcon';
 import Paper from 'material-ui/Paper';
 import { Card, CardTitle, CardText, CardActions } from 'material-ui/Card';
+import { List, ListItem } from 'material-ui/List';
+import Avatar from 'material-ui/Avatar';
+import GeorgianaAv from '../img/georgiana.jpg';
 
 // inline styles
 const styles = {
@@ -48,6 +51,7 @@ class Georgiana extends Component {
           </ResponsiveDrawer>
           <BodyContainer openSecondary={false}>
             <ResponsiveAppBar
+              title="Georgiana McCrae"
               iconElementRight={
                 <FlatButton
                   href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/components/people/women/Georgiana.js"
@@ -86,6 +90,10 @@ class Georgiana extends Component {
             <div className="container">
               <Paper zDepth={1}>
                 <Card>
+                  <List>
+                    <ListItem leftAvatar={<Avatar src={GeorgianaAv} />} />
+                  </List>
+
                   <CardTitle
                     title="Georgiana McCrae"
                     subtitle="The life of Georgiana McCrae - an aristocratic woman in early Melbourne"

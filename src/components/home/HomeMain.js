@@ -146,8 +146,8 @@ class HomeMain extends Component {
               <CardMedia
                 overlay={
                   <CardTitle
-                    title="Wedding of Elsie May Chinn and Kum Mow"
-                    subtitle="Sydney, 1917"
+                    title=""
+                    subtitle="Wedding of Elsie May Chinn and Kum Mow - Sydney, 1917"
                   />
                 }
               >

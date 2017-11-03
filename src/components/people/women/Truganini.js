@@ -22,6 +22,10 @@ import Subheader from 'material-ui/Subheader';
 import SvgIcon from 'material-ui/SvgIcon';
 import Paper from 'material-ui/Paper';
 import { Card, CardTitle, CardText, CardActions } from 'material-ui/Card';
+import { List, ListItem } from 'material-ui/List';
+import Avatar from 'material-ui/Avatar';
+import TruganiniAv from '../img/Truganini.jpg';
+
 // inline styles
 const styles = {
   drawer_container: {
@@ -47,6 +51,7 @@ class Truganini extends Component {
           </ResponsiveDrawer>
           <BodyContainer openSecondary={false}>
             <ResponsiveAppBar
+              title="TRUGANINI"
               iconElementRight={
                 <FlatButton
                   href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/components/people/women/Truganini.js"
@@ -85,6 +90,9 @@ class Truganini extends Component {
             <div className="container">
               <Paper zDepth={1}>
                 <Card>
+                  <ListItem>
+                    <ListItem leftAvatar={<Avatar src={TruganiniAv} />} />
+                  </ListItem>
                   <CardTitle
                     title="Truganini"
                     subtitle="Truganini - negotiator, diplomat and guerilla fighter"
