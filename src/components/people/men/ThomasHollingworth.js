@@ -22,6 +22,9 @@ import FlatButton from 'material-ui/FlatButton';
 import SvgIcon from 'material-ui/SvgIcon';
 import Paper from 'material-ui/Paper';
 import { Card, CardTitle, CardText, CardActions } from 'material-ui/Card';
+import { List, ListItem } from 'material-ui/List';
+import Avatar from 'material-ui/Avatar';
+import HollingworthAv from '../../../img/hollingworth/HollingworthAv.jpg';
 
 // inline styles
 const styles = {
@@ -86,6 +89,9 @@ class ThomasHollingworth extends Component {
             <div className="container">
               <Paper zDepth={1}>
                 <Card>
+                  <List>
+                    <ListItem leftAvatar={<Avatar src={HollingworthAv} />} />
+                  </List>
                   <CardTitle
                     title="Thomas Hollingworth"
                     subtitle="Proud family began with theft of a coat and a gun. by Margaret Henderson"

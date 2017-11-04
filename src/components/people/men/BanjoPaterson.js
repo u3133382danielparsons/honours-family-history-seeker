@@ -22,6 +22,9 @@ import FlatButton from 'material-ui/FlatButton';
 import SvgIcon from 'material-ui/SvgIcon';
 import Paper from 'material-ui/Paper';
 import { Card, CardTitle, CardText, CardActions } from 'material-ui/Card';
+import { List, ListItem } from 'material-ui/List';
+import Avatar from 'material-ui/Avatar';
+import PatersonAv from '../../../img/paterson/hat.jpg';
 
 // inline styles
 const styles = {
@@ -86,6 +89,9 @@ class BanjoPaterson extends Component {
             <div className="container">
               <Paper zDepth={1}>
                 <Card>
+                  <List>
+                    <ListItem leftAvatar={<Avatar src={PatersonAv} />} />
+                  </List>
                   <CardTitle title="Banjo Paterson" subtitle="A Bush Poet!" />
                   <CardText>
                     Andrew Barton Paterson was born in 1864 on his family

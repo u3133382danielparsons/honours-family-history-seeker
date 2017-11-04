@@ -22,6 +22,9 @@ import FlatButton from 'material-ui/FlatButton';
 import SvgIcon from 'material-ui/SvgIcon';
 import Paper from 'material-ui/Paper';
 import { Card, CardTitle, CardText, CardActions } from 'material-ui/Card';
+import { List, ListItem } from 'material-ui/List';
+import Avatar from 'material-ui/Avatar';
+import BryantTas from '../../../img/bryant/Tasmania2015.jpg';
 
 // inline styles
 const styles = {
@@ -86,6 +89,9 @@ class BryantBrothers extends Component {
             <div className="container">
               <Paper zDepth={1}>
                 <Card>
+                  <List>
+                    <ListItem leftAvatar={<Avatar src={BryantTas} />} />
+                  </List>
                   <CardTitle
                     title="A Tale of Four Brothers"
                     subtitle="The Bryant Brothers - W.S. Griffith"

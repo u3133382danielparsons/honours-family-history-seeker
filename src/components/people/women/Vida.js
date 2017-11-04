@@ -22,6 +22,10 @@ import Subheader from 'material-ui/Subheader';
 import SvgIcon from 'material-ui/SvgIcon';
 import Paper from 'material-ui/Paper';
 import { Card, CardTitle, CardText, CardActions } from 'material-ui/Card';
+import { List, ListItem } from 'material-ui/List';
+import Avatar from 'material-ui/Avatar';
+import VidaAv from '../img/vida.jpg';
+
 // inline styles
 const styles = {
   drawer_container: {
@@ -85,6 +89,9 @@ class Vida extends Component {
             <div className="container">
               <Paper zDepth={1}>
                 <Card>
+                  <List>
+                    <ListItem leftAvatar={<Avatar src={VidaAv} />} />
+                  </List>
                   <CardTitle
                     title="Vida Goldstein"
                     subtitle="Feminist and Suffragist"

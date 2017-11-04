@@ -4,6 +4,12 @@ import { Toolbar, ToolbarGroup, ToolbarTitle } from 'material-ui/Toolbar';
 import { Card, CardHeader, CardText, CardActions } from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
 
+const styles = {
+  lineHeight: {
+    lineHeight: '1.5'
+  }
+};
+
 class FamiliesMain extends Component {
   render() {
     return (
@@ -19,7 +25,7 @@ class FamiliesMain extends Component {
               <List>
                 <ListItem>
                   <CardHeader>David Spence</CardHeader>
-                  <CardText>
+                  <CardText style={styles.lineHeight}>
                     Born 28 Apr 1789 in Earlston, Berwickshire, Scotland.
                     Husband of Helen (Brodie) Spence — married 24 Sep 1815 in
                     Whitekirk, East Lothian, Scotland. Died 29 May 1846 in
@@ -37,14 +43,14 @@ class FamiliesMain extends Component {
                     </FlatButton>
                   </CardActions>
                 </ListItem>
-                <ListItem>
+                <ListItem style={styles.lineHeight}>
                   Helen Spence formerly Brodie. Together with her husband David
                   she had eight children - Agnes Spence, Janet (Spence) Murray,
                   William Richard Spence, John Brodie Spence, Catherine Helen
                   Spence, David Wauchope Spence, Mary Brodie (Spence) Wren and
                   Eliza Spence.
                   <CardHeader>Obituary Notices.</CardHeader>
-                  <CardText>
+                  <CardText style={styles.lineHeight}>
                     DEATH OF AN AGED PIONEER COLONIST. We have received
                     information of the death of Mrs. Helen Brodie Spence, at
                     College Town, on December 8, at the good old age of 96. The
@@ -81,7 +87,7 @@ class FamiliesMain extends Component {
 
                 <ListItem>
                   <CardHeader>Agnes Spence</CardHeader>
-                  <CardText>
+                  <CardText style={styles.lineHeight}>
                     Agnes was born in 1818. She was the daughter of David Spence
                     and Helen Brodie. She passed away about 1835. Died of
                     consumption at the age of 16
@@ -90,7 +96,7 @@ class FamiliesMain extends Component {
 
                 <ListItem>
                   <CardHeader>Janet Murray (Spence)</CardHeader>
-                  <CardText>
+                  <CardText style={styles.lineHeight}>
                     The name Jessie is a Scottish pet name for Janet Jessie
                     (1821-1888) married Andrew Murray (1813-1880) in 1841. They
                     had ten children, not all of whom survived. From 1877 the
@@ -107,7 +113,7 @@ class FamiliesMain extends Component {
 
                 <ListItem>
                   <CardHeader>William Richard Spence</CardHeader>
-                  <CardText>
+                  <CardText style={styles.lineHeight}>
                     William Richard was born in 1822. William Richard is the
                     child of David Spence and Helen Brodie. From the
                     Autobiography of Catherine Helen Spence - "My eldest brother
@@ -118,7 +124,7 @@ class FamiliesMain extends Component {
                 </ListItem>
                 <ListItem>
                   <CardHeader>John Brodie Spence</CardHeader>
-                  <CardText>
+                  <CardText style={styles.lineHeight}>
                     John Brodie was born in 1824. He was the son of David Spence
                     and Helen Brodie. He passed away in 1902. John Brodie Spence
                     (15 May 1824 – 7 December 1902), born in Melrose, Scotland,
@@ -170,7 +176,7 @@ class FamiliesMain extends Component {
 
                 <ListItem>
                   <CardHeader>Catherine Helen Spence</CardHeader>
-                  <CardText>
+                  <CardText style={styles.lineHeight}>
                     Catherine Helen Spence (1825-1910), writer, preacher,
                     reformer and feminist, was born on 31 October 1825 near
                     Melrose, Scotland, daughter of David Spence, lawyer and
@@ -320,7 +326,7 @@ class FamiliesMain extends Component {
 
                 <ListItem>
                   <CardHeader>David Wauchope Spence</CardHeader>
-                  <CardText>
+                  <CardText style={styles.lineHeight}>
                     David Wauchope was born in 1828. He is the son of David
                     Spence and Helen Brodie. 1839 - David Wauchope, had been
                     left behind for his education with the three maiden aunts,
@@ -332,7 +338,7 @@ class FamiliesMain extends Component {
                 </ListItem>
                 <ListItem>
                   <CardHeader>Mary Brodie (Spence) Wren</CardHeader>
-                  <CardText>
+                  <CardText style={styles.lineHeight}>
                     Mary Brodie was born in 1830. She is the daughter of David
                     Spence and Helen Brodie. Marriage Notice - At
                     Pulteney-street, Adelaide, on the 19th instant, by the Rev.
@@ -359,7 +365,7 @@ class FamiliesMain extends Component {
                 </ListItem>
                 <ListItem>
                   <CardHeader>Eliza Spence</CardHeader>
-                  <CardText>
+                  <CardText style={styles.lineHeight}>
                     Eliza was born in 1833. She was the daughter of David Spence
                     and Helen Brodie. She passed away in 1836 age 3.
                   </CardText>
@@ -382,7 +388,7 @@ class FamiliesMain extends Component {
               <List>
                 <ListItem>
                   <CardHeader>Andrew Barton Paterson</CardHeader>
-                  <CardText>
+                  <CardText style={styles.lineHeight}>
                     Andrew Barton "Banjo" Paterson. Australian bush poet,
                     solicitor, journalist, war correspondent and soldier, was
                     born on 17 February 1864 at Narrambla near Orange, New South
@@ -399,7 +405,7 @@ class FamiliesMain extends Component {
 
                 <ListItem>
                   <CardHeader>Rose Florence Lumsdaine</CardHeader>
-                  <CardText>
+                  <CardText style={styles.lineHeight}>
                     Rose Florence Lumsdaine (Paterson) born October 1865 and
                     died May 1931. Daughter of Andrew Bogle Paterson and Rose
                     Isabella Paterson. Sister of Andrew Barton (Banjo) Paterson.
@@ -411,7 +417,7 @@ class FamiliesMain extends Component {
 
                 <ListItem>
                   <CardHeader>Andrew Bogle Paterson</CardHeader>
-                  <CardText>
+                  <CardText style={styles.lineHeight}>
                     Andrew Bogle Paterson (b.1833, d.1889), grazier, married to
                     Rose Isabella, daughter of Robert Barton of Boree Nyrang
                     station, near Orange. Father to Andrew Barton 'Banjo'
@@ -423,7 +429,7 @@ class FamiliesMain extends Component {
 
                 <ListItem>
                   <CardHeader>Isabella Paterson (Barton).</CardHeader>
-                  <CardText>
+                  <CardText style={styles.lineHeight}>
                     Isabella Paterson daughter to Robert Johnston Barton and
                     Emily Mason Barton. Sister to Charles Hampden H Barton.
                     Married to Andrew Bogle Paterson with seven children. Mother
@@ -436,7 +442,7 @@ class FamiliesMain extends Component {
 
                 <ListItem>
                   <CardHeader>Alice Emily Paterson (Walker)</CardHeader>
-                  <CardText>
+                  <CardText style={styles.lineHeight}>
                     Alice Emily Paterson, wife to Andrew Barton 'Banjo'
                     Paterson. Born 1877 in Tenterfield, NSW, Australia, died in
                     June 1963 (86). Mother to Hugh and Grace Paterson. It
@@ -445,7 +451,7 @@ class FamiliesMain extends Component {
                 </ListItem>
                 <ListItem>
                   <CardHeader>Hugh Barton Paterson</CardHeader>
-                  <CardText>
+                  <CardText style={styles.lineHeight}>
                     Hugh Barton Paterson is the son of Andrew Barton 'Banjo'
                     Patersons and Emily Walker. Born 1906 in Woollahra, New
                     South Wales, Australia. Hugh served in the 20th Brigade
@@ -476,7 +482,7 @@ class FamiliesMain extends Component {
                 <ListItem>
                   <CardHeader>Matthew Bryant</CardHeader>
 
-                  <CardText>
+                  <CardText style={styles.lineHeight}>
                     Matthew and Mary Mills were married in Bridgewater in 1784
                     and the older four of their ten children were born there.
                     Matthew died in 1815 and Many about 1829? Matthew Bryant and
@@ -488,7 +494,7 @@ class FamiliesMain extends Component {
                 </ListItem>
                 <ListItem>
                   <CardHeader>George Bryant</CardHeader>
-                  <CardText>
+                  <CardText style={styles.lineHeight}>
                     George was born in 1789. George still the lease of Curry
                     Pool the property until it was sold in October 1833 and he
                     was 44. George and his family sailed to join his brothers in
@@ -509,7 +515,7 @@ class FamiliesMain extends Component {
 
                 <ListItem>
                   <CardHeader>Francis Bryant</CardHeader>
-                  <CardText>
+                  <CardText style={styles.lineHeight}>
                     Francis Bryant was born in 1795. Francis had married Jane
                     Carver about 1815. They sailed to Van Diemen's Land with
                     their five children and had a further six children in
@@ -533,7 +539,7 @@ class FamiliesMain extends Component {
 
                 <ListItem>
                   <CardHeader>James Bryant</CardHeader>
-                  <CardText>
+                  <CardText style={styles.lineHeight}>
                     James Bryant was born in 1799. Of the brothers, James and
                     Edmund, both bachelors, went first. They wrote jointly, from
                     Guild Hall Coffee Shop, London, to Earl Bathurst on 25 April
@@ -556,7 +562,7 @@ class FamiliesMain extends Component {
 
                 <ListItem>
                   <CardHeader>Edmund Bryant</CardHeader>
-                  <CardText>
+                  <CardText style={styles.lineHeight}>
                     Edmund Bryant was born in 1803. Edmund had departed again
                     for England in the brig Woodlark, 196 tons, on 4 April 1824.
                     There he married Jane Mogg by licence on 15 February 1825 at
@@ -599,7 +605,7 @@ class FamiliesMain extends Component {
               <List>
                 <ListItem>
                   <CardHeader>John Thomas Gray</CardHeader>
-                  <CardText>
+                  <CardText style={styles.lineHeight}>
                     Married to Annie with six sons and three daughters. John
                     Gray came from the South Coast and after a short sojourn at
                     Burringbar selected land Montecollum in 1906. By 1922 the a
@@ -613,7 +619,7 @@ class FamiliesMain extends Component {
 
                 <ListItem>
                   <CardHeader>Annie Gray</CardHeader>
-                  <CardText>
+                  <CardText style={styles.lineHeight}>
                     Annie and her husband John both originated from Foxground on
                     the South coast. Annie Gray was highly respected by a large
                     circle of friends.
@@ -681,7 +687,7 @@ class FamiliesMain extends Component {
               <List>
                 <ListItem>
                   <CardHeader>Thomas Nicholsan Hollingworth</CardHeader>
-                  <CardText>
+                  <CardText style={styles.lineHeight}>
                     THOMAS Nicholson Hollingworth, the founder of the
                     Hollingworth family in our area, was a convict sentenced in
                     1836 to life imprisonment for stealing a gun and a coat.
@@ -709,7 +715,7 @@ class FamiliesMain extends Component {
 
                 <ListItem>
                   <CardHeader>Ann Hollingworth (King)</CardHeader>
-                  <CardText>
+                  <CardText style={styles.lineHeight}>
                     Ann was a daughter of William Parrott King and his wife
                     Hannah (nee Barrett) who had arrived as immigrants.
                   </CardText>
@@ -717,7 +723,7 @@ class FamiliesMain extends Component {
 
                 <ListItem>
                   <CardHeader>William Parrot King</CardHeader>
-                  <CardText>
+                  <CardText style={styles.lineHeight}>
                     William King had obtained work first as a shepherd and then
                     as a bullock driver. For some years he hauled cedar logs to
                     the river at Tucki where they were loaded onto sailing ships
@@ -728,7 +734,7 @@ class FamiliesMain extends Component {
 
                 <ListItem>
                   <CardHeader>Thomas King.</CardHeader>
-                  <CardText>
+                  <CardText style={styles.lineHeight}>
                     Thomas King was the brother to William and therefore the
                     uncle to their children. Thomas King had been apprenticed as
                     a shipwright to William Yabsley. Yabsley had provided a
@@ -744,7 +750,7 @@ class FamiliesMain extends Component {
 
                 <ListItem>
                   <CardHeader>Joseph Nicholsan Hollingworth</CardHeader>
-                  <CardText>
+                  <CardText style={styles.lineHeight}>
                     Joseph married Annie McAndrew Ross in 1892 and in 1902 he
                     purchased Glasgow's sawmill at Mullumbimby. He moved his
                     growing family there and began what was to become a major
@@ -762,7 +768,7 @@ class FamiliesMain extends Component {
                 </ListItem>
                 <ListItem>
                   <CardHeader>David John Hollingworth</CardHeader>
-                  <CardText>
+                  <CardText style={styles.lineHeight}>
                     David Hollingworth began working at the timber mill in 1916
                     at the age of 14 years. At 17 his father died, David was
                     considered too young to hold the reins. The business became
@@ -774,7 +780,7 @@ class FamiliesMain extends Component {
                 </ListItem>
                 <ListItem>
                   <CardHeader>Nicholson (Nick) Hollingworth</CardHeader>
-                  <CardText>
+                  <CardText style={styles.lineHeight}>
                     Nicholson (Nick) Hollingworth is the fifth generation of his
                     family to be involved with the timber industry. A book, The
                     Mullumbimby Sawmill, has taken many years to compile by
@@ -801,14 +807,14 @@ class FamiliesMain extends Component {
               <List>
                 <ListItem>
                   <CardHeader>Sir James Scarlett</CardHeader>
-                  <CardText>
+                  <CardText style={styles.lineHeight}>
                     James Scarlett became Attorney-General and Lord Chief Baron
                     of the Exchequer.
                   </CardText>
                 </ListItem>
                 <ListItem>
                   <CardHeader>Lord Abinger</CardHeader>
-                  <CardText>
+                  <CardText style={styles.lineHeight}>
                     Lord Abinger is the sixth baron, descended from the advocate
                     Sir James Scarlett. Lord Abinger was a barrister by
                     profession and he lived in the traditions of the bar as the
@@ -819,7 +825,7 @@ class FamiliesMain extends Component {
 
                 <ListItem>
                   <CardHeader>Hugh Scarlett</CardHeader>
-                  <CardText>
+                  <CardText style={styles.lineHeight}>
                     Major H.R. Scarlett was brother to Lord Abinger. Hugh
                     Scarlett was A.D.C. (Senior Aide) to Sir William Macgregor
                     when Governor of Queensland. Hugh married Miss Marjorie
@@ -829,7 +835,7 @@ class FamiliesMain extends Component {
 
                 <ListItem>
                   <CardHeader>L.F. Scarlett</CardHeader>
-                  <CardText>
+                  <CardText style={styles.lineHeight}>
                     L.F. Scarlett is the youngest brother of Lord Abinger. L.F.
                     Scarlett was lent to the Australian Navy, and was lost in
                     the submarine AE1 in the South Seas.

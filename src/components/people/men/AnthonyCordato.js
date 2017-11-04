@@ -16,15 +16,15 @@ import {
   toggleDrawerDock,
   setResponsive
 } from '../../../material-ui-responsive-drawer/index.js';
-import FlatButton from 'material-ui/FlatButton';
 import IconButton from 'material-ui/IconButton';
 import Subheader from 'material-ui/Subheader';
+import FlatButton from 'material-ui/FlatButton';
 import SvgIcon from 'material-ui/SvgIcon';
 import Paper from 'material-ui/Paper';
 import { Card, CardTitle, CardText, CardActions } from 'material-ui/Card';
 import { List, ListItem } from 'material-ui/List';
 import Avatar from 'material-ui/Avatar';
-import TruganiniAv from '../img/Truganini.jpg';
+import AnthonyAv from '../../../img/cordato/anthony.jpg';
 
 // inline styles
 const styles = {
@@ -37,7 +37,7 @@ const styles = {
   }
 };
 
-class Truganini extends Component {
+class AnthonyCordato extends Component {
   render() {
     return (
       <div>
@@ -51,10 +51,9 @@ class Truganini extends Component {
           </ResponsiveDrawer>
           <BodyContainer openSecondary={false}>
             <ResponsiveAppBar
-              title="TRUGANINI"
               iconElementRight={
                 <FlatButton
-                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/components/people/women/Truganini.js"
+                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/components/people/women/Georgiana.js"
                   target="_blank"
                   secondary={true}
                   icon={
@@ -91,52 +90,64 @@ class Truganini extends Component {
               <Paper zDepth={1}>
                 <Card>
                   <List>
-                    <ListItem leftAvatar={<Avatar src={TruganiniAv} />} />
+                    <ListItem leftAvatar={<Avatar src={AnthonyAv} />} />
                   </List>
                   <CardTitle
-                    title="Truganini"
-                    subtitle="Truganini - negotiator, diplomat and guerilla fighter"
+                    title="Anthony Cordato"
+                    subtitle="UNIQUE WEDDING"
                   />
                   <CardText>
-                    Aboriginal women in colonial Australia such as Truganini,
-                    Fanny Cochrane Smith and Cora Gooseberry led lives that were
-                    very different from their ancestors'. Their challenge was to
-                    find meaning in a world where their traditional ways and
-                    lands were changed. One of the foremost Tasmanian Aboriginal
-                    leaders of the 1800s, Truganini was a negotiator and
-                    spokesperson for her people. Truganini was born in 1812 on
-                    Bruny Island which is in the D'Entrecasteaux Channel, south
-                    of present day Hobart. Her early life was typical of many
-                    young Aboriginal women of Tasmania in the early 1800s.
-                    Before she was seventeen, her mother had been killed by
-                    whalers, her uncle had been shot by a soldier and three of
-                    her sisters had been abducted and sold to sealers (one of
-                    whom was also shot by a sealer). Her betrothed, Paraweena,
-                    was drowned in the Channel by timber sawyers. In 1832
-                    Truganini and her husband Wooraddy helped find the remaining
-                    Tasmanian Aborigines as part of a plan to re-settle them on
-                    Flinders Island at Wybaleena. In 1838, Truganini was part of
-                    a guerilla war campaign at Port Philip, Victoria with a
-                    group of other Tasmanian Aborigines - the men later executed
-                    in Melbourne's first public execution. Truganini returned to
-                    Wybaleena in 1842. In 1847, Truganini and the remaining 45
-                    people were moved to Oyster Cove, Truganini's traditional
-                    country. Truganini died in 1876. Her skeleton was displayed
-                    at the Tasmanian Museum until 1947. In 1976 her remains were
-                    cremated and scattered in the D'Entrecasteaux Channel
-                    according to her wishes. Samples of her skin and hair were
-                    finally returned from the British College of Surgeons in
-                    2002. A shell necklace attributed to Truganini was found in
-                    a southern England museum in 2001. (The Age, 30 May 2002)
+                    Cordato – Manucoe (from Northern Star – Lismore NSW,
+                    Saturday 29 July 1916) --- A wedding of an unusual
+                    character, writes our casino correspondent, was solemnised
+                    at St. Marks Anglican Church on Wednesday. The bride and
+                    groom were both of Greek nationality, and the Greek ceremony
+                    was performed. The contracting parties were Anthony Cordato,
+                    of Dubbo, brother of Mr. Simon Cordato, of Casino, and
+                    Anthee Manucoe of Kyogle, whose parents reside in Greece.
+                    The ceremony was the first of its kind ever performed in
+                    Casino, and its novelty attracted a large attendance of
+                    people to the church. Father Marinakis, the only Greek
+                    priest in the State, came all the way from Sydney to
+                    officiate, and he was assisted by Mr. J. Black of Brisbane.
+                    The bride was given away by her two brothers, Mr. Theo and
+                    Mr. Peter Manucoe, and the bridesmaids were Miss Stella
+                    Garland, of Maryborough, Queensland, and Miss Kathleen
+                    Cordato of Casino and the best man was Mr. Jake Aroney of
+                    Murwillumbah. There was a large number of friends and
+                    relatives, who came from Sydney, Armidale, Glen Innes,
+                    Tenterfield, Maryborough, Ipswich, Murwillumbah,
+                    Mullumbimby, Lismore, Grafton and Casino. The breakfast was
+                    served at Mr. Cordato’s restaurant and about 60 sat down.
+                    The priest took the chair. And the usual toasts were
+                    proposed and acknowledged. The National Anthems of Great
+                    Britain, Greece and France were sung. At the conclusion of
+                    the breakfast dancing was indulged in until early morning.
+                    The happy couple left by the morning train for Byron bay,
+                    where they will stay for a few days, and will leave for
+                    Dubbo via Brisbane. -- Authors Notes This report of the
+                    Cordato-Minucoe wedding is an important historical, social
+                    and cultural document that underpins Greek migration and
+                    settlement in Australia. This places Greeks in time and
+                    place, their social interaction and the practise of cultural
+                    traditions. Not to be over looked, the relationship of the
+                    Greek Orthodox Church and the Anglican Church that has
+                    continued to provide a venue for ceremonies until Greek
+                    Orthodox Churches were established. Last but not least, the
+                    interest of the press to record the event and the National
+                    Library of Australia to preserve and provide a snap shot of
+                    time past for future generations. Researched and written
+                    Peter C. McCarthy (Makarthis) Inverell NSW ©S. Peter & Co. 7
+                    October 2013
                   </CardText>
                   <CardActions>
-                    <FlatButton label="australia.gov.au">
+                    <FlatButton label="northernstar.com.au">
                       <a
-                        href="http://www.australia.gov.au/about-australia/australian-story/women-in-colonial-times"
+                        href="http://www.kythera-family.net/en/history/general-history/cordato-manucoe-wedding-1916"
                         rel="noreferrer noopener"
                         target="_blank"
                       >
-                        Women in colonial times
+                        Cordato- Manucoe Wedding 1916
                       </a>
                     </FlatButton>
                   </CardActions>
@@ -150,7 +161,7 @@ class Truganini extends Component {
   }
 }
 
-Truganini.propTypes = {
+AnthonyCordato.propTypes = {
   toggleDrawerOpen: PropTypes.func.isRequired,
   toggleDrawerDock: PropTypes.func.isRequired,
   setResponsive: PropTypes.func.isRequired
@@ -178,4 +189,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Truganini);
+export default connect(mapStateToProps, mapDispatchToProps)(AnthonyCordato);

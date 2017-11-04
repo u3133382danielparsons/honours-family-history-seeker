@@ -11,11 +11,12 @@ import VidaAv from './img/vida.jpg';
 import MollyAv from './img/molly.jpg';
 import HicksAv from './img/hicks.jpg';
 import SpenceAv from './img/spence.jpg';
-import bryantTas from '../../img/bryant/Tasmania2015.jpg';
+import BryantTas from '../../img/bryant/Tasmania2015.jpg';
 import HollingworthAv from '../../img/hollingworth/HollingworthAv.jpg';
-import grayAv from '../../img/gray/grayAv.jpg';
-import patersonAv from '../../img/paterson/hat.jpg';
-import scarlettAv from '../../img/scarlett/scarlettAv.jpg';
+import GrayAv from '../../img/gray/grayAv.jpg';
+import PatersonAv from '../../img/paterson/hat.jpg';
+import ScarlettAv from '../../img/scarlett/scarlettAv.jpg';
+import AnthonyAv from '../../img/cordato/anthony.jpg';
 
 class PeopleMain extends Component {
   render() {
@@ -95,7 +96,7 @@ class PeopleMain extends Component {
                 secondaryText={
                   <p>Proud family began with theft of a coat and a gun</p>
                 }
-                leftAvatar={<Avatar src={bryantTas} />}
+                leftAvatar={<Avatar src={BryantTas} />}
                 rightIcon={<ActionInfo />}
               />
             </Link>
@@ -111,7 +112,7 @@ class PeopleMain extends Component {
               <ListItem
                 primaryText="Henry William Gray"
                 secondaryText={<p>Life Summary.</p>}
-                leftAvatar={<Avatar src={grayAv} />}
+                leftAvatar={<Avatar src={GrayAv} />}
                 rightIcon={<ActionInfo />}
               />
             </Link>
@@ -119,7 +120,7 @@ class PeopleMain extends Component {
               <ListItem
                 primaryText="BanjoPaterson"
                 secondaryText={<p>A Bush Poet.</p>}
-                leftAvatar={<Avatar src={patersonAv} />}
+                leftAvatar={<Avatar src={PatersonAv} />}
                 rightIcon={<ActionInfo />}
               />
             </Link>
@@ -127,7 +128,15 @@ class PeopleMain extends Component {
               <ListItem
                 primaryText="James Scarlett, 1st Baron Abinger"
                 secondaryText={<p>Lord Abinger.</p>}
-                leftAvatar={<Avatar src={scarlettAv} />}
+                leftAvatar={<Avatar src={ScarlettAv} />}
+                rightIcon={<ActionInfo />}
+              />
+            </Link>
+            <Link to="../components/people/men/AnthonyCordato">
+              <ListItem
+                primaryText="Anthony Cordato"
+                secondaryText={<p>Casino N.S.W.</p>}
+                leftAvatar={<Avatar src={AnthonyAv} />}
                 rightIcon={<ActionInfo />}
               />
             </Link>

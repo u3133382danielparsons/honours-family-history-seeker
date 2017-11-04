@@ -55,10 +55,10 @@ import ChinnFamily from '../../img/chinn.jpg';
 import CordatoFamily from '../../img/cordato/Casino1914.jpg';
 import ChambirasFamily from '../../img/cordato/Chambiras.jpg';
 import CordatoAv from '../../img/cordato/kyriakos.jpg';
-import anthiAv from '../../img/cordato/anthi.jpg';
-import anthonyAv from '../../img/cordato/anthony.jpg';
-import manuelAv from '../../img/cordato/manuel.jpg';
-import jimAv from '../../img/cordato/jim.jpg';
+import AnthiAv from '../../img/cordato/anthi.jpg';
+import AnthonyAv from '../../img/cordato/anthony.jpg';
+import ManuelAv from '../../img/cordato/manuel.jpg';
+import JimAv from '../../img/cordato/jim.jpg';
 
 class HomeMain extends Component {
   render() {
@@ -248,7 +248,7 @@ class HomeMain extends Component {
                         target="_blank"
                         alt="From Trove. The Tweed Daily, Mullimbimby, Feburary 8, 1922."
                       >
-                        The Tweed Daily, Mullimbimby, Feburary 8, 1922.
+                        Mullimbimby - The Gray Family
                       </a>
                     </FlatButton>
                   </ListItem>
@@ -795,7 +795,7 @@ class HomeMain extends Component {
                 <CardHeader
                   title="Anthony Theodorakakis Cordato"
                   subtitle="Brother of Kyriakos Cordato and Jim Cordato"
-                  avatar={anthonyAv}
+                  avatar={AnthonyAv}
                 />
               </a>
               <a
@@ -806,7 +806,7 @@ class HomeMain extends Component {
                 <CardHeader
                   title="Jim Theodorakis Cordato"
                   subtitle="Brother of Kyriakos Cordato and Anthony Cordato"
-                  avatar={jimAv}
+                  avatar={JimAv}
                 />
               </a>
               <a
@@ -817,7 +817,7 @@ class HomeMain extends Component {
                 <CardHeader
                   title="Anthi Minoucos"
                   subtitle="Wife of Anthony Cordato"
-                  avatar={anthiAv}
+                  avatar={AnthiAv}
                 />
               </a>
               <a
@@ -828,7 +828,7 @@ class HomeMain extends Component {
                 <CardHeader
                   title="Manuel A. Cordato"
                   subtitle="Son of Anthony Cordato and Anthi Minoucos"
-                  avatar={manuelAv}
+                  avatar={ManuelAv}
                 />
               </a>
             </Card>

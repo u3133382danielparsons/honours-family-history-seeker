@@ -55,7 +55,6 @@ class SearchList extends Component {
               </Form>
             </CardText>
           </Card>
-          <hr />
         </ListItem>
         <ListItem>
           <Card>
@@ -96,7 +95,6 @@ class SearchList extends Component {
               </Form>
             </CardText>
           </Card>
-          <hr />
         </ListItem>
         <ListItem>
           <Card>
@@ -137,7 +135,6 @@ class SearchList extends Component {
               </Form>
             </CardText>
           </Card>
-          <hr />
         </ListItem>
         <ListItem>
           <Card>
@@ -178,7 +175,6 @@ class SearchList extends Component {
               </Form>
             </CardText>
           </Card>
-          <hr />
         </ListItem>
         <ListItem>
           <Card>
@@ -219,7 +215,6 @@ class SearchList extends Component {
               </Form>
             </CardText>
           </Card>
-          <hr />
         </ListItem>
         <ListItem>
           <Card>
@@ -260,7 +255,6 @@ class SearchList extends Component {
               </Form>
             </CardText>
           </Card>
-          <hr />
         </ListItem>
         <ListItem>
           <Card>
@@ -301,7 +295,6 @@ class SearchList extends Component {
               </Form>
             </CardText>
           </Card>
-          <hr />
         </ListItem>
         <ListItem>
           <Card>
@@ -342,7 +335,6 @@ class SearchList extends Component {
               </Form>
             </CardText>
           </Card>
-          <hr />
         </ListItem>
         <ListItem>
           <Card>
@@ -383,7 +375,6 @@ class SearchList extends Component {
               </Form>
             </CardText>
           </Card>
-          <hr />
         </ListItem>
         <ListItem>
           <Card>
@@ -424,7 +415,6 @@ class SearchList extends Component {
               </Form>
             </CardText>
           </Card>
-          <hr />
         </ListItem>
         <ListItem>
           <Card>
@@ -465,7 +455,6 @@ class SearchList extends Component {
               </Form>
             </CardText>
           </Card>
-          <hr />
         </ListItem>
         <ListItem>
           <Card>
@@ -506,7 +495,6 @@ class SearchList extends Component {
               </Form>
             </CardText>
           </Card>
-          <hr />
         </ListItem>
         <ListItem>
           <Card>
@@ -547,7 +535,6 @@ class SearchList extends Component {
               </Form>
             </CardText>
           </Card>
-          <hr />
         </ListItem>
         <ListItem>
           <Card>
@@ -588,7 +575,6 @@ class SearchList extends Component {
               </Form>
             </CardText>
           </Card>
-          <hr />
         </ListItem>
         <ListItem>
           <Card>
@@ -629,7 +615,6 @@ class SearchList extends Component {
               </Form>
             </CardText>
           </Card>
-          <hr />
         </ListItem>
         <ListItem>
           <Card>
@@ -670,7 +655,6 @@ class SearchList extends Component {
               </Form>
             </CardText>
           </Card>
-          <hr />
         </ListItem>
         <ListItem>
           <Card>
@@ -711,7 +695,6 @@ class SearchList extends Component {
               </Form>
             </CardText>
           </Card>
-          <hr />
         </ListItem>
         <ListItem>
           <Card>
@@ -752,7 +735,6 @@ class SearchList extends Component {
               </Form>
             </CardText>
           </Card>
-          <hr />
         </ListItem>
         <ListItem>
           <Card>
@@ -793,7 +775,6 @@ class SearchList extends Component {
               </Form>
             </CardText>
           </Card>
-          <hr />
         </ListItem>
         <ListItem>
           <Card>
@@ -834,7 +815,6 @@ class SearchList extends Component {
               </Form>
             </CardText>
           </Card>
-          <hr />
         </ListItem>
       </List>
     );

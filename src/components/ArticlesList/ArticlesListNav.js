@@ -7,15 +7,16 @@ import HomeIcon from 'material-ui/svg-icons/action/home';
 import DashboardIcon from 'material-ui/svg-icons/action/dashboard';
 import SearchIcon from 'material-ui/svg-icons/action/search';
 import GalleryIcon from 'material-ui/svg-icons/image/photo-library';
-import PostsIcon from 'material-ui/svg-icons/action/chrome-reader-mode';
 import FamiliesIcon from 'material-ui/svg-icons/social/people';
+import FamilyMembersIcon from 'material-ui/svg-icons/social/people-outline';
 import PeopleIcon from 'material-ui/svg-icons/social/person';
 import DataVizIcon from 'material-ui/svg-icons/editor/insert-chart';
 import VideosIcon from 'material-ui/svg-icons/notification/ondemand-video';
-import FamilyMembersIcon from 'material-ui/svg-icons/social/people-outline';
-import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
 import ProfileIcon from 'material-ui/svg-icons/action/perm-identity';
 import AboutIcon from 'material-ui/svg-icons/action/question-answer';
+import PostsIcon from 'material-ui/svg-icons/action/chrome-reader-mode';
+import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
+import UrlLinkIcon from 'material-ui/svg-icons/content/link';
 
 class ArticlesListNav extends Component {
   render() {
@@ -62,6 +63,9 @@ class ArticlesListNav extends Component {
         </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<AddPostsIcon />}>
           <Link to="/containers/AddPosts">Add Posts</Link>
+        </ListItem>
+        <ListItem onTouchTap={this.handleClose} leftIcon={<UrlLinkIcon />}>
+          <Link to="/containers/UrlLinks">Article Links</Link>
         </ListItem>
       </List>
     );

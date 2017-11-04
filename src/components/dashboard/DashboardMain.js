@@ -15,6 +15,7 @@ import ProfileIcon from 'material-ui/svg-icons/action/perm-identity';
 import GalleryIcon from 'material-ui/svg-icons/image/photo-library';
 import PostsIcon from 'material-ui/svg-icons/action/chrome-reader-mode';
 import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
+import UrlLinkIcon from 'material-ui/svg-icons/content/link';
 
 import IconButton from 'material-ui/IconButton';
 import Subheader from 'material-ui/Subheader';
@@ -201,6 +202,19 @@ class DashboardMain extends Component {
               >
                 <AddPostsIcon />
                 <Subheader>ADD_POSTS</Subheader>
+              </IconButton>
+            </Link>
+          </div>
+
+          <div className="col-sm-6 col-lg-4">
+            <Link to="/containers/AddPosts">
+              <IconButton
+                iconStyle={styles.largeIcon}
+                style={styles.large}
+                tooltip="ADD POSTS"
+              >
+                <UrlLinkIcon />
+                <Subheader>ARTILCE_LINKS</Subheader>
               </IconButton>
             </Link>
           </div>

@@ -10,12 +10,13 @@ import FamilyMembersIcon from 'material-ui/svg-icons/social/people-outline';
 import PeopleIcon from 'material-ui/svg-icons/social/person';
 import DataVizIcon from 'material-ui/svg-icons/editor/insert-chart';
 import VideosIcon from 'material-ui/svg-icons/notification/ondemand-video';
-import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
 import ListIcon from 'material-ui/svg-icons/action/list';
 import ProfileIcon from 'material-ui/svg-icons/action/perm-identity';
 import AboutIcon from 'material-ui/svg-icons/action/question-answer';
 import GalleryIcon from 'material-ui/svg-icons/image/photo-library';
 import PostsIcon from 'material-ui/svg-icons/action/chrome-reader-mode';
+import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
+import UrlLinkIcon from 'material-ui/svg-icons/content/link';
 
 class DashboardNav extends Component {
   render() {
@@ -62,6 +63,9 @@ class DashboardNav extends Component {
         </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<AddPostsIcon />}>
           <Link to="/containers/AddPosts">Add Posts</Link>
+        </ListItem>
+        <ListItem onTouchTap={this.handleClose} leftIcon={<UrlLinkIcon />}>
+          <Link to="/containers/UrlLinks">Article Links</Link>
         </ListItem>
       </List>
     );

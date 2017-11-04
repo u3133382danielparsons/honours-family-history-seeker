@@ -16,6 +16,7 @@ import ProfileIcon from 'material-ui/svg-icons/action/perm-identity';
 import AboutIcon from 'material-ui/svg-icons/action/question-answer';
 import PostsIcon from 'material-ui/svg-icons/action/chrome-reader-mode';
 import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
+import UrlLinkIcon from 'material-ui/svg-icons/content/link';
 
 class HomeNav extends Component {
   render() {
@@ -62,6 +63,9 @@ class HomeNav extends Component {
         </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<AddPostsIcon />}>
           <Link to="/containers/AddPosts">Add Posts</Link>
+        </ListItem>
+        <ListItem onTouchTap={this.handleClose} leftIcon={<UrlLinkIcon />}>
+          <Link to="/containers/UrlLinks">Article Links</Link>
         </ListItem>
       </List>
     );

@@ -22,6 +22,10 @@ import Subheader from 'material-ui/Subheader';
 import SvgIcon from 'material-ui/SvgIcon';
 import Paper from 'material-ui/Paper';
 import { Card, CardTitle, CardText, CardActions } from 'material-ui/Card';
+import { List, ListItem } from 'material-ui/List';
+import Avatar from 'material-ui/Avatar';
+import MollyAv from '../img/molly.jpg';
+
 // inline styles
 const styles = {
   drawer_container: {
@@ -85,6 +89,9 @@ class Molly extends Component {
             <div className="container">
               <Paper zDepth={1}>
                 <Card>
+                  <List>
+                    <ListItem leftAvatar={<Avatar src={MollyAv} />} />
+                  </List>
                   <CardTitle
                     title="Molly Kelly (Craig)"
                     subtitle="The Mardudjara people"

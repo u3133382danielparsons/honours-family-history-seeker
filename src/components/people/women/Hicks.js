@@ -23,6 +23,8 @@ import SvgIcon from 'material-ui/SvgIcon';
 import Paper from 'material-ui/Paper';
 import { Card, CardTitle, CardText, CardActions } from 'material-ui/Card';
 import { List, ListItem } from 'material-ui/List';
+import Avatar from 'material-ui/Avatar';
+import HicksAv from '../img/hicks.jpg';
 
 // inline styles
 const styles = {
@@ -87,6 +89,9 @@ class Hicks extends Component {
             <div className="container">
               <Paper zDepth={1}>
                 <Card>
+                  <List>
+                    <ListItem leftAvatar={<Avatar src={HicksAv} />} />
+                  </List>
                   <CardTitle
                     title="Mary Ann Hicks (McKenzie)"
                     subtitle="A Thirroul Pioneering Woman"

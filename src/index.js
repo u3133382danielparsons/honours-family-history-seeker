@@ -25,6 +25,7 @@ import Profile from './containers/Profile';
 import Gallery from './containers/Gallery';
 import Posts from './containers/Posts';
 import AddPosts from './containers/AddPosts';
+import UrlLinks from './containers/UrlLinks';
 
 // People
 import Georgiana from './components/people/women/Georgiana';
@@ -40,6 +41,7 @@ import ThomasHollingworth from './components/people/men/ThomasHollingworth';
 import HenryGray from './components/people/men/HenryGray';
 import BanjoPaterson from './components/people/men/BanjoPaterson';
 import LordScarlett from './components/people/men/LordScarlett';
+import AnthonyCordato from './components/people/men/AnthonyCordato';
 
 // Material-ui theme
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
@@ -69,6 +71,7 @@ render(
           <Route path="/containers/Gallery" component={Gallery} />
           <Route path="/containers/Posts" component={Posts} />
           <Route path="/containers/AddPosts" component={AddPosts} />
+          <Route path="/containers/UrlLinks" component={UrlLinks} />
 
           <Route
             path="/components/people/women/Georgiana"
@@ -106,6 +109,10 @@ render(
           <Route
             path="/components/people/men/LordScarlett"
             component={LordScarlett}
+          />
+          <Route
+            path="/components/people/men/AnthonyCordato"
+            component={AnthonyCordato}
           />
         </Switch>
       </BrowserRouter>
