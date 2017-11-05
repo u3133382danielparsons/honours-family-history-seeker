@@ -49,7 +49,7 @@ class Posts extends Component {
               title="POSTS"
               iconElementRight={
                 <FlatButton
-                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/Dashboard.js"
+                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/Posts.js"
                   target="_blank"
                   secondary={true}
                   icon={

@@ -50,7 +50,7 @@ class Families extends Component {
               title="FAMILIES"
               iconElementRight={
                 <FlatButton
-                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/Dashboard.js"
+                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/Families.js"
                   target="_blank"
                   secondary={true}
                   icon={

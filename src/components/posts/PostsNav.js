@@ -17,6 +17,8 @@ import AboutIcon from 'material-ui/svg-icons/action/question-answer';
 import GalleryIcon from 'material-ui/svg-icons/image/photo-library';
 import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
 import UrlLinkIcon from 'material-ui/svg-icons/content/link';
+import SubscribersIcon from 'material-ui/svg-icons/action/assignment-ind';
+import SignUpIcon from 'material-ui/svg-icons/action/card-membership';
 
 class PostsNav extends Component {
   render() {
@@ -67,6 +69,12 @@ class PostsNav extends Component {
         </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<UrlLinkIcon />}>
           <Link to="/containers/UrlLinks">Article Links</Link>
+        </ListItem>
+        <ListItem onTouchTap={this.handleClose} leftIcon={<SubscribersIcon />}>
+          <Link to="/containers/Subscribers">Subscribers</Link>
+        </ListItem>
+        <ListItem onTouchTap={this.handleClose} leftIcon={<SignUpIcon />}>
+          <Link to="/containers/SignUp">Sign Up</Link>
         </ListItem>
       </List>
     );

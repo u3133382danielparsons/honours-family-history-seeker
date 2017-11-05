@@ -16,6 +16,8 @@ import GalleryIcon from 'material-ui/svg-icons/image/photo-library';
 import PostsIcon from 'material-ui/svg-icons/action/chrome-reader-mode';
 import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
 import UrlLinkIcon from 'material-ui/svg-icons/content/link';
+import SubscribersIcon from 'material-ui/svg-icons/action/assignment-ind';
+import SignUpIcon from 'material-ui/svg-icons/action/card-membership';
 
 import IconButton from 'material-ui/IconButton';
 import Subheader from 'material-ui/Subheader';
@@ -211,10 +213,36 @@ class DashboardMain extends Component {
               <IconButton
                 iconStyle={styles.largeIcon}
                 style={styles.large}
-                tooltip="ADD POSTS"
+                tooltip="ARITICLE LINKS"
               >
                 <UrlLinkIcon />
                 <Subheader>ARTILCE_LINKS</Subheader>
+              </IconButton>
+            </Link>
+          </div>
+
+          <div className="col-sm-6 col-lg-4">
+            <Link to="/containers/Subscriptions">
+              <IconButton
+                iconStyle={styles.largeIcon}
+                style={styles.large}
+                tooltip="SUBSCRIPTIONS"
+              >
+                <SubscribersIcon />
+                <Subheader>SUBSCRIPTIONS</Subheader>
+              </IconButton>
+            </Link>
+          </div>
+
+          <div className="col-sm-6 col-lg-4">
+            <Link to="/containers/SignUp">
+              <IconButton
+                iconStyle={styles.largeIcon}
+                style={styles.large}
+                tooltip="SIGN UP"
+              >
+                <SignUpIcon />
+                <Subheader>SIGN UP</Subheader>
               </IconButton>
             </Link>
           </div>

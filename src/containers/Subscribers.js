@@ -4,10 +4,9 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 // src
-import ProfileNav from '../components/profile/ProfileNav';
-import ProfileHeader from '../components/profile/ProfileHeader';
-import ProfileMain from '../components/profile/ProfileMain';
-
+import SubscribersNav from '../components/subscribers/SubscribersNav';
+import SubscribersHeader from '../components/subscribers/SubscribersHeader';
+import SubscribersMain from '../components/subscribers/SubscribersMain';
 import Footer from '../components/Footer';
 
 // Material-ui
@@ -33,7 +32,7 @@ const styles = {
   }
 };
 
-class Profile extends Component {
+class Subscribers extends Component {
   render() {
     return (
       <div>
@@ -41,16 +40,16 @@ class Profile extends Component {
           <ResponsiveDrawer openSecondary={false}>
             <div style={styles.drawer_container}>
               <div style={styles.drawer_header_container}>
-                <ProfileNav />
+                <SubscribersNav />
               </div>
             </div>
           </ResponsiveDrawer>
           <BodyContainer openSecondary={false}>
             <ResponsiveAppBar
-              title="Profile"
+              title="SUBSCRIBERS"
               iconElementRight={
                 <FlatButton
-                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/Profile.js"
+                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/Subscribers.js"
                   target="_blank"
                   secondary={true}
                   icon={
@@ -66,11 +65,9 @@ class Profile extends Component {
               }
             />
             <div className="BackgroundGradient">
-              <ProfileHeader />
+              <SubscribersHeader />
             </div>
-            <div className="container">
-              <ProfileMain />
-            </div>
+            <SubscribersMain />
             <div className="footer-background">
               <Footer />
             </div>
@@ -81,7 +78,7 @@ class Profile extends Component {
   }
 }
 
-Profile.propTypes = {
+Subscribers.propTypes = {
   toggleDrawerOpen: PropTypes.func.isRequired,
   toggleDrawerDock: PropTypes.func.isRequired,
   setResponsive: PropTypes.func.isRequired
@@ -109,4 +106,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Profile);
+export default connect(mapStateToProps, mapDispatchToProps)(Subscribers);

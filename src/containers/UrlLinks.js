@@ -49,7 +49,7 @@ class UrlLinks extends Component {
               title="ARTICLE LINKS"
               iconElementRight={
                 <FlatButton
-                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/About.js"
+                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/UrlLinks.js"
                   target="_blank"
                   secondary={true}
                   icon={
