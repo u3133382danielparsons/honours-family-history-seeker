@@ -24,9 +24,7 @@ class SubscribersMain extends Component {
           <div className="col-md-6 col-lg-4">
             <SarahWalters />
           </div>
-          <div className="col-md-6 col-lg-4">
-            <HeatherHenty />
-          </div>
+
           <div className="col-md-6 col-lg-4">
             <LynMorris />
           </div>
@@ -41,6 +39,9 @@ class SubscribersMain extends Component {
           </div>
           <div className="col-md-6 col-lg-4">
             <KirstenKelly />
+          </div>
+          <div className="col-md-6 col-lg-4">
+            <HeatherHenty />
           </div>
         </div>
       </main>

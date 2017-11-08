@@ -13,14 +13,14 @@ import DataVizIcon from 'material-ui/svg-icons/editor/insert-chart';
 import VideosIcon from 'material-ui/svg-icons/notification/ondemand-video';
 import ListIcon from 'material-ui/svg-icons/action/list';
 import ProfileIcon from 'material-ui/svg-icons/action/perm-identity';
-import AboutIcon from 'material-ui/svg-icons/action/question-answer';
 import GalleryIcon from 'material-ui/svg-icons/image/photo-library';
 import PostsIcon from 'material-ui/svg-icons/action/chrome-reader-mode';
 import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
-import ArticleLinksIcon from 'material-ui/svg-icons/content/link';
+import UrlLinkIcon from 'material-ui/svg-icons/content/link';
 import SubscribersIcon from 'material-ui/svg-icons/action/assignment-ind';
+import SignUpIcon from 'material-ui/svg-icons/action/card-membership';
 
-class SignUpNav extends Component {
+class AboutNav extends Component {
   render() {
     return (
       <List className="nav-link">
@@ -33,7 +33,6 @@ class SignUpNav extends Component {
         <ListItem onTouchTap={this.handleClose} leftIcon={<SearchIcon />}>
           <Link to="/containers/Search">Search</Link>
         </ListItem>
-
         <ListItem onTouchTap={this.handleClose} leftIcon={<FamiliesIcon />}>
           <Link to="/containers/Families">Families</Link>
         </ListItem>
@@ -58,9 +57,6 @@ class SignUpNav extends Component {
         <ListItem onTouchTap={this.handleClose} leftIcon={<ProfileIcon />}>
           <Link to="/containers/Profile">Profile</Link>
         </ListItem>
-        <ListItem onTouchTap={this.handleClose} leftIcon={<AboutIcon />}>
-          <Link to="/containers/About">About</Link>
-        </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<GalleryIcon />}>
           <Link to="/containers/Gallery">Gallery</Link>
         </ListItem>
@@ -70,15 +66,18 @@ class SignUpNav extends Component {
         <ListItem onTouchTap={this.handleClose} leftIcon={<AddPostsIcon />}>
           <Link to="/containers/AddPosts">Add Posts</Link>
         </ListItem>
-        <ListItem onTouchTap={this.handleClose} leftIcon={<ArticleLinksIcon />}>
-          <Link to="/containers/ArticleLinks">Article Links</Link>
+        <ListItem onTouchTap={this.handleClose} leftIcon={<UrlLinkIcon />}>
+          <Link to="/containers/UrlLinks">Article Links</Link>
         </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<SubscribersIcon />}>
           <Link to="/containers/Subscribers">Subscribers</Link>
+        </ListItem>
+        <ListItem onTouchTap={this.handleClose} leftIcon={<SignUpIcon />}>
+          <Link to="/containers/SignUp">Login or Sign Up</Link>
         </ListItem>
       </List>
     );
   }
 }
 
-export default SignUpNav;
+export default AboutNav;

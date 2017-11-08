@@ -38,11 +38,11 @@ const SarahWalters = () => (
             <Link to="/containers/Profile">
               <MenuItem primaryText="Daniel Parsons" />
             </Link>,
-            <Link to="/containers/Profile">
-              <MenuItem primaryText="Daniel Parsons" />
+            <Link to="/components/profile/profiles/JohnSmithProfile">
+              <MenuItem primaryText="John Smith" />
             </Link>,
-            <Link to="/containers/Profile">
-              <MenuItem primaryText="Daniel Parsons" />
+            <Link to="/components/profile/profiles/MaryJonesProfile">
+              <MenuItem primaryText="Mary Jones" />
             </Link>,
             <Link to="/containers/Profile">
               <MenuItem primaryText="Daniel Parsons" />

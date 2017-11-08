@@ -28,7 +28,8 @@ import AddPosts from './containers/AddPosts';
 import ArticleLinks from './containers/ArticleLinks';
 import Subscribers from './containers/Subscribers';
 import SignUp from './containers/SignUp';
-import NotFound from './components/NotFound';
+// import NotFound from './components/NotFound';
+// <Route component={NotFound} />
 
 // People
 import Georgiana from './components/people/women/Georgiana';
@@ -45,7 +46,16 @@ import HenryGray from './components/people/men/HenryGray';
 import BanjoPaterson from './components/people/men/BanjoPaterson';
 import LordScarlett from './components/people/men/LordScarlett';
 import AnthonyCordato from './components/people/men/AnthonyCordato';
-
+// profiles
+import JohnSmithProfile from './components/profile/profiles/JohnSmithProfile';
+import MaryJonesProfile from './components/profile/profiles/MaryJonesProfile';
+import SarahWaltersProfile from './components/profile/profiles/SarahWaltersProfile';
+import RosOsborneProfile from './components/profile/profiles/RosOsborneProfile';
+import JulieHughesProfile from './components/profile/profiles/JulieHughesProfile';
+import RhondaRussellProfile from './components/profile/profiles/RhondaRussellProfile';
+import KirstenKellyProfile from './components/profile/profiles/KirstenKellyProfile';
+import HeatherHentyProfile from './components/profile/profiles/HeatherHentyProfile';
+import LynMorrisProfile from './components/profile/profiles/LynMorrisProfile';
 // Material-ui theme
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
@@ -77,7 +87,6 @@ render(
           <Route path="/containers/ArticleLinks" component={ArticleLinks} />
           <Route path="/containers/Subscribers" component={Subscribers} />
           <Route path="/containers/SignUp" component={SignUp} />
-          <Route path="*" component={NotFound} />
 
           <Route
             path="/components/people/women/Georgiana"
@@ -109,6 +118,7 @@ render(
             component={HenryGray}
           />
           <Route
+            exact
             path="/components/people/men/BanjoPaterson"
             component={BanjoPaterson}
           />
@@ -119,6 +129,42 @@ render(
           <Route
             path="/components/people/men/AnthonyCordato"
             component={AnthonyCordato}
+          />
+          <Route
+            path="/components/profile/profiles/JohnSmithProfile"
+            component={JohnSmithProfile}
+          />
+          <Route
+            path="/components/profile/profiles/MaryJonesProfile"
+            component={MaryJonesProfile}
+          />
+          <Route
+            path="/components/profile/profiles/SarahWaltersProfile"
+            component={SarahWaltersProfile}
+          />
+          <Route
+            path="/components/profile/profiles/RosOsborneProfile"
+            component={RosOsborneProfile}
+          />
+          <Route
+            path="/components/profile/profiles/JulieHughesProfile"
+            component={JulieHughesProfile}
+          />
+          <Route
+            path="/components/profile/profiles/RhondaRussellProfile"
+            component={RhondaRussellProfile}
+          />
+          <Route
+            path="/components/profile/profiles/KirstenKellyProfile"
+            component={KirstenKellyProfile}
+          />
+          <Route
+            path="/components/profile/profiles/LynMorrisProfile"
+            component={LynMorrisProfile}
+          />
+          <Route
+            path="/components/profile/profiles/HeatherHentyProfile"
+            component={HeatherHentyProfile}
           />
         </Switch>
       </BrowserRouter>

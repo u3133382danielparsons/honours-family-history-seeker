@@ -35,8 +35,14 @@ const RhondaRussell = () => (
           primaryText="Family History Seeker Friends"
           rightIcon={<ArrowDropRight />}
           menuItems={[
-            <Link to="/containers/Profile">
-              <MenuItem primaryText="Daniel Parsons" />
+            <Link to="/components/profile/profiles/LynMorrisProfile">
+              <MenuItem primaryText="Lyn Morris" />
+            </Link>,
+            <Link to="/components/profile/profiles/KirstenKellyProfile">
+              <MenuItem primaryText="Kirsten Kelly" />
+            </Link>,
+            <Link to="/components/profile/profiles/HeatherHentyProfile">
+              <MenuItem primaryText="Heather Henty" />
             </Link>,
             <Link to="/containers/Profile">
               <MenuItem primaryText="Daniel Parsons" />
@@ -44,17 +50,20 @@ const RhondaRussell = () => (
             <Link to="/containers/Profile">
               <MenuItem primaryText="Daniel Parsons" />
             </Link>,
-            <Link to="/containers/Profile">
-              <MenuItem primaryText="Daniel Parsons" />
+            <Link to="/components/profile/profiles/SarahWaltersProfile">
+              <MenuItem primaryText="Sarah Walters" />
             </Link>,
-            <Link to="/containers/Profile">
-              <MenuItem primaryText="Daniel Parsons" />
+            <Link to="/components/profile/profiles/JohnSmithProfile">
+              <MenuItem primaryText="John Smith" />
             </Link>,
-            <Link to="/containers/Profile">
-              <MenuItem primaryText="Daniel Parsons" />
+            <Link to="/components/profile/profiles/MaryJonesProfile">
+              <MenuItem primaryText="Mary Jones" />
             </Link>,
-            <Link to="/containers/Profile">
-              <MenuItem primaryText="Daniel Parsons" />
+            <Link to="/components/profile/profiles/RosOsborneProfile">
+              <MenuItem primaryText="Ros Osborne" />
+            </Link>,
+            <Link to="/components/profile/profiles/JulieHughesProfile">
+              <MenuItem primaryText="Julie Hughes" />
             </Link>,
             <Link to="/containers/Profile">
               <MenuItem primaryText="Daniel Parsons" />

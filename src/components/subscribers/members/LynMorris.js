@@ -35,17 +35,26 @@ const LynMorris = () => (
           primaryText="Family History Seeker Friends"
           rightIcon={<ArrowDropRight />}
           menuItems={[
-            <Link to="/containers/Profile">
-              <MenuItem primaryText="Daniel Parsons" />
+            <Link to="/components/profile/profiles/SarahWaltersProfile">
+              <MenuItem primaryText="Sarah Walters" />
+            </Link>,
+            <Link to="/components/profile/profiles/JohnSmithProfile">
+              <MenuItem primaryText="John Smith" />
+            </Link>,
+            <Link to="/components/profile/profiles/MaryJonesProfile">
+              <MenuItem primaryText="Mary Jones" />
             </Link>,
             <Link to="/containers/Profile">
               <MenuItem primaryText="Daniel Parsons" />
             </Link>,
-            <Link to="/containers/Profile">
-              <MenuItem primaryText="Daniel Parsons" />
+            <Link to="/components/profile/profiles/RosOsborneProfile">
+              <MenuItem primaryText="Ros Osborne" />
             </Link>,
-            <Link to="/containers/Profile">
-              <MenuItem primaryText="Daniel Parsons" />
+            <Link to="/components/profile/profiles/JulieHughesProfile">
+              <MenuItem primaryText="Julie Hughes" />
+            </Link>,
+            <Link to="/components/profile/profiles/RhondaRussellProfile">
+              <MenuItem primaryText="Rhonda Russell" />
             </Link>
           ]}
         />
