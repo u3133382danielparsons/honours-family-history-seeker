@@ -563,7 +563,7 @@ class HomeMain extends Component {
             <hr />
           </div>
 
-          <div className="col-md-12">
+          <div className="col-md-6">
             <Card>
               <CardHeader
                 title="Spence Family"

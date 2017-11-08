@@ -15,7 +15,7 @@ import ProfileIcon from 'material-ui/svg-icons/action/perm-identity';
 import GalleryIcon from 'material-ui/svg-icons/image/photo-library';
 import PostsIcon from 'material-ui/svg-icons/action/chrome-reader-mode';
 import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
-import UrlLinkIcon from 'material-ui/svg-icons/content/link';
+import ArticleLinksIcon from 'material-ui/svg-icons/content/link';
 import SubscribersIcon from 'material-ui/svg-icons/action/assignment-ind';
 import SignUpIcon from 'material-ui/svg-icons/action/card-membership';
 
@@ -215,7 +215,7 @@ class DashboardMain extends Component {
                 style={styles.large}
                 tooltip="ARITICLE LINKS"
               >
-                <UrlLinkIcon />
+                <ArticleLinksIcon />
                 <Subheader>ARTILCE_LINKS</Subheader>
               </IconButton>
             </Link>
@@ -239,10 +239,10 @@ class DashboardMain extends Component {
               <IconButton
                 iconStyle={styles.largeIcon}
                 style={styles.large}
-                tooltip="SIGN UP"
+                tooltip="LOGIN OR SIGN UP"
               >
                 <SignUpIcon />
-                <Subheader>SIGN UP</Subheader>
+                <Subheader>LOGIN OR SIGN UP</Subheader>
               </IconButton>
             </Link>
           </div>

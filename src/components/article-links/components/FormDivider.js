@@ -59,7 +59,7 @@ export default class FormDivider extends React.Component {
           open={this.state.open}
           onRequestClose={this.handleClose}
         >
-          This is a demonstration only.
+          This is a demonstration only. Please View articles below!
         </Dialog>
       </div>
     );

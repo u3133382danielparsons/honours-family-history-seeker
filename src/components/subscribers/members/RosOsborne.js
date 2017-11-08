@@ -9,26 +9,26 @@ import { Card, CardHeader } from 'material-ui/Card';
 import { List, ListItem } from 'material-ui/List';
 import Subheader from 'material-ui/Subheader';
 import ActionInfo from 'material-ui/svg-icons/action/info';
-import Ava7 from './img/ava-7.png';
+import Ava4 from './img/ava-4.png';
 
 const style = {
   display: 'inline-block',
   margin: '16px 32px 16px 0'
 };
 
-const SarahWalters = () => (
+const RosOsborne = () => (
   <div>
     <Paper style={style}>
       <Card>
         <CardHeader
-          title="Sarah Walters"
+          title="Ros Osborne"
           subtitle="Family History Seeker Member"
-          avatar={Ava7}
+          avatar={Ava4}
         />
       </Card>
       <Menu desktop={true} width={320}>
-        <Subheader>Public Servant</Subheader>
-        <Subheader>Aged 27</Subheader>
+        <Subheader>Shop Assistant</Subheader>
+        <Subheader>Aged 31</Subheader>
         <Subheader>Lives in Millicent, S.A.</Subheader>
         <Divider />
         <MenuItem
@@ -223,4 +223,4 @@ Mount Gambier History Group" />
   </div>
 );
 
-export default SarahWalters;
+export default RosOsborne;

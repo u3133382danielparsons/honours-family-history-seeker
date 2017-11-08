@@ -73,7 +73,7 @@ class AboutNav extends Component {
           <Link to="/containers/Subscribers">Subscribers</Link>
         </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<SignUpIcon />}>
-          <Link to="/containers/SignUp">Sign Up</Link>
+          <Link to="/containers/SignUp">Login or Sign Up</Link>
         </ListItem>
       </List>
     );

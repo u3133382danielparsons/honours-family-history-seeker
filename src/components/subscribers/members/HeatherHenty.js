@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Paper from 'material-ui/Paper';
 import Menu from 'material-ui/Menu';
 import MenuItem from 'material-ui/MenuItem';
@@ -26,12 +27,40 @@ const HeatherHenty = () => (
         />
       </Card>
       <Menu desktop={true} width={320}>
-        <Subheader>Aged Care Worder</Subheader>
+        <Subheader>Aged Care Worker</Subheader>
         <Subheader>Aged 33</Subheader>
         <Subheader>Lives in Maryborough, QLD</Subheader>
         <Divider />
         <MenuItem
-          primaryText="Families"
+          primaryText="Family History Seeker Friends"
+          rightIcon={<ArrowDropRight />}
+          menuItems={[
+            <Link to="/containers/Profile">
+              <MenuItem primaryText="Daniel Parsons" />
+            </Link>,
+            <Link to="/containers/Profile">
+              <MenuItem primaryText="Daniel Parsons" />
+            </Link>,
+            <Link to="/containers/Profile">
+              <MenuItem primaryText="Daniel Parsons" />
+            </Link>,
+            <Link to="/containers/Profile">
+              <MenuItem primaryText="Daniel Parsons" />
+            </Link>,
+            <Link to="/containers/Profile">
+              <MenuItem primaryText="Daniel Parsons" />
+            </Link>,
+            <Link to="/containers/Profile">
+              <MenuItem primaryText="Daniel Parsons" />
+            </Link>,
+            <Link to="/containers/Profile">
+              <MenuItem primaryText="Daniel Parsons" />
+            </Link>
+          ]}
+        />
+        <Divider />
+        <MenuItem
+          primaryText="Families Researched"
           checked={true}
           rightIcon={<ArrowDropRight />}
           menuItems={[
@@ -112,48 +141,6 @@ const HeatherHenty = () => (
                   />
                 </a>
               ]}
-            />,
-            <MenuItem
-              primaryText=" Family "
-              rightIcon={<ArrowDropRight />}
-              menuItems={[
-                <a href="" rel="noreferrer noopener" target="_blank" alt="">
-                  <MenuItem
-                    primaryText=""
-                    insetChildren={true}
-                    checked={true}
-                  />
-                </a>,
-                <a href="" rel="noreferrer noopener" target="_blank" alt="">
-                  <MenuItem
-                    primaryText=""
-                    insetChildren={true}
-                    checked={true}
-                  />
-                </a>,
-                <a href="" rel="noreferrer noopener" target="_blank" alt="">
-                  <MenuItem
-                    primaryText=""
-                    insetChildren={true}
-                    checked={true}
-                  />
-                </a>
-              ]}
-            />,
-            <MenuItem
-              primaryText=" Family "
-              rightIcon={<ArrowDropRight />}
-              menuItems={[
-                <a href="" rel="noreferrer noopener" target="_blank" alt="">
-                  <MenuItem primaryText="" checked={true} />
-                </a>,
-                <a href="" rel="noreferrer noopener" target="_blank" alt="">
-                  <MenuItem primaryText="" checked={true} />
-                </a>,
-                <a href="" rel="noreferrer noopener" target="_blank" alt="">
-                  <MenuItem primaryText="" checked={true} />
-                </a>
-              ]}
             />
           ]}
         />
@@ -164,12 +151,12 @@ const HeatherHenty = () => (
         <List>
           <ListItem rightIcon={<ActionInfo />}>
             <a
-              href="http://www.bendigofamilyhistory.org/"
+              href="http://www.new.maryboroughfamilyhistory.org/blog/"
               rel="noreferrer noopener"
               target="_blank"
-              alt="Bendigo Family History Group"
+              alt="Maryborough District Family History Society"
             >
-              <MenuItem primaryText="Bendigo Family History Group" />
+              <MenuItem primaryText="Maryborough District Family History Society" />
             </a>
           </ListItem>
         </List>
@@ -177,12 +164,12 @@ const HeatherHenty = () => (
         <List>
           <ListItem rightIcon={<ActionInfo />}>
             <a
-              href="http://www.brac.vic.gov.au/Family_Local_History/Family_History_Research/"
+              href="http://www.treeroots.com.au"
               rel="noreferrer noopener"
               target="_blank"
-              alt="Bendigo Family History Research"
+              alt="Maryborough Family Heritage Research Institute"
             >
-              <MenuItem primaryText="Bendigo Family History Research" />
+              <MenuItem primaryText="Maryborough Family Heritage Research Institute" />
             </a>
           </ListItem>
         </List>
@@ -190,12 +177,12 @@ const HeatherHenty = () => (
         <List>
           <ListItem rightIcon={<ActionInfo />}>
             <a
-              href="https://www.aigs.org.au/bendigo.htm"
+              href="https://www.facebook.com/maryboroughfamilyhistory/"
               rel="noreferrer noopener"
               target="_blank"
-              alt="Bendigo Family History Group"
+              alt="Maryborough Family History on Facebook"
             >
-              <MenuItem primaryText="Bendigo Family History Group" />
+              <MenuItem primaryText="Maryborough Family History on Facebook" />
             </a>
           </ListItem>
         </List>

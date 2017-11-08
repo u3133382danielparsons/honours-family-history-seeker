@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 // src
-import UrlLinksNav from '../components/url-links/UrlLinksNav';
-import UrlLinksHeader from '../components/url-links/UrlLinksHeader';
-import UrlLinksMain from '../components/url-links/UrlLinksMain';
+import ArticleLinksNav from '../components/article-links/ArticleLinksNav';
+import ArticleLinksHeader from '../components/article-links/ArticleLinksHeader';
+import ArticleLinksMain from '../components/article-links/ArticleLinksMain';
 import Footer from '../components/Footer';
 
 // Material-ui
@@ -40,7 +40,7 @@ class UrlLinks extends Component {
           <ResponsiveDrawer openSecondary={false}>
             <div style={styles.drawer_container}>
               <div style={styles.drawer_header_container}>
-                <UrlLinksNav />
+                <ArticleLinksNav />
               </div>
             </div>
           </ResponsiveDrawer>
@@ -49,7 +49,7 @@ class UrlLinks extends Component {
               title="ARTICLE LINKS"
               iconElementRight={
                 <FlatButton
-                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/UrlLinks.js"
+                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/ArticleLinks.js"
                   target="_blank"
                   secondary={true}
                   icon={
@@ -65,9 +65,9 @@ class UrlLinks extends Component {
               }
             />
             <div className="BackgroundGradient">
-              <UrlLinksHeader />
+              <ArticleLinksHeader />
             </div>
-            <UrlLinksMain />
+            <ArticleLinksMain />
             <div className="footer-background">
               <Footer />
             </div>

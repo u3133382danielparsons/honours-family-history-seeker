@@ -24,7 +24,8 @@ class SignUpMain extends Component {
             </Paper>
             <Card>
               <h3 className="social-login-msg">
-                This is for Demonstration Purposes!
+                This is for Demonstration Purposes Only! Oauth is beyond the
+                scope of this project!
               </h3>
             </Card>
           </div>

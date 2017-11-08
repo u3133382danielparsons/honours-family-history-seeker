@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 // src
-import ArticlesListNav from '../components/ArticlesList/ArticlesListNav';
-import ArticlesListHeader from '../components/ArticlesList/ArticlesListHeader';
-import ArticlesListMain from '../components/ArticlesList/ArticlesListMain';
+import ArticlesListNav from '../components/articles-list/ArticlesListNav';
+import ArticlesListHeader from '../components/articles-list/ArticlesListHeader';
+import ArticlesListMain from '../components/articles-list/ArticlesListMain';
 
 import Footer from '../components/Footer';
 

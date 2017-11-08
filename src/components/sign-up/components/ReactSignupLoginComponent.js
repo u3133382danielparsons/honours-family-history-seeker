@@ -36,7 +36,7 @@ class ReactSignupLoginComponent extends React.Component {
     //   // passwordConfirmation: this.state.passwordConfirmation,
     // });
     alert(
-      'Congratulations on Becoming a new member of the Demo Family History Seeker'
+      'Congratulations on Joining the Family History Seeker community! We look forward to your contributions!'
     );
   }
 
@@ -45,7 +45,9 @@ class ReactSignupLoginComponent extends React.Component {
     //   username: this.state.username,
     //   password: this.state.password
     // });
-    alert('Logged in! Please enjoy the Demo of Family History Seeker');
+    alert(
+      'Logged in!  Access the Family History Seeker Dashboard via the side menu!'
+    );
   }
 
   bubleUpRecoverPassword() {

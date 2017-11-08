@@ -9,26 +9,26 @@ import { Card, CardHeader } from 'material-ui/Card';
 import { List, ListItem } from 'material-ui/List';
 import Subheader from 'material-ui/Subheader';
 import ActionInfo from 'material-ui/svg-icons/action/info';
-import Ava1 from './img/ava-1.png';
+import Ava3 from './img/ava-3.png';
 
 const style = {
   display: 'inline-block',
   margin: '16px 32px 16px 0'
 };
 
-const MaryJones = () => (
+const RhondaRussell = () => (
   <div>
     <Paper style={style}>
       <Card>
         <CardHeader
-          title="Mary Jones"
+          title="Rhonda Russell"
           subtitle="Family History Seeker Member"
-          avatar={Ava1}
+          avatar={Ava3}
         />
       </Card>
       <Menu desktop={true} width={320}>
-        <Subheader>Public Servant</Subheader>
-        <Subheader>Aged 22</Subheader>
+        <Subheader>Accountant</Subheader>
+        <Subheader>Aged 34</Subheader>
         <Subheader>Lives in Albany, W.A.</Subheader>
         <Divider />
         <MenuItem
@@ -200,4 +200,4 @@ const MaryJones = () => (
   </div>
 );
 
-export default MaryJones;
+export default RhondaRussell;

@@ -25,9 +25,10 @@ import Profile from './containers/Profile';
 import Gallery from './containers/Gallery';
 import Posts from './containers/Posts';
 import AddPosts from './containers/AddPosts';
-import UrlLinks from './containers/UrlLinks';
+import ArticleLinks from './containers/ArticleLinks';
 import Subscribers from './containers/Subscribers';
 import SignUp from './containers/SignUp';
+import NotFound from './components/NotFound';
 
 // People
 import Georgiana from './components/people/women/Georgiana';
@@ -73,9 +74,10 @@ render(
           <Route path="/containers/Gallery" component={Gallery} />
           <Route path="/containers/Posts" component={Posts} />
           <Route path="/containers/AddPosts" component={AddPosts} />
-          <Route path="/containers/UrlLinks" component={UrlLinks} />
+          <Route path="/containers/ArticleLinks" component={ArticleLinks} />
           <Route path="/containers/Subscribers" component={Subscribers} />
           <Route path="/containers/SignUp" component={SignUp} />
+          <Route path="*" component={NotFound} />
 
           <Route
             path="/components/people/women/Georgiana"

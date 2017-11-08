@@ -46,7 +46,7 @@ class SignUp extends Component {
           </ResponsiveDrawer>
           <BodyContainer openSecondary={false}>
             <ResponsiveAppBar
-              title="SignUp"
+              title="Login or Sign Up"
               iconElementRight={
                 <FlatButton
                   href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/SignUp.js"

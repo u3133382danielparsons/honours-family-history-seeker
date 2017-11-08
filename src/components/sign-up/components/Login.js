@@ -105,7 +105,9 @@ const Login = ({
             styles.recoverPasswordButton
           )}
           onClick={() => {
-            alert('A Demo only Recovering Password');
+            alert(
+              'You can reset your password by clicking on the link sent to your email account!'
+            );
           }}
         >
           Recover Password

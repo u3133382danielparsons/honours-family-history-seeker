@@ -74,7 +74,7 @@ class SubscribersNav extends Component {
           <Link to="/containers/UrlLinks">Article Links</Link>
         </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<SignUpIcon />}>
-          <Link to="/containers/SignUp">SignUp</Link>
+          <Link to="/containers/SignUp">Login or SignUp</Link>
         </ListItem>
       </List>
     );
