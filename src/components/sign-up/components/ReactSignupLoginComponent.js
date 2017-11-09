@@ -36,7 +36,7 @@ class ReactSignupLoginComponent extends React.Component {
     //   // passwordConfirmation: this.state.passwordConfirmation,
     // });
     alert(
-      'Congratulations on Joining the Family History Seeker community! We look forward to your contributions!'
+      'Congratulations on Joining the Family History Seeker community! We look forward to your contributions! Please find the Dashboard and other pages in left side naviagtion menu.'
     );
   }
 
@@ -46,7 +46,7 @@ class ReactSignupLoginComponent extends React.Component {
     //   password: this.state.password
     // });
     alert(
-      'Logged in!  Access the Family History Seeker Dashboard via the side menu!'
+      'Logged in!  Access the Family History Seeker Dashboard via the left side menu!'
     );
   }
 

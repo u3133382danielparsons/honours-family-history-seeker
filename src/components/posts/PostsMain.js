@@ -90,7 +90,7 @@ class PostsMain extends Component {
       case 0:
         return 'Paterson Family';
       case 1:
-        return 'Links to  Patersons Family';
+        return 'Links to Patersons Family';
       case 2:
         return 'Andrew Barton Paterson';
       default:
@@ -108,10 +108,10 @@ class PostsMain extends Component {
               <StepLabel>Post the Family information!</StepLabel>
             </Step>
             <Step>
-              <StepLabel>Post the Links to Family information!</StepLabel>
+              <StepLabel>Family information Posted!</StepLabel>
             </Step>
             <Step>
-              <StepLabel>Post a Family Members information!</StepLabel>
+              <StepLabel>Links to Family information posted!</StepLabel>
             </Step>
           </Stepper>
           <div style={contentStyle}>
@@ -125,15 +125,21 @@ class PostsMain extends Component {
                       this.setState({ stepIndex: 0, finished: false });
                     }}
                   >
-                    Click here
+                    Reset Family Information
                   </Link>{' '}
-                  to reset the example.
                 </p>
                 <p>{this.getStepContent(stepIndex)}</p>
               </div>
             ) : (
               <div>
-                <p>{this.getStepContent(stepIndex)}</p>
+                <a
+                  href="https://www.wikitree.com/genealogy/PATERSON"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                  alt="wikitree"
+                >
+                  {this.getStepContent(stepIndex)}
+                </a>
                 <div style={{ marginTop: 12 }}>
                   <FlatButton
                     label="Back"
@@ -152,6 +158,10 @@ class PostsMain extends Component {
           </div>
         </div>
         <hr />
+        <div>
+          <div className="posts">{this.renderPosts()}</div>
+        </div>
+
         <Subheader>Select Family Members</Subheader>
         <Table onRowSelection={this.handleRowSelection}>
           <TableHeader>
@@ -184,9 +194,6 @@ class PostsMain extends Component {
             </TableRow>
           </TableBody>
         </Table>
-        <div>
-          <div className="posts">{this.renderPosts()}</div>
-        </div>
       </div>
     );
   }

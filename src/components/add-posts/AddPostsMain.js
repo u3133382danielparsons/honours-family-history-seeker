@@ -66,7 +66,9 @@ class AddPostsMain extends Component {
             component={this.renderTextArea}
           />
           <Button type="submit" className="btn btn-primary">
-            Submit
+            <Link to="/containers/Posts" className="link-add-posts">
+              Submit
+            </Link>
           </Button>
           <Link to="/" className="btn btn-danger">
             Cancel

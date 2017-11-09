@@ -13,6 +13,11 @@ object:hover {
 .nav-link a {
   color: #4f4f4f;
 }
+
+.link-add-posts {
+  color: white;
+  text-align: center;
+}
 /*.nav-link a:hover {
   font-size: 1.2em;
   -webkit-transition: color 2s, font-size 2s;
