@@ -41,7 +41,7 @@ import University from 'material-ui/svg-icons/av/library-books';
 import Course from 'material-ui/svg-icons/image/palette';
 import Location from 'material-ui/svg-icons/communication/location-on';
 import Website from 'material-ui/svg-icons/content/link';
-import MaryJonesAv from '../../subscribers/members/img/ava-8.png';
+import HeatherHentyAv from '../../subscribers/members/img/ava-8.png';
 // inline styles
 const styles = {
   drawer_container: {
@@ -70,7 +70,7 @@ class HeatherHentyProfile extends Component {
               title="Profile"
               iconElementRight={
                 <FlatButton
-                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/Profile.js"
+                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/HeatherHentyProfile.js"
                   target="_blank"
                   secondary={true}
                   icon={
@@ -111,7 +111,7 @@ class HeatherHentyProfile extends Component {
                 <CardHeader
                   title="Heather Henty"
                   subtitle="Member of Family History Seeker since November 10, 2017"
-                  avatar={MaryJonesAv}
+                  avatar={HeatherHentyAv}
                 />
                 <CardText>
                   <List>
@@ -122,27 +122,27 @@ class HeatherHentyProfile extends Component {
                     />
                     <ListItem
                       primaryText="Date of Birth"
-                      secondaryText="20th January, 1970"
+                      secondaryText="20th April, 1984"
                       leftIcon={<DateRange />}
                     />
                     <ListItem
                       primaryText="Location"
-                      secondaryText="Canberra, Australia"
+                      secondaryText="Maryborough Qld, Australia"
                       leftIcon={<Location />}
                     />
                     <ListItem
                       primaryText="Personal Email"
-                      secondaryText="rhondarussell@gmail.com"
+                      secondaryText="heatherhenty@fmail.com"
                       leftIcon={<Email />}
                     />
                     <ListItem
                       primaryText="Phone Number"
-                      secondaryText="0491 360 585"
+                      secondaryText="xxxx xxxx xxxx"
                       leftIcon={<Phone />}
                     />
                     <ListItem
                       primaryText="Occupation"
-                      secondaryText="Fulltime Student"
+                      secondaryText="Aged Care Worker"
                       leftIcon={<Work />}
                     />
                     <ListItem

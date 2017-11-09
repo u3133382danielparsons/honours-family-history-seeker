@@ -2,6 +2,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
+import Subheader from 'material-ui/Subheader';
 
 // from src/components
 import HomeNav from './components/home/HomeNav';
@@ -20,6 +22,7 @@ import {
 } from './material-ui-responsive-drawer/index.js';
 import FlatButton from 'material-ui/FlatButton';
 import SvgIcon from 'material-ui/SvgIcon';
+import SignUpIcon from 'material-ui/svg-icons/action/card-membership';
 
 const styles = {
   drawer_container: {
@@ -45,7 +48,13 @@ class Home extends Component {
           </ResponsiveDrawer>
           <BodyContainer openSecondary={false}>
             <ResponsiveAppBar
-              title="HOME"
+              title={
+                <Link to="/containers/SignUp">
+                  <FlatButton icon={<SignUpIcon />}>
+                    <Subheader>LOGIN OR SIGN UP</Subheader>
+                  </FlatButton>
+                </Link>
+              }
               iconElementRight={
                 <FlatButton
                   href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/Home.js"

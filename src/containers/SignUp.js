@@ -20,6 +20,7 @@ import {
 } from '../material-ui-responsive-drawer/index.js';
 import FlatButton from 'material-ui/FlatButton';
 import SvgIcon from 'material-ui/SvgIcon';
+import Face from 'material-ui/svg-icons/image/tag-faces';
 
 // inline styles
 const styles = {
@@ -46,7 +47,7 @@ class SignUp extends Component {
           </ResponsiveDrawer>
           <BodyContainer openSecondary={false}>
             <ResponsiveAppBar
-              title="Login or Sign Up"
+              title={<FlatButton icon={<Face />}>Welcome . . .</FlatButton>}
               iconElementRight={
                 <FlatButton
                   href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/SignUp.js"

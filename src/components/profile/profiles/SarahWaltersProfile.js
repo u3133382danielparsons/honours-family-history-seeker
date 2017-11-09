@@ -70,7 +70,7 @@ class SarahWaltersProfile extends Component {
               title="Profile"
               iconElementRight={
                 <FlatButton
-                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/Profile.js"
+                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/SarahWaltersProfile.js"
                   target="_blank"
                   secondary={true}
                   icon={
@@ -122,53 +122,53 @@ class SarahWaltersProfile extends Component {
                     />
                     <ListItem
                       primaryText="Date of Birth"
-                      secondaryText="20th January, 1970"
+                      secondaryText="20th November, 1990"
                       leftIcon={<DateRange />}
                     />
                     <ListItem
                       primaryText="Location"
-                      secondaryText="Canberra, Australia"
+                      secondaryText="Millicent S.A., Australia"
                       leftIcon={<Location />}
                     />
                     <ListItem
                       primaryText="Personal Email"
-                      secondaryText="danielparsons3133382@gmail.com"
+                      secondaryText="sarahwalters@gmail.com"
                       leftIcon={<Email />}
                     />
                     <ListItem
                       primaryText="Phone Number"
-                      secondaryText="0491 360 585"
+                      secondaryText="7777 777 777"
                       leftIcon={<Phone />}
                     />
                     <ListItem
                       primaryText="Occupation"
-                      secondaryText="Fulltime Student"
+                      secondaryText="Public Servant"
                       leftIcon={<Work />}
                     />
                     <ListItem
                       primaryText="Student ID "
-                      secondaryText="u3133382"
+                      secondaryText="N.A."
                       leftIcon={<Number />}
                     />
                     <ListItem
                       primaryText="Interests"
-                      secondaryText="Web Design, Web Development"
+                      secondaryText="Chinese, Geneology"
                       leftIcon={<Info />}
                     />
                     <ListItem
                       primaryText="Hobbies"
-                      secondaryText="Football, Guitar, Reading, Watching TV"
+                      secondaryText="Walking, Dancing, Reading, Watching TV"
                       leftIcon={<Hobbies />}
                     />
 
                     <ListItem
                       primaryText="University"
-                      secondaryText="University of Canberra, Australia"
+                      secondaryText="N.A."
                       leftIcon={<University />}
                     />
                     <ListItem
                       primaryText="Course of Study"
-                      secondaryText="Honours in Arts & Design"
+                      secondaryText="N.A."
                       leftIcon={<Course />}
                     />
                     <ListItem
@@ -178,7 +178,7 @@ class SarahWaltersProfile extends Component {
                     />
                     <ListItem
                       primaryText="Student Email"
-                      secondaryText="u3133382@uni.canberra.edu.au"
+                      secondaryText="N.A."
                       leftIcon={<Email />}
                     />
                   </List>

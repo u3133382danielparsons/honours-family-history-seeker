@@ -70,7 +70,7 @@ class MaryJonesProfile extends Component {
               title="Profile"
               iconElementRight={
                 <FlatButton
-                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/Profile.js"
+                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/MaryJonesProfile.js"
                   target="_blank"
                   secondary={true}
                   icon={

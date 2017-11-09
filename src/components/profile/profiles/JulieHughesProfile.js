@@ -70,7 +70,7 @@ class JulieHughesProfile extends Component {
               title="Profile"
               iconElementRight={
                 <FlatButton
-                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/Profile.js"
+                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/JulieHughesProfile.js"
                   target="_blank"
                   secondary={true}
                   icon={
@@ -122,22 +122,22 @@ class JulieHughesProfile extends Component {
                     />
                     <ListItem
                       primaryText="Date of Birth"
-                      secondaryText="20th January, 1970"
+                      secondaryText="10th March, 1994"
                       leftIcon={<DateRange />}
                     />
                     <ListItem
                       primaryText="Location"
-                      secondaryText="Canberra, Australia"
+                      secondaryText="Bendigo Vic, Australia"
                       leftIcon={<Location />}
                     />
                     <ListItem
                       primaryText="Personal Email"
-                      secondaryText="danielparsons3133382@gmail.com"
+                      secondaryText="julieHughes@gmail.com"
                       leftIcon={<Email />}
                     />
                     <ListItem
                       primaryText="Phone Number"
-                      secondaryText="0491 360 585"
+                      secondaryText="987 654 321"
                       leftIcon={<Phone />}
                     />
                     <ListItem
@@ -147,7 +147,7 @@ class JulieHughesProfile extends Component {
                     />
                     <ListItem
                       primaryText="Student ID "
-                      secondaryText="u3133382"
+                      secondaryText="u555555"
                       leftIcon={<Number />}
                     />
                     <ListItem
@@ -157,7 +157,7 @@ class JulieHughesProfile extends Component {
                     />
                     <ListItem
                       primaryText="Hobbies"
-                      secondaryText="Football, Guitar, Reading, Watching TV"
+                      secondaryText="Dancing, Piano, Reading, Watching TV"
                       leftIcon={<Hobbies />}
                     />
 
@@ -168,7 +168,7 @@ class JulieHughesProfile extends Component {
                     />
                     <ListItem
                       primaryText="Course of Study"
-                      secondaryText="Honours in Arts & Design"
+                      secondaryText="Bachelor of Mathematics"
                       leftIcon={<Course />}
                     />
                     <ListItem
@@ -178,7 +178,7 @@ class JulieHughesProfile extends Component {
                     />
                     <ListItem
                       primaryText="Student Email"
-                      secondaryText="u3133382@uni.canberra.edu.au"
+                      secondaryText="u555555@uni.canberra.edu.au"
                       leftIcon={<Email />}
                     />
                   </List>

@@ -70,7 +70,7 @@ class KirstenKellyProfile extends Component {
               title="Profile"
               iconElementRight={
                 <FlatButton
-                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/Profile.js"
+                  href="https://github.com/u3133382danielparsons/honours-family-history-seeker/blob/master/src/containers/KirstenKellyProfile.js"
                   target="_blank"
                   secondary={true}
                   icon={
@@ -122,22 +122,22 @@ class KirstenKellyProfile extends Component {
                     />
                     <ListItem
                       primaryText="Date of Birth"
-                      secondaryText="20th January, 1970"
+                      secondaryText="20th August, 1995"
                       leftIcon={<DateRange />}
                     />
                     <ListItem
                       primaryText="Location"
-                      secondaryText="Canberra, Australia"
+                      secondaryText="Bendigo Vic, Australia"
                       leftIcon={<Location />}
                     />
                     <ListItem
                       primaryText="Personal Email"
-                      secondaryText="rhondarussell@gmail.com"
+                      secondaryText="kirstenkelly@gmail.com"
                       leftIcon={<Email />}
                     />
                     <ListItem
                       primaryText="Phone Number"
-                      secondaryText="0491 360 585"
+                      secondaryText="000 000 000"
                       leftIcon={<Phone />}
                     />
                     <ListItem
@@ -147,7 +147,7 @@ class KirstenKellyProfile extends Component {
                     />
                     <ListItem
                       primaryText="Student ID "
-                      secondaryText="u3133382"
+                      secondaryText="u314243"
                       leftIcon={<Number />}
                     />
                     <ListItem
@@ -157,7 +157,7 @@ class KirstenKellyProfile extends Component {
                     />
                     <ListItem
                       primaryText="Hobbies"
-                      secondaryText="Football, Guitar, Reading, Watching TV"
+                      secondaryText="Chess, Jogging, Reading, Watching TV"
                       leftIcon={<Hobbies />}
                     />
 
@@ -178,7 +178,7 @@ class KirstenKellyProfile extends Component {
                     />
                     <ListItem
                       primaryText="Student Email"
-                      secondaryText="u3133382@uni.canberra.edu.au"
+                      secondaryText="u314243@uni.canberra.edu.au"
                       leftIcon={<Email />}
                     />
                   </List>

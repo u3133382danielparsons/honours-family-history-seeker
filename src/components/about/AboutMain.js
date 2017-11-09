@@ -30,17 +30,22 @@ class AboutMain extends Component {
           <CardText>
             <List>
               <ListItem
-                primaryText="Family History Seeker is a research tool for family historians. The design is in the development phase."
+                primaryText="Family History Seeker is a research tool for family historians. "
                 style={styles.lineHeight}
                 leftIcon={<Dot />}
               />
               <ListItem
-                primaryText="Each page within Family History Seeker is a demonstration of a component."
+                primaryText="Each page within Family History Seeker gives a visual demonstration of a component."
                 style={styles.lineHeight}
                 leftIcon={<Dot />}
               />
               <ListItem
-                primaryText="The HOME Page displays works posted by Family History Seeker members."
+                primaryText="The design is a concept for a fututre proper working family history research tool."
+                style={styles.lineHeight}
+                leftIcon={<Dot />}
+              />
+              <ListItem
+                primaryText="The HOME Page is  the landing page and cards of families are displayed. Visitors can got to the Login or Sign Up page."
                 style={styles.lineHeight}
                 leftIcon={<Dot />}
               />
@@ -50,17 +55,17 @@ class AboutMain extends Component {
                 leftIcon={<Dot />}
               />
               <ListItem
-                primaryText="The Sidebar is also a navigation component. Each page has a sidebar sidebar that contains a list of links to all of the pages within Family History Seeker."
+                primaryText="The navigation component is in the left sidebar. Each page has a navigation sidebar that contains a list of links to all of the pages within Family History Seeker."
                 style={styles.lineHeight}
                 leftIcon={<Dot />}
               />
               <ListItem
-                primaryText="The SEARCH page is a form that takes in a query. The query should be a name of someone that is being researched by the family historian."
+                primaryText="The SEARCH page is a form with an input field that takes in a query."
                 style={styles.lineHeight}
                 leftIcon={<Dot />}
               />
               <ListItem
-                primaryText="Pressing the submit button in the SEARCH page sends a request for items from The National Library of Australia's Trove collection. A list of 20 articles from the Trove collection are returned."
+                primaryText="Pressing the submit button in the SEARCH page sends a request for items from The National Library of Australia's Trove collection. A list of 20 articles from the Trove collection are returned. The Search component will only work when the browser has CORS (Cross Origin Restrictions) enabled."
                 style={styles.lineHeight}
                 leftIcon={<Dot />}
               />
@@ -113,7 +118,7 @@ class AboutMain extends Component {
                 leftIcon={<Dot />}
               />
               <ListItem
-                primaryText="The POSTS page is intended to be a component that stores information and resources relevent to the family or family member being researched."
+                primaryText="The POSTS page is intended to be a component that stores information and resources relevent to the family or family member being researched. A stepper component and a table with selectable items is also on the POSTS page."
                 style={styles.lineHeight}
                 leftIcon={<Dot />}
               />
@@ -124,6 +129,11 @@ class AboutMain extends Component {
               />
               <ListItem
                 primaryText="The ARTICLE LINKS page has a form that accepts a Newspaper Title, Article Title, the Publication Date, and the URL Link to the Trove Article. The Articles page also has a list of Articles with the same details that are given in the form."
+                style={styles.lineHeight}
+                leftIcon={<Dot />}
+              />
+              <ListItem
+                primaryText="The SUBSCRIBERS page has panels of Family History Seeker members. Each panel contains the personal details and drop down lists of friends and families being researched. Links to external resources relevent to each members research are also in the panels."
                 style={styles.lineHeight}
                 leftIcon={<Dot />}
               />

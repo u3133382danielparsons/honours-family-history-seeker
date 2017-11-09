@@ -1,13 +1,6 @@
 import React, { Component } from 'react';
 // material-ui components
-import {
-  Card,
-  CardText,
-  CardMedia,
-  CardTitle,
-  CardActions
-} from 'material-ui/Card';
-import FlatButton from 'material-ui/FlatButton';
+import { Card, CardText, CardMedia, CardTitle } from 'material-ui/Card';
 // React Photo Gallery
 import Gallery from 'react-photo-gallery';
 // src
@@ -18,12 +11,10 @@ import McCraeGalleryFour from './galleries/McCraeGalleryFour';
 import McCraeGalleryFive from './galleries/McCraeGalleryFive';
 
 import hobartLand from '../../img/bryant/hobartLand.jpg';
-import Charles from './galleries/charlesperkins.jpg';
 import scarlettFamily from '../../img/scarlett/scarlettFamily.jpg';
 import grayFamily from '../../img/gray/grayFamily.jpg';
 import CatherineSpence from '../../img/spence/Catherine-Spence.jpg';
 import Wiloma from '../../img/nla.jpg';
-import Erj from '../../img/erj.jpg';
 import Glover from '../../img/glover.jpg';
 import Mckeller from '../../img/mckeller.jpg';
 import Chinn from '../../img/chinn.jpg';
@@ -158,26 +149,6 @@ class GalleryMain extends Component {
 
         <div className="col-md-6">
           <Card>
-            <CardMedia
-              overlay={<CardTitle subtitle="Charles Perkins Graduation" />}
-            >
-              <img src={Charles} alt="Catherine Spence" />
-            </CardMedia>
-            <CardText>
-              <a
-                href="https://sydney.edu.au/news-opinion/news/2016/10/21/50-years-forward--50-years-back.html"
-                rel="noreferrer noopener"
-                target="_blank"
-                alt="wikitree"
-              >
-                50 years back - 50 years forward
-              </a>
-            </CardText>
-          </Card>
-        </div>
-
-        <div className="col-md-6">
-          <Card>
             <CardMedia overlay={<CardTitle subtitle="Catherine Spence" />}>
               <img src={CatherineSpence} alt="Catherine Spence" />
             </CardMedia>
@@ -194,26 +165,6 @@ class GalleryMain extends Component {
           </Card>
         </div>
 
-        <div className="col-md-6">
-          <Card>
-            <CardMedia overlay={<CardTitle subtitle="An 1850s Family" />}>
-              <img src={Erj} alt="Ethan + Rodney + Jeff" />
-            </CardMedia>
-            <CardText>
-              <CardActions>
-                <FlatButton label="Chinese Australians">
-                  <a
-                    href="http://chineseaustralia.org/category/books/"
-                    rel="noreferrer noopener"
-                    target="_blank"
-                  >
-                    by Kate Bagnall
-                  </a>
-                </FlatButton>
-              </CardActions>
-            </CardText>
-          </Card>
-        </div>
         <div className="col-md-12">
           <Card>
             <CardMedia
