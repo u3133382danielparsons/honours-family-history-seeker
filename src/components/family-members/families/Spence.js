@@ -54,8 +54,9 @@ class Spence extends Component {
               onRequestClose={this.handleRequestClose}
             >
               <Menu>
-                <MenuItem primaryText="David Spence" />
-
+                <Link to="../../components/people/women/Spence">
+                  <MenuItem primaryText="David Spence" />
+                </Link>
                 <Link to="../../components/people/women/Spence">
                   <MenuItem primaryText="Agnes Spence" />
                 </Link>

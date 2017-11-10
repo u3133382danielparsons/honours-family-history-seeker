@@ -96,6 +96,7 @@ class HenryGray extends Component {
                     title="Gray, William Henry (1843–1929)"
                     subtitle="Dairy Industry North Coast Lismore, Mullumbimby"
                   />
+
                   <CardText>
                     The late Mr. and Mrs. W. H. Gray, of 10 Wyrallah road,
                     Lismore, who died within a few hours of each other on

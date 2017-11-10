@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { List, ListItem } from 'material-ui/List';
 import { Toolbar, ToolbarGroup, ToolbarTitle } from 'material-ui/Toolbar';
 import { Card, CardHeader, CardText, CardActions } from 'material-ui/Card';
@@ -40,6 +41,13 @@ class FamiliesMain extends Component {
                       >
                         David Spence - WikiTree
                       </a>
+                    </FlatButton>
+                  </CardActions>
+                  <CardActions>
+                    <FlatButton label="Spence Family">
+                      <Link to="../components/people/women/Spence">
+                        Helen Spence - {' '}
+                      </Link>
                     </FlatButton>
                   </CardActions>
                 </ListItem>
@@ -401,6 +409,13 @@ class FamiliesMain extends Component {
                     Queen Street, Woollahra. The Patersons had two children,
                     Grace (born in 1904) and Hugh (born in 1906).
                   </CardText>
+                  <CardActions>
+                    <FlatButton label="Paterson Family">
+                      <Link to="/components/people/men/BanjoPaterson">
+                        Banjo Paterson -{' '}
+                      </Link>
+                    </FlatButton>
+                  </CardActions>
                 </ListItem>
 
                 <ListItem>
@@ -491,6 +506,13 @@ class FamiliesMain extends Component {
                     1791. On their death George held the lease of Curry Pool
                     Farm.
                   </CardText>
+                  <CardActions>
+                    <FlatButton label="Bryant Family">
+                      <Link to="/components/people/men/BryantBrothers">
+                        A Tale of Four Brothers -{' '}
+                      </Link>
+                    </FlatButton>
+                  </CardActions>
                 </ListItem>
                 <ListItem>
                   <CardHeader>George Bryant</CardHeader>
@@ -615,6 +637,13 @@ class FamiliesMain extends Component {
                     retirement the property was handed over to the two youngest
                     sons, Lewis and Ernest.
                   </CardText>
+                  <CardActions>
+                    <FlatButton label="Gray Family">
+                      <Link to="/components/people/men/HenryGray">
+                        Diary Industry Mullumbimby -{' '}
+                      </Link>
+                    </FlatButton>
+                  </CardActions>
                 </ListItem>
 
                 <ListItem>
@@ -711,6 +740,13 @@ class FamiliesMain extends Component {
                     Hollingworth, initially worked for his uncle, Thomas King,
                     at Woodburn.
                   </CardText>
+                  <CardActions>
+                    <FlatButton label="Hollingworth Family">
+                      <Link to="/components/people/men/ThomasHollingworth">
+                        Timber Industry Mullumbimby -{' '}
+                      </Link>
+                    </FlatButton>
+                  </CardActions>
                 </ListItem>
 
                 <ListItem>
@@ -811,6 +847,13 @@ class FamiliesMain extends Component {
                     James Scarlett became Attorney-General and Lord Chief Baron
                     of the Exchequer.
                   </CardText>
+                  <CardActions>
+                    <FlatButton label="Scarlett Family">
+                      <Link to="/components/people/men/LordScarlett">
+                        1st Baron of Abinger -{' '}
+                      </Link>
+                    </FlatButton>
+                  </CardActions>
                 </ListItem>
                 <ListItem>
                   <CardHeader>Lord Abinger</CardHeader>

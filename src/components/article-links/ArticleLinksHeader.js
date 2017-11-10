@@ -8,7 +8,7 @@ const styles = {
   }
 };
 
-class UrlLinksHeader extends Component {
+class ArticleLinksHeader extends Component {
   render() {
     return (
       <header>
@@ -31,4 +31,4 @@ class UrlLinksHeader extends Component {
   }
 }
 
-export default UrlLinksHeader;
+export default ArticleLinksHeader;

@@ -6,13 +6,13 @@ import { Card, CardText } from 'material-ui/Card';
 import Divider from 'material-ui/Divider';
 import FlatButton from 'material-ui/FlatButton';
 
-class UrlLinksMain extends Component {
+class ArticleLinksMain extends Component {
   render() {
     return (
       <main className="container">
         <div className="row">
           <List>
-            <ListItem>Add Links to Trove Articles</ListItem>
+            <ListItem>Add Links to Articles Found in Trove</ListItem>
           </List>
           <List>
             <ListItem>
@@ -245,4 +245,4 @@ class UrlLinksMain extends Component {
   }
 }
 
-export default UrlLinksMain;
+export default ArticleLinksMain;

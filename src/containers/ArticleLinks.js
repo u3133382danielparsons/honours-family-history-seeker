@@ -32,7 +32,7 @@ const styles = {
   }
 };
 
-class UrlLinks extends Component {
+class ArticleLinks extends Component {
   render() {
     return (
       <div>
@@ -78,7 +78,7 @@ class UrlLinks extends Component {
   }
 }
 
-UrlLinks.propTypes = {
+ArticleLinks.propTypes = {
   toggleDrawerOpen: PropTypes.func.isRequired,
   toggleDrawerDock: PropTypes.func.isRequired,
   setResponsive: PropTypes.func.isRequired
@@ -106,4 +106,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(UrlLinks);
+export default connect(mapStateToProps, mapDispatchToProps)(ArticleLinks);

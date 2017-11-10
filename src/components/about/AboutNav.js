@@ -16,7 +16,7 @@ import ProfileIcon from 'material-ui/svg-icons/action/perm-identity';
 import GalleryIcon from 'material-ui/svg-icons/image/photo-library';
 import PostsIcon from 'material-ui/svg-icons/action/chrome-reader-mode';
 import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
-import UrlLinkIcon from 'material-ui/svg-icons/content/link';
+import ArticleLinksIcon from 'material-ui/svg-icons/content/link';
 import SubscribersIcon from 'material-ui/svg-icons/action/assignment-ind';
 import SignUpIcon from 'material-ui/svg-icons/action/card-membership';
 
@@ -66,8 +66,8 @@ class AboutNav extends Component {
         <ListItem onTouchTap={this.handleClose} leftIcon={<AddPostsIcon />}>
           <Link to="/containers/AddPosts">Add Posts</Link>
         </ListItem>
-        <ListItem onTouchTap={this.handleClose} leftIcon={<UrlLinkIcon />}>
-          <Link to="/containers/UrlLinks">Article Links</Link>
+        <ListItem onTouchTap={this.handleClose} leftIcon={<ArticleLinksIcon />}>
+          <Link to="/containers/ArticleLinks">Article Links</Link>
         </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<SubscribersIcon />}>
           <Link to="/containers/Subscribers">Subscribers</Link>

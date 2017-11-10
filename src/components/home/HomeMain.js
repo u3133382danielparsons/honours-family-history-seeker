@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
 import {
   Card,
   CardHeader,
@@ -105,6 +107,13 @@ class HomeMain extends Component {
                 recommend- ation to the Governor and the high cost of travel to
                 Van Diemen’s Land also discouraged the poorer person.
               </CardText>
+              <CardActions>
+                <FlatButton label="Bryant Family">
+                  <Link to="/components/people/men/BryantBrothers">
+                    Four Brothers -{' '}
+                  </Link>
+                </FlatButton>
+              </CardActions>
               <CardActions>
                 <List>
                   <ListItem>
@@ -241,6 +250,13 @@ class HomeMain extends Component {
               <CardActions>
                 <List>
                   <ListItem>
+                    <CardActions>
+                      <FlatButton label="Gray Family">
+                        <Link to="/components/people/men/HenryGray">
+                          Diary Industry Mullumbimby -{' '}
+                        </Link>
+                      </FlatButton>
+                    </CardActions>
                     <FlatButton label="Trove">
                       <a
                         href="http://trove.nla.gov.au/newspaper/article/190722784?browse=ndp%3Abrowse%2Ftitle%2FT%2Ftitle%2F1007%2F1922%2F02%2F08%2Fpage%2F21492780%2Farticle%2F190722784"
@@ -292,6 +308,13 @@ class HomeMain extends Component {
               <CardText>
                 <img src={scarlettArticle} alt="The Scarlett Family" />
               </CardText>
+              <CardActions>
+                <FlatButton label="Scarlett Family">
+                  <Link to="/components/people/men/LordScarlett">
+                    1st Baron of Abinger -{' '}
+                  </Link>
+                </FlatButton>
+              </CardActions>
               <CardActions>
                 <List>
                   <ListItem>
@@ -392,6 +415,13 @@ class HomeMain extends Component {
                 which closed the mill down. The site is now occupied by the
                 Byron Shire Council Chambers.
               </CardText>
+              <CardActions>
+                <FlatButton label="Hollingworth Family">
+                  <Link to="/components/people/men/ThomasHollingworth">
+                    Timber Industry Mullumbimby -{' '}
+                  </Link>
+                </FlatButton>
+              </CardActions>
               <CardActions>
                 <List>
                   <ListItem>
@@ -598,6 +628,13 @@ class HomeMain extends Component {
                   John Brodie Spence is the brother of Catherine Helen Spence
                   and he gained fame as a prominent South Australian Banker.
                 </CardText>
+                <CardActions>
+                  <FlatButton label="Spence Family">
+                    <Link to="../components/people/women/Spence">
+                      Helen Spence - {' '}
+                    </Link>
+                  </FlatButton>
+                </CardActions>
                 <CardActions>
                   <FlatButton label="Project Gutenberg">
                     <a
@@ -877,6 +914,13 @@ class HomeMain extends Component {
                 <img src={Wind} alt="Australia's Great Poet" />
                 <img src={Clancy} alt="Australia's Great Poet" />
               </CardText>
+              <CardActions>
+                <FlatButton label="Paterson Family">
+                  <Link to="/components/people/men/BanjoPaterson">
+                    Banjo Paterson -{' '}
+                  </Link>
+                </FlatButton>
+              </CardActions>
               <CardActions>
                 <List>
                   <ListItem>

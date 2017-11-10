@@ -68,7 +68,7 @@ class FamiliesNav extends Component {
           <Link to="/containers/AddPosts">Add Posts</Link>
         </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<ArticleLinksIcon />}>
-          <Link to="/containers/UrlLinks">Article Links</Link>
+          <Link to="/containers/ArticleLinks">Article Links</Link>
         </ListItem>
         <ListItem onTouchTap={this.handleClose} leftIcon={<SubscribersIcon />}>
           <Link to="/containers/Subscribers">Subscribers</Link>

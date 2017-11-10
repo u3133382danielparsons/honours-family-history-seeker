@@ -36,7 +36,7 @@ class Kelly extends Component {
       <div>
         <Card>
           <CardHeader
-            title="Lee Family"
+            title="Kelly Family"
             subtitle="Family Members"
             avatar={MollyAv}
           />

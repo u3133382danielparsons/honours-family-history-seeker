@@ -20,7 +20,7 @@ import AddPostsIcon from 'material-ui/svg-icons/action/note-add';
 import SubscribersIcon from 'material-ui/svg-icons/action/assignment-ind';
 import SignUpIcon from 'material-ui/svg-icons/action/card-membership';
 
-class UrlLinksNav extends Component {
+class ArticleLinksNav extends Component {
   render() {
     return (
       <List className="nav-link">
@@ -81,4 +81,4 @@ class UrlLinksNav extends Component {
   }
 }
 
-export default UrlLinksNav;
+export default ArticleLinksNav;
